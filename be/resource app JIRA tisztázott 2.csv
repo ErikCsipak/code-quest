@@ -1,0 +1,364 @@
+Issue key,Summary,Description,Σ Time Spent
+RA-167,Integrate Flyway for DB version handling,"Add and integrate Flyway dependency.
+
+Create DB baseline script and replace the hibernate DDL with it.",54900
+RA-166,Sticky header on plan timeline,,18000
+RA-165,Calculate the best 3 match,,117900
+RA-164,Input fields for searching competences,,86400
+RA-163,New menu and page,,9000
+RA-162,Tooltip for counters,,1800
+RA-161,BE algorithm for counting average,,11700
+RA-160,Competence component refactor,,16200
+RA-159,"Adjust ""looking for ..."" pages",,
+RA-158,Redesign profil form,,21600
+RA-157,Add input field in competence component,,
+RA-156,Adjust CRUD,,25200
+RA-155,Change DB for the scale,,16200
+RA-154,Deploy and devops,,18000
+RA-153,Quick search with more competencies,,241200
+RA-152,Show the average of the top 3 competencies in list,,41400
+RA-151,Competencies in a 1-10 scale,"*Menu - Employee and Looking for project*
+
+!Screenshot 2023-10-26 at 13.08.42-20231026-110847.png|width=1154,height=702!
+
+The user can enter the level of the selected competence in the right competence component, right beside the competence.
+
+The user can see in the list view only one column with competence.
+
+
+
+*Menu - Project and Looking for employee*
+
+Remains the same display: 1 column for the competencies.",240300
+RA-150,Mark the row in case of clicked on it,,14400
+RA-149,Meetings & PO tasks,,43200
+RA-148,Competencies in 1-10 scale and komplex competence search,,292500
+RA-147,Remove minimal overlapping of timeline items,Change timeline style/remove overlapping of plans to be able to remove stacking,5400
+RA-146,Change plan percentage to number input and range,"Add a number input to plan creation/modification, change the range values for easier percentage change ",9000
+RA-145,Datepickers don't change back to labels when out of focus,,3600
+RA-144,Infinitive loop in plan component,,111600
+RA-143,Small design changes,"* dates should be aligned to the center
+* column “fte” should be aligned to the center and can be more narrow
+* change “alkalmazottak” to “tagok” (“employees” to “member”)
+* count in column “members”: it should count all the members with plan from the current day to the future (not just the members on the current day)
+* in case of add new project, the count in column members should be 0 as well (as in competence)",12600
+RA-142,Small design changes,"* Column “planned” can be more narrow
+* Column “position” can be wider",13500
+RA-141,Small design changes,* Column “free from”: display dates without background,4500
+RA-140,Small design changes,"* Column project state and competence can be more narrow (the size of the column header text)
+* Column member can be wider (rest of the space)
+* Table should fill up the space instead of scrolling
+* Search should be possible by the members with a plan in the future as well (instead of the members on just the current day)",12600
+RA-139,Optimise the API requests,,25200
+RA-138,Summary API,,88200
+RA-137,Extend Looking For Resource search with searching by project members,,7200
+RA-136,Extend GetAllLookinfForResources API with member list,,3600
+RA-135,Add project's employee list to a looking for resource according to plan,,28800
+RA-134,Extend project search with searching by member,,18000
+RA-133,Import employees from HR Master (first load),,182700
+RA-132,Non functional reqs,,237600
+RA-131,Extend GetAllProjectsByCompanyid with member list,,7200
+RA-130,Filter employees according to status,,
+RA-129,Filter projects according to status,,
+RA-128,Extend Project DTO with project status,,
+RA-127,Add employee list to a project according to plan,,47700
+RA-126,Add Project status to project data,,19800
+RA-125,Change style of login page with added microsoft login button,,5400
+RA-124,Selected project is not cleared when closing the sidebar,,4500
+RA-123,Change favicon.ico and head title of application,,3600
+RA-122,"Sorting does not work in employee table, table does not refresh on update",,
+RA-121,Backend doesn't prevent the user from saving 2 or more active entities,"Backend doesn’t prevent the user from saving an IN_PROGRESS or WAITING Looking for Resource entity, when there already is one WAITING or IN_PROGRESS entity. ",3600
+RA-120,Insert logo and image,"* insert logo in the login page
+
+!Screenshot 2023-09-29 at 13.09.04-20230929-110910.png|width=602,height=389!
+* insert image in home pages in case there’s no element in the table (empty state)
+
+!Screenshot 2023-09-29 at 13.09.15-20230929-110921.png|width=602,height=383!",23400
+RA-119,SearchPlan API,,63000
+RA-118,Add comment field to employee dto,,2700
+RA-117,DeletePlan API,,3600
+RA-116,CreatePlan API,,11700
+RA-115,UpdatePlan API,,11700
+RA-114,Design changes,"* sidebar can be half wide as it is now
+* the sidebar icons (except the user icon) can be much smaller (e.g. tempo icons)",11700
+RA-113,Employee and project competencies shown at the same time in home component,,
+RA-112,App colours,"In the app we use the official Gloster colours:
+
+Orange: #E95A1A
+Dark blue: #212852
+Light grey: #E6E6E6 (opacity 30%)
+
+!Screenshot 2023-09-26 at 16.09.45-20230926-140952.png|width=1066,height=633!",9900
+RA-111,GetAllPlansByCompany API,,21600
+RA-110,Search includes whitespace characters,,2700
+RA-109,Refactor employee search to use RxJS,,5400
+RA-108,Pagination stopped working after refactor in search,,2700
+RA-107,Backend skeleton for 'Plan',,35100
+RA-106,Modal throws error when dismissed,"When subscribing to a modal, there are no reject functions provided for the then() function, only resolves. This results in an error being thrown.
+
+*Solution*: instead of dismissing, close the modal with  a ‘false’ parameter or provide a reject function (first suggestion is more suitable here)",1800
+RA-105,GetAllProjects API,,7200
+RA-104,AddLookingForResource API,,17100
+RA-103,SearchLookingForResource API,,10800
+RA-102,Devops tasks,,486000
+RA-101,Update LookingForResource API,,28800
+RA-100,GetAllEmployees API,,7200
+RA-99,Refactor Employee's getAllEmployees() method to getAllEmployeesByCompany(),,2700
+RA-98,getAllLookingForResources API,,
+RA-97,Employee search is case sensitive,"!image-20230919-122405.png|width=1385,height=490!
+
+!image-20230919-122429.png|width=1091,height=502!
+
+The search is case-sensitive. If we want to look up a competency that has uppercase letters and we use lowercase letters in the search bar, the competency will not be circled.
+
+*Solution*:
+
+Add lowerCase() function to both strings before comparing them in the isSearchResult() method of tr-employee.component.ts",900
+RA-96,AddLookingForProject API,,43200
+RA-95,GetAllLookingForResources API,,24300
+RA-94,Backend skeleton for 'Looking for Resource',,37800
+RA-93,ModifyLookingForProject API,,33300
+RA-92,SearchLookingForProject API,,27900
+RA-91,GetAllUsers API,,3600
+RA-90,GetAllLookingForProjects API,,25200
+RA-89,Backend skeleton for 'Looking for Project',,24300
+RA-88,Tab display for 'Looking for...' components,,5400
+RA-87,Add and delete competency API,,36900
+RA-86,Add and delete competency to project,,45900
+RA-85,Add and delete employee competency API,,24300
+RA-84,Add new project to the list,"!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!
+
+
+
+* The user can add new project to the list, by clicking on the “add project” button.
+* The user can type the name of the new project in the first empty line opened by the “add project” button.
+* The user can see the newly added project in the first line until the page is not reloaded.
+* In case of reload the page, the newly added project has to take its place according to the last configured sorting.
+* As soon es the new line opened for the new project, the max relevant project number is increased by 1.",48600
+RA-83,Add new employee to the list,"!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!
+
+
+
+* The user can add new employee to the list, by clicking on the “add employee” button.
+* The user can choose the name of the new employee from a dropbox in the first empty line opened by the “add employee” button.
+* The user can search for an employee’s name in the dropbox opened in the “name” cell.
+* The user can see the employee’s other data (role, cv, competencies) automatically filled by enter.
+* The user can see the newly added employee in the first line until the page is not reloaded.
+* In case of reload the page, the newly added employee has to take its place according to the last configured sorting.
+* As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.",96300
+RA-82,GetAllPositions API,,
+RA-81,General exception handling,,6300
+RA-80,Employee Search API,,50400
+RA-79,SearchProject API,,44100
+RA-78,UpdateProject API,,41400
+RA-77,AddProject API,,35100
+RA-76,Add Swagger,"Add OpenAPI documentation, and angular client generation, to avoid manually created frontend API services and models",66600
+RA-75,CORS configuration,,20700
+RA-74,Microsoft configuration,,69300
+RA-73,Project table sorting,,
+RA-72,GetProjectByCompany API,,32400
+RA-71,Implement drag&drop for competencies,,10800
+RA-70,Workflow logic,,
+RA-69,Update list element,"!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!
+
+* The user can update the following fields by double clicking in the cell:
+** assigned to
+** status
+** project state
+
+* the user can see the saved result by enter or by clicking somewhere else on the site",41400
+RA-68,Search in looking for resource,"* the user can search for some text in the table by typing the text in the search field
+* the user can search in all text contained field in the table by typing in the search field
+* the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.",21600
+RA-67,Display all the element of the looking for resource list,"!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!
+
+* The user can see the list of projects that has free capacity.
+* As a 1st version, the list is filled only manually.",51300
+RA-66,Workflow logic,,
+RA-65,Update list element,"!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!
+
+
+
+* The user can update the following fields by double clicking in the cell:
+** assigned to
+** status
+** free from
+
+* the user can see the saved result by enter or by clicking somewhere else on the site",76500
+RA-64,Search in looking for project,"* the user can search for some text in the table by typing the text in the search field
+* the user can search in all text contained field in the table by typing in the search field
+* the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.",64800
+RA-63,Display all the element of the looking for project list,"!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!
+
+
+
+* The user can see the list of employees who will be available for the next project.
+* As a 1st version, the list is filled only manually.",90000
+RA-62,Add employee to a looking for project list,,
+RA-61,Search in plan,,116100
+RA-60,Summarise the workload of an employee,"On the line of the employee, the user can see the total planned workload for the employee.",191700
+RA-59,Connect project to an employee,,109800
+RA-58,Display calendar view of employee,,242100
+RA-57,PM & PO tasks,,59400
+RA-56,CreateCompany API,,5400
+RA-55,UpdateCompany API,,
+RA-54,Sequencies,,3600
+RA-53,Swagger,,3600
+RA-52,Table sorting,"Default sorting of the table is alphabetical order by name.
+
+The user can select other sorting columns:
+
+* name
+* e-mail
+
+(other filter options can be done by search function)",18900
+RA-51,GetEmployeesByCompany API,,10800
+RA-50,UpdateEmployee API,,47700
+RA-49,CreateEmployee API,,85500
+RA-48,GetAllCompanies API,,9900
+RA-47,DeleteCompetence API,,
+RA-46,UpdateCompetence API,,
+RA-45,Update competence,* the user can update the competency name by double-clicking on the the name,28800
+RA-44,CreateCompetence API,,
+RA-43,GetAllCompetencies API,,
+RA-42,"Separate application, and authentication components",Separate the application components from the authentication component(s) (login component) for correct navigation,
+RA-41,i18n internationalization,"Delegate displayed texts in order to avoid “magic strings”, and help internationalization",
+RA-40,OAuth2 research+config,,424800
+RA-39,language basics,,
+RA-38,Empty screen,,
+RA-37,Project structure plan,,25200
+RA-36,Login screen,,57600
+RA-35,Redis research,"The purpose of using Redis is to increase the security of the API by making the authentication stateful.
+
+This way we can revoke the token of a user and thus implementing a logout on the server side as well, not just on the frontend.
+
+This can be done by configuring a Redis instance to be used in the application and saving the active token for each user in it as well as checking this token with every http request that is made to the API.
+
+Even though this would increase the security of the application, the improvement is not high priority momentarily and its configuration and implementation could take several days.
+
+The implementation should be kept in the backlog and we should get back to it later if we have the time or see the need for it.",5400
+RA-34,User entity (role+authority),,
+RA-33,Create developer user,,
+RA-32,Create model classes,,95400
+RA-31,Environment setup,,68400
+RA-30,EK diagramm + DB tervezés,,75600
+RA-29,Architecture,,828900
+RA-28,Search project,"* the user can search for some text in the table by typing the text in the search field
+* the user can search in all text contained field in the table by typing in the search field
+* the user have to type at least 3 character to start a search
+* the user can see the result 3sec after last typed character. The result is a filtered table and the searched text is highlighted.",104400
+RA-27,Export CVs,,
+RA-26,Search employee,"* the user can search for some text in the table by typing the text in the search field
+* the user can search in all text contained field in the table by typing in the search field
+* -the user have to type at least 3 character to start a search-
+* the user can see the result 3sec after last typed character. The result is a filtered table and -the searched text is highlighted.- the result in competencies is marked with red.",102600
+RA-25,Fill up profile form,"The user can see the “document” icon in case the employee’s comment field is not empty.
+
+The user can see a + icon in case the employee’s comment field is empty.
+
+In both case the user can click on the icons and will see the the profile of the employee.
+
+!Screenshot 2023-09-27 at 11.21.39-20230927-092144.png|width=396,height=731!
+
+
+
+The user can edit the experience section.
+
+The user cannot edit the competence section.
+
+The user can save the changes by clicking on the save button.
+
+The user can discard the changes by clicking on the cancel button or clicking outside of the form.",39600
+RA-24,Employee's position,"The user add roles (position) to an employee by choosing one from the dropdown list.
+
+(please work with dummy positions eg. Frontend Developer, Backend developer, Business Analyst)",3600
+RA-23,Roles and rights,,
+RA-22,Delete competence,"!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=1788,height=1098!
+
+* the user can delete a competency by clicking on the bin icon at the end of the line
+* the user got a warning message if the selected competency is already used by employees or projects. The user can decide whether to continue the delete or not.
+* the deleted competency is no more shown in the list",39600
+RA-21,Add new competence,"!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!
+
+* the user can type the competency in the search field and if the search had no results, the user can add a new competency by clicking on the add button
+* the user can see the added competency in the filtered list
+* the user can’t click on the add button if there is at least one result after search",58500
+RA-20,List all competence,"!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!
+
+* The user can see on the right side of the screen all the existing competencies.
+* The user can close the Competency tab by clicking on the narrow icon.
+* The user can open the Competency tab by clicking on the narrow icon on the closed tab.
+* The user can drag one of the competencies.",85500
+RA-19,Competence component,,212400
+RA-18,Company separated display,"!Screenshot 2023-08-07 at 13.43.27-20230807-114333.png|width=701,height=398!
+
+* The user can see all the possible companies in tab form.
+* The user can see only 1 tab as active
+* The user can add new company by clicking on the + icon and type the name.
+* The user can update a company name by double clicking on the existing company name.
+* The cannot delete a company.
+* The user can only see as active tab the company where she/he belongs.
+* Superadmin can see and edit all the company tabs.",250200
+RA-17,Modify existing project,"* the user can modify the project data by double-clicking on the selected cell
+* the user can see the saved result by enter or by clicking somewhere else on the site",139500
+RA-16,Add new project,"* The user can add a new project by clicking on the “add employee” button.
+* The user can type the datas of the new project in the first empty line opened by the “add project” button.
+* The user can see the newly added project in the first line until the page is not reloaded.
+* In case of reload the page, the newly added project has to take its place according to the last configured sorting.
+* As soon es the new line opened for the new project, the max relevant project number is increased by 1.",74700
+RA-15,Display all projects,"Design same as employees.
+
+* The Minero user can see all the relevant project listed in a table.
+* The Minero user can see how many project is listed and how many project is relevant all together in the lower left corner.
+* The Minero user can turn page and list the next page of the projects by clicking on the right or left arrow in the lower left corner.",298800
+RA-14,Add and delete competence to employee,"*Add - Scenario 1:*
+
+The user can add competence to an employee row in the cells junior, medium or senior by drag the competency and drop it in the cell.
+
+The dropped competence will not disappear from the competence list.
+
+
+
+*Add - Scenario 2:*
+
+The user can add competence to an employee row in the cells junior, medium or senior by double-clicking in the cell he/she would add and click on the + icon beside the selected competence.
+
+
+
+*Delete*
+
+The user can delete the competency from the employees cell by clicking on the x at the end of the competency tag.",65700
+RA-13,Modify existing employee,"* the user can modify the employee data by double-clicking on the selected cell
+* the user can see the saved result by enter or by clicking somewhere else on the site",91800
+RA-12,Add new employee,"!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!
+
+* The user can add a new employee by clicking on the “add employee” button.
+* The user can type the datas of the new employee in the first empty line opened by the “add employee” button.
+* The user can see the newly added employee in the first line until the page is not reloaded.
+* In case of reload the page, the newly added employee has to take its place according to the last configured sorting.
+* As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.",133200
+RA-11,Display all employees,"!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!
+
+* The Minero user can see all the relevant employee listed in a table.
+* The Minero user can see how many employee is listed and how many employee is relevant all together in the lower left corner.
+* The Minero user can turn page and list the next page of the employees by clicking on the right or left arrow in the lower left corner.",420300
+RA-10,Sidebar (Navigation),"!Screenshot 2023-07-13 at 17.11.57-20230713-151203.png|width=931,height=576!
+
+The user can see a landing page with sidebar.
+Sidebar contains the following menus: user, home, plan, employee, project.
+As a menu, it only displays the icon. In case the user hover over the icon, the system displays the menu description.
+
+Precondition: successful login",177300
+RA-9,SSO Gloster Login,"!Screenshot 2023-07-13 at 16.27.42-20230713-142747.png|width=930,height=571!
+
+The business user can start the application by clicking on the “sign in with Google” button.
+
+The business user goes through the google standard login process.",592200
+RA-8,Meetings,,574200
+RA-7,Administration,,633600
+RA-6,Looking for resource component,,146700
+RA-5,Looking for Project component,,223200
+RA-4,Plan component,,541800
+RA-3,Project component,,531900
+RA-2,Employee component,,639000
+RA-1,App frame,,468900

@@ -1,0 +1,1004 @@
+[
+ {
+   "Issue key": "RA-167",
+   "Summary": "Integrate Flyway for DB version handling",
+   "Description": "Add and integrate Flyway dependency.\n\nCreate DB baseline script and replace the hibernate DDL with it.",
+   "Σ Time Spent": 54900
+ },
+ {
+   "Issue key": "RA-166",
+   "Summary": "Sticky header on plan timeline",
+   "Description": "",
+   "Σ Time Spent": 18000
+ },
+ {
+   "Issue key": "RA-165",
+   "Summary": "Calculate the best 3 match",
+   "Description": "",
+   "Σ Time Spent": 117900
+ },
+ {
+   "Issue key": "RA-164",
+   "Summary": "Input fields for searching competences",
+   "Description": "",
+   "Σ Time Spent": 86400
+ },
+ {
+   "Issue key": "RA-163",
+   "Summary": "New menu and page",
+   "Description": "",
+   "Σ Time Spent": 9000
+ },
+ {
+   "Issue key": "RA-162",
+   "Summary": "Tooltip for counters",
+   "Description": "",
+   "Σ Time Spent": 1800
+ },
+ {
+   "Issue key": "RA-161",
+   "Summary": "BE algorithm for counting average",
+   "Description": "",
+   "Σ Time Spent": 11700
+ },
+ {
+   "Issue key": "RA-160",
+   "Summary": "Competence component refactor",
+   "Description": "",
+   "Σ Time Spent": 16200
+ },
+ {
+   "Issue key": "RA-159",
+   "Summary": "Adjust \"looking for ...\" pages",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-158",
+   "Summary": "Redesign profil form",
+   "Description": "",
+   "Σ Time Spent": 21600
+ },
+ {
+   "Issue key": "RA-157",
+   "Summary": "Add input field in competence component",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-156",
+   "Summary": "Adjust CRUD",
+   "Description": "",
+   "Σ Time Spent": 25200
+ },
+ {
+   "Issue key": "RA-155",
+   "Summary": "Change DB for the scale",
+   "Description": "",
+   "Σ Time Spent": 16200
+ },
+ {
+   "Issue key": "RA-154",
+   "Summary": "Deploy and devops",
+   "Description": "",
+   "Σ Time Spent": 18000
+ },
+ {
+   "Issue key": "RA-153",
+   "Summary": "Quick search with more competencies",
+   "Description": "",
+   "Σ Time Spent": 241200
+ },
+ {
+   "Issue key": "RA-152",
+   "Summary": "Show the average of the top 3 competencies in list",
+   "Description": "",
+   "Σ Time Spent": 41400
+ },
+ {
+   "Issue key": "RA-151",
+   "Summary": "Competencies in a 1-10 scale",
+   "Description": "*Menu - Employee and Looking for project*\n\n!Screenshot 2023-10-26 at 13.08.42-20231026-110847.png|width=1154,height=702!\n\nThe user can enter the level of the selected competence in the right competence component, right beside the competence.\n\nThe user can see in the list view only one column with competence.\n\n\n\n*Menu - Project and Looking for employee*\n\nRemains the same display: 1 column for the competencies.",
+   "Σ Time Spent": 240300
+ },
+ {
+   "Issue key": "RA-150",
+   "Summary": "Mark the row in case of clicked on it",
+   "Description": "",
+   "Σ Time Spent": 14400
+ },
+ {
+   "Issue key": "RA-149",
+   "Summary": "Meetings & PO tasks",
+   "Description": "",
+   "Σ Time Spent": 43200
+ },
+ {
+   "Issue key": "RA-148",
+   "Summary": "Competencies in 1-10 scale and komplex competence search",
+   "Description": "",
+   "Σ Time Spent": 292500
+ },
+ {
+   "Issue key": "RA-147",
+   "Summary": "Remove minimal overlapping of timeline items",
+   "Description": "Change timeline style/remove overlapping of plans to be able to remove stacking",
+   "Σ Time Spent": 5400
+ },
+ {
+   "Issue key": "RA-146",
+   "Summary": "Change plan percentage to number input and range",
+   "Description": "Add a number input to plan creation/modification, change the range values for easier percentage change ",
+   "Σ Time Spent": 9000
+ },
+ {
+   "Issue key": "RA-145",
+   "Summary": "Datepickers don't change back to labels when out of focus",
+   "Description": "",
+   "Σ Time Spent": 3600
+ },
+ {
+   "Issue key": "RA-144",
+   "Summary": "Infinitive loop in plan component",
+   "Description": "",
+   "Σ Time Spent": 111600
+ },
+ {
+   "Issue key": "RA-143",
+   "Summary": "Small design changes",
+   "Description": "* dates should be aligned to the center\n* column “fte” should be aligned to the center and can be more narrow\n* change “alkalmazottak” to “tagok” (“employees” to “member”)\n* count in column “members”: it should count all the members with plan from the current day to the future (not just the members on the current day)\n* in case of add new project, the count in column members should be 0 as well (as in competence)",
+   "Σ Time Spent": 12600
+ },
+ {
+   "Issue key": "RA-142",
+   "Summary": "Small design changes",
+   "Description": "* Column “planned” can be more narrow\n* Column “position” can be wider",
+   "Σ Time Spent": 13500
+ },
+ {
+   "Issue key": "RA-141",
+   "Summary": "Small design changes",
+   "Description": "* Column “free from”: display dates without background",
+   "Σ Time Spent": 4500
+ },
+ {
+   "Issue key": "RA-140",
+   "Summary": "Small design changes",
+   "Description": "* Column project state and competence can be more narrow (the size of the column header text)\n* Column member can be wider (rest of the space)\n* Table should fill up the space instead of scrolling\n* Search should be possible by the members with a plan in the future as well (instead of the members on just the current day)",
+   "Σ Time Spent": 12600
+ },
+ {
+   "Issue key": "RA-139",
+   "Summary": "Optimise the API requests",
+   "Description": "",
+   "Σ Time Spent": 25200
+ },
+ {
+   "Issue key": "RA-138",
+   "Summary": "Summary API",
+   "Description": "",
+   "Σ Time Spent": 88200
+ },
+ {
+   "Issue key": "RA-137",
+   "Summary": "Extend Looking For Resource search with searching by project members",
+   "Description": "",
+   "Σ Time Spent": 7200
+ },
+ {
+   "Issue key": "RA-136",
+   "Summary": "Extend GetAllLookinfForResources API with member list",
+   "Description": "",
+   "Σ Time Spent": 3600
+ },
+ {
+   "Issue key": "RA-135",
+   "Summary": "Add project's employee list to a looking for resource according to plan",
+   "Description": "",
+   "Σ Time Spent": 28800
+ },
+ {
+   "Issue key": "RA-134",
+   "Summary": "Extend project search with searching by member",
+   "Description": "",
+   "Σ Time Spent": 18000
+ },
+ {
+   "Issue key": "RA-133",
+   "Summary": "Import employees from HR Master (first load)",
+   "Description": "",
+   "Σ Time Spent": 182700
+ },
+ {
+   "Issue key": "RA-132",
+   "Summary": "Non functional reqs",
+   "Description": "",
+   "Σ Time Spent": 237600
+ },
+ {
+   "Issue key": "RA-131",
+   "Summary": "Extend GetAllProjectsByCompanyid with member list",
+   "Description": "",
+   "Σ Time Spent": 7200
+ },
+ {
+   "Issue key": "RA-130",
+   "Summary": "Filter employees according to status",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-129",
+   "Summary": "Filter projects according to status",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-128",
+   "Summary": "Extend Project DTO with project status",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-127",
+   "Summary": "Add employee list to a project according to plan",
+   "Description": "",
+   "Σ Time Spent": 47700
+ },
+ {
+   "Issue key": "RA-126",
+   "Summary": "Add Project status to project data",
+   "Description": "",
+   "Σ Time Spent": 19800
+ },
+ {
+   "Issue key": "RA-125",
+   "Summary": "Change style of login page with added microsoft login button",
+   "Description": "",
+   "Σ Time Spent": 5400
+ },
+ {
+   "Issue key": "RA-124",
+   "Summary": "Selected project is not cleared when closing the sidebar",
+   "Description": "",
+   "Σ Time Spent": 4500
+ },
+ {
+   "Issue key": "RA-123",
+   "Summary": "Change favicon.ico and head title of application",
+   "Description": "",
+   "Σ Time Spent": 3600
+ },
+ {
+   "Issue key": "RA-122",
+   "Summary": "Sorting does not work in employee table, table does not refresh on update",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-121",
+   "Summary": "Backend doesn't prevent the user from saving 2 or more active entities",
+   "Description": "Backend doesn’t prevent the user from saving an IN_PROGRESS or WAITING Looking for Resource entity, when there already is one WAITING or IN_PROGRESS entity. ",
+   "Σ Time Spent": 3600
+ },
+ {
+   "Issue key": "RA-120",
+   "Summary": "Insert logo and image",
+   "Description": "* insert logo in the login page\n\n!Screenshot 2023-09-29 at 13.09.04-20230929-110910.png|width=602,height=389!\n* insert image in home pages in case there’s no element in the table (empty state)\n\n!Screenshot 2023-09-29 at 13.09.15-20230929-110921.png|width=602,height=383!",
+   "Σ Time Spent": 23400
+ },
+ {
+   "Issue key": "RA-119",
+   "Summary": "SearchPlan API",
+   "Description": "",
+   "Σ Time Spent": 63000
+ },
+ {
+   "Issue key": "RA-118",
+   "Summary": "Add comment field to employee dto",
+   "Description": "",
+   "Σ Time Spent": 2700
+ },
+ {
+   "Issue key": "RA-117",
+   "Summary": "DeletePlan API",
+   "Description": "",
+   "Σ Time Spent": 3600
+ },
+ {
+   "Issue key": "RA-116",
+   "Summary": "CreatePlan API",
+   "Description": "",
+   "Σ Time Spent": 11700
+ },
+ {
+   "Issue key": "RA-115",
+   "Summary": "UpdatePlan API",
+   "Description": "",
+   "Σ Time Spent": 11700
+ },
+ {
+   "Issue key": "RA-114",
+   "Summary": "Design changes",
+   "Description": "* sidebar can be half wide as it is now\n* the sidebar icons (except the user icon) can be much smaller (e.g. tempo icons)",
+   "Σ Time Spent": 11700
+ },
+ {
+   "Issue key": "RA-113",
+   "Summary": "Employee and project competencies shown at the same time in home component",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-112",
+   "Summary": "App colours",
+   "Description": "In the app we use the official Gloster colours:\n\nOrange: #E95A1A\nDark blue: #212852\nLight grey: #E6E6E6 (opacity 30%)\n\n!Screenshot 2023-09-26 at 16.09.45-20230926-140952.png|width=1066,height=633!",
+   "Σ Time Spent": 9900
+ },
+ {
+   "Issue key": "RA-111",
+   "Summary": "GetAllPlansByCompany API",
+   "Description": "",
+   "Σ Time Spent": 21600
+ },
+ {
+   "Issue key": "RA-110",
+   "Summary": "Search includes whitespace characters",
+   "Description": "",
+   "Σ Time Spent": 2700
+ },
+ {
+   "Issue key": "RA-109",
+   "Summary": "Refactor employee search to use RxJS",
+   "Description": "",
+   "Σ Time Spent": 5400
+ },
+ {
+   "Issue key": "RA-108",
+   "Summary": "Pagination stopped working after refactor in search",
+   "Description": "",
+   "Σ Time Spent": 2700
+ },
+ {
+   "Issue key": "RA-107",
+   "Summary": "Backend skeleton for 'Plan'",
+   "Description": "",
+   "Σ Time Spent": 35100
+ },
+ {
+   "Issue key": "RA-106",
+   "Summary": "Modal throws error when dismissed",
+   "Description": "When subscribing to a modal, there are no reject functions provided for the then() function, only resolves. This results in an error being thrown.\n\n*Solution*: instead of dismissing, close the modal with  a ‘false’ parameter or provide a reject function (first suggestion is more suitable here)",
+   "Σ Time Spent": 1800
+ },
+ {
+   "Issue key": "RA-105",
+   "Summary": "GetAllProjects API",
+   "Description": "",
+   "Σ Time Spent": 7200
+ },
+ {
+   "Issue key": "RA-104",
+   "Summary": "AddLookingForResource API",
+   "Description": "",
+   "Σ Time Spent": 17100
+ },
+ {
+   "Issue key": "RA-103",
+   "Summary": "SearchLookingForResource API",
+   "Description": "",
+   "Σ Time Spent": 10800
+ },
+ {
+   "Issue key": "RA-102",
+   "Summary": "Devops tasks",
+   "Description": "",
+   "Σ Time Spent": 486000
+ },
+ {
+   "Issue key": "RA-101",
+   "Summary": "Update LookingForResource API",
+   "Description": "",
+   "Σ Time Spent": 28800
+ },
+ {
+   "Issue key": "RA-100",
+   "Summary": "GetAllEmployees API",
+   "Description": "",
+   "Σ Time Spent": 7200
+ },
+ {
+   "Issue key": "RA-99",
+   "Summary": "Refactor Employee's getAllEmployees() method to getAllEmployeesByCompany()",
+   "Description": "",
+   "Σ Time Spent": 2700
+ },
+ {
+   "Issue key": "RA-98",
+   "Summary": "getAllLookingForResources API",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-97",
+   "Summary": "Employee search is case sensitive",
+   "Description": "!image-20230919-122405.png|width=1385,height=490!\n\n!image-20230919-122429.png|width=1091,height=502!\n\nThe search is case-sensitive. If we want to look up a competency that has uppercase letters and we use lowercase letters in the search bar, the competency will not be circled.\n\n*Solution*:\n\nAdd lowerCase() function to both strings before comparing them in the isSearchResult() method of tr-employee.component.ts",
+   "Σ Time Spent": 900
+ },
+ {
+   "Issue key": "RA-96",
+   "Summary": "AddLookingForProject API",
+   "Description": "",
+   "Σ Time Spent": 43200
+ },
+ {
+   "Issue key": "RA-95",
+   "Summary": "GetAllLookingForResources API",
+   "Description": "",
+   "Σ Time Spent": 24300
+ },
+ {
+   "Issue key": "RA-94",
+   "Summary": "Backend skeleton for 'Looking for Resource'",
+   "Description": "",
+   "Σ Time Spent": 37800
+ },
+ {
+   "Issue key": "RA-93",
+   "Summary": "ModifyLookingForProject API",
+   "Description": "",
+   "Σ Time Spent": 33300
+ },
+ {
+   "Issue key": "RA-92",
+   "Summary": "SearchLookingForProject API",
+   "Description": "",
+   "Σ Time Spent": 27900
+ },
+ {
+   "Issue key": "RA-91",
+   "Summary": "GetAllUsers API",
+   "Description": "",
+   "Σ Time Spent": 3600
+ },
+ {
+   "Issue key": "RA-90",
+   "Summary": "GetAllLookingForProjects API",
+   "Description": "",
+   "Σ Time Spent": 25200
+ },
+ {
+   "Issue key": "RA-89",
+   "Summary": "Backend skeleton for 'Looking for Project'",
+   "Description": "",
+   "Σ Time Spent": 24300
+ },
+ {
+   "Issue key": "RA-88",
+   "Summary": "Tab display for 'Looking for...' components",
+   "Description": "",
+   "Σ Time Spent": 5400
+ },
+ {
+   "Issue key": "RA-87",
+   "Summary": "Add and delete competency API",
+   "Description": "",
+   "Σ Time Spent": 36900
+ },
+ {
+   "Issue key": "RA-86",
+   "Summary": "Add and delete competency to project",
+   "Description": "",
+   "Σ Time Spent": 45900
+ },
+ {
+   "Issue key": "RA-85",
+   "Summary": "Add and delete employee competency API",
+   "Description": "",
+   "Σ Time Spent": 24300
+ },
+ {
+   "Issue key": "RA-84",
+   "Summary": "Add new project to the list",
+   "Description": "!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!\n\n\n\n* The user can add new project to the list, by clicking on the “add project” button.\n* The user can type the name of the new project in the first empty line opened by the “add project” button.\n* The user can see the newly added project in the first line until the page is not reloaded.\n* In case of reload the page, the newly added project has to take its place according to the last configured sorting.\n* As soon es the new line opened for the new project, the max relevant project number is increased by 1.",
+   "Σ Time Spent": 48600
+ },
+ {
+   "Issue key": "RA-83",
+   "Summary": "Add new employee to the list",
+   "Description": "!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!\n\n\n\n* The user can add new employee to the list, by clicking on the “add employee” button.\n* The user can choose the name of the new employee from a dropbox in the first empty line opened by the “add employee” button.\n* The user can search for an employee’s name in the dropbox opened in the “name” cell.\n* The user can see the employee’s other data (role, cv, competencies) automatically filled by enter.\n* The user can see the newly added employee in the first line until the page is not reloaded.\n* In case of reload the page, the newly added employee has to take its place according to the last configured sorting.\n* As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.",
+   "Σ Time Spent": 96300
+ },
+ {
+   "Issue key": "RA-82",
+   "Summary": "GetAllPositions API",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-81",
+   "Summary": "General exception handling",
+   "Description": "",
+   "Σ Time Spent": 6300
+ },
+ {
+   "Issue key": "RA-80",
+   "Summary": "Employee Search API",
+   "Description": "",
+   "Σ Time Spent": 50400
+ },
+ {
+   "Issue key": "RA-79",
+   "Summary": "SearchProject API",
+   "Description": "",
+   "Σ Time Spent": 44100
+ },
+ {
+   "Issue key": "RA-78",
+   "Summary": "UpdateProject API",
+   "Description": "",
+   "Σ Time Spent": 41400
+ },
+ {
+   "Issue key": "RA-77",
+   "Summary": "AddProject API",
+   "Description": "",
+   "Σ Time Spent": 35100
+ },
+ {
+   "Issue key": "RA-76",
+   "Summary": "Add Swagger",
+   "Description": "Add OpenAPI documentation, and angular client generation, to avoid manually created frontend API services and models",
+   "Σ Time Spent": 66600
+ },
+ {
+   "Issue key": "RA-75",
+   "Summary": "CORS configuration",
+   "Description": "",
+   "Σ Time Spent": 20700
+ },
+ {
+   "Issue key": "RA-74",
+   "Summary": "Microsoft configuration",
+   "Description": "",
+   "Σ Time Spent": 69300
+ },
+ {
+   "Issue key": "RA-73",
+   "Summary": "Project table sorting",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-72",
+   "Summary": "GetProjectByCompany API",
+   "Description": "",
+   "Σ Time Spent": 32400
+ },
+ {
+   "Issue key": "RA-71",
+   "Summary": "Implement drag&drop for competencies",
+   "Description": "",
+   "Σ Time Spent": 10800
+ },
+ {
+   "Issue key": "RA-70",
+   "Summary": "Workflow logic",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-69",
+   "Summary": "Update list element",
+   "Description": "!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!\n\n* The user can update the following fields by double clicking in the cell:\n** assigned to\n** status\n** project state\n\n* the user can see the saved result by enter or by clicking somewhere else on the site",
+   "Σ Time Spent": 41400
+ },
+ {
+   "Issue key": "RA-68",
+   "Summary": "Search in looking for resource",
+   "Description": "* the user can search for some text in the table by typing the text in the search field\n* the user can search in all text contained field in the table by typing in the search field\n* the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.",
+   "Σ Time Spent": 21600
+ },
+ {
+   "Issue key": "RA-67",
+   "Summary": "Display all the element of the looking for resource list",
+   "Description": "!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!\n\n* The user can see the list of projects that has free capacity.\n* As a 1st version, the list is filled only manually.",
+   "Σ Time Spent": 51300
+ },
+ {
+   "Issue key": "RA-66",
+   "Summary": "Workflow logic",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-65",
+   "Summary": "Update list element",
+   "Description": "!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!\n\n\n\n* The user can update the following fields by double clicking in the cell:\n** assigned to\n** status\n** free from\n\n* the user can see the saved result by enter or by clicking somewhere else on the site",
+   "Σ Time Spent": 76500
+ },
+ {
+   "Issue key": "RA-64",
+   "Summary": "Search in looking for project",
+   "Description": "* the user can search for some text in the table by typing the text in the search field\n* the user can search in all text contained field in the table by typing in the search field\n* the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.",
+   "Σ Time Spent": 64800
+ },
+ {
+   "Issue key": "RA-63",
+   "Summary": "Display all the element of the looking for project list",
+   "Description": "!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!\n\n\n\n* The user can see the list of employees who will be available for the next project.\n* As a 1st version, the list is filled only manually.",
+   "Σ Time Spent": 90000
+ },
+ {
+   "Issue key": "RA-62",
+   "Summary": "Add employee to a looking for project list",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-61",
+   "Summary": "Search in plan",
+   "Description": "",
+   "Σ Time Spent": 116100
+ },
+ {
+   "Issue key": "RA-60",
+   "Summary": "Summarise the workload of an employee",
+   "Description": "On the line of the employee, the user can see the total planned workload for the employee.",
+   "Σ Time Spent": 191700
+ },
+ {
+   "Issue key": "RA-59",
+   "Summary": "Connect project to an employee",
+   "Description": "",
+   "Σ Time Spent": 109800
+ },
+ {
+   "Issue key": "RA-58",
+   "Summary": "Display calendar view of employee",
+   "Description": "",
+   "Σ Time Spent": 242100
+ },
+ {
+   "Issue key": "RA-57",
+   "Summary": "PM & PO tasks",
+   "Description": "",
+   "Σ Time Spent": 59400
+ },
+ {
+   "Issue key": "RA-56",
+   "Summary": "CreateCompany API",
+   "Description": "",
+   "Σ Time Spent": 5400
+ },
+ {
+   "Issue key": "RA-55",
+   "Summary": "UpdateCompany API",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-54",
+   "Summary": "Sequencies",
+   "Description": "",
+   "Σ Time Spent": 3600
+ },
+ {
+   "Issue key": "RA-53",
+   "Summary": "Swagger",
+   "Description": "",
+   "Σ Time Spent": 3600
+ },
+ {
+   "Issue key": "RA-52",
+   "Summary": "Table sorting",
+   "Description": "Default sorting of the table is alphabetical order by name.\n\nThe user can select other sorting columns:\n\n* name\n* e-mail\n\n(other filter options can be done by search function)",
+   "Σ Time Spent": 18900
+ },
+ {
+   "Issue key": "RA-51",
+   "Summary": "GetEmployeesByCompany API",
+   "Description": "",
+   "Σ Time Spent": 10800
+ },
+ {
+   "Issue key": "RA-50",
+   "Summary": "UpdateEmployee API",
+   "Description": "",
+   "Σ Time Spent": 47700
+ },
+ {
+   "Issue key": "RA-49",
+   "Summary": "CreateEmployee API",
+   "Description": "",
+   "Σ Time Spent": 85500
+ },
+ {
+   "Issue key": "RA-48",
+   "Summary": "GetAllCompanies API",
+   "Description": "",
+   "Σ Time Spent": 9900
+ },
+ {
+   "Issue key": "RA-47",
+   "Summary": "DeleteCompetence API",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-46",
+   "Summary": "UpdateCompetence API",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-45",
+   "Summary": "Update competence",
+   "Description": "* the user can update the competency name by double-clicking on the the name",
+   "Σ Time Spent": 28800
+ },
+ {
+   "Issue key": "RA-44",
+   "Summary": "CreateCompetence API",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-43",
+   "Summary": "GetAllCompetencies API",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-42",
+   "Summary": "Separate application, and authentication components",
+   "Description": "Separate the application components from the authentication component(s) (login component) for correct navigation",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-41",
+   "Summary": "i18n internationalization",
+   "Description": "Delegate displayed texts in order to avoid “magic strings”, and help internationalization",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-40",
+   "Summary": "OAuth2 research+config",
+   "Description": "",
+   "Σ Time Spent": 424800
+ },
+ {
+   "Issue key": "RA-39",
+   "Summary": "language basics",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-38",
+   "Summary": "Empty screen",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-37",
+   "Summary": "Project structure plan",
+   "Description": "",
+   "Σ Time Spent": 25200
+ },
+ {
+   "Issue key": "RA-36",
+   "Summary": "Login screen",
+   "Description": "",
+   "Σ Time Spent": 57600
+ },
+ {
+   "Issue key": "RA-35",
+   "Summary": "Redis research",
+   "Description": "The purpose of using Redis is to increase the security of the API by making the authentication stateful.\n\nThis way we can revoke the token of a user and thus implementing a logout on the server side as well, not just on the frontend.\n\nThis can be done by configuring a Redis instance to be used in the application and saving the active token for each user in it as well as checking this token with every http request that is made to the API.\n\nEven though this would increase the security of the application, the improvement is not high priority momentarily and its configuration and implementation could take several days.\n\nThe implementation should be kept in the backlog and we should get back to it later if we have the time or see the need for it.",
+   "Σ Time Spent": 5400
+ },
+ {
+   "Issue key": "RA-34",
+   "Summary": "User entity (role+authority)",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-33",
+   "Summary": "Create developer user",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-32",
+   "Summary": "Create model classes",
+   "Description": "",
+   "Σ Time Spent": 95400
+ },
+ {
+   "Issue key": "RA-31",
+   "Summary": "Environment setup",
+   "Description": "",
+   "Σ Time Spent": 68400
+ },
+ {
+   "Issue key": "RA-30",
+   "Summary": "EK diagramm + DB tervezés",
+   "Description": "",
+   "Σ Time Spent": 75600
+ },
+ {
+   "Issue key": "RA-29",
+   "Summary": "Architecture",
+   "Description": "",
+   "Σ Time Spent": 828900
+ },
+ {
+   "Issue key": "RA-28",
+   "Summary": "Search project",
+   "Description": "* the user can search for some text in the table by typing the text in the search field\n* the user can search in all text contained field in the table by typing in the search field\n* the user have to type at least 3 character to start a search\n* the user can see the result 3sec after last typed character. The result is a filtered table and the searched text is highlighted.",
+   "Σ Time Spent": 104400
+ },
+ {
+   "Issue key": "RA-27",
+   "Summary": "Export CVs",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-26",
+   "Summary": "Search employee",
+   "Description": "* the user can search for some text in the table by typing the text in the search field\n* the user can search in all text contained field in the table by typing in the search field\n* -the user have to type at least 3 character to start a search-\n* the user can see the result 3sec after last typed character. The result is a filtered table and -the searched text is highlighted.- the result in competencies is marked with red.",
+   "Σ Time Spent": 102600
+ },
+ {
+   "Issue key": "RA-25",
+   "Summary": "Fill up profile form",
+   "Description": "The user can see the “document” icon in case the employee’s comment field is not empty.\n\nThe user can see a + icon in case the employee’s comment field is empty.\n\nIn both case the user can click on the icons and will see the the profile of the employee.\n\n!Screenshot 2023-09-27 at 11.21.39-20230927-092144.png|width=396,height=731!\n\n\n\nThe user can edit the experience section.\n\nThe user cannot edit the competence section.\n\nThe user can save the changes by clicking on the save button.\n\nThe user can discard the changes by clicking on the cancel button or clicking outside of the form.",
+   "Σ Time Spent": 39600
+ },
+ {
+   "Issue key": "RA-24",
+   "Summary": "Employee's position",
+   "Description": "The user add roles (position) to an employee by choosing one from the dropdown list.\n\n(please work with dummy positions eg. Frontend Developer, Backend developer, Business Analyst)",
+   "Σ Time Spent": 3600
+ },
+ {
+   "Issue key": "RA-23",
+   "Summary": "Roles and rights",
+   "Description": "",
+   "Σ Time Spent": null
+ },
+ {
+   "Issue key": "RA-22",
+   "Summary": "Delete competence",
+   "Description": "!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=1788,height=1098!\n\n* the user can delete a competency by clicking on the bin icon at the end of the line\n* the user got a warning message if the selected competency is already used by employees or projects. The user can decide whether to continue the delete or not.\n* the deleted competency is no more shown in the list",
+   "Σ Time Spent": 39600
+ },
+ {
+   "Issue key": "RA-21",
+   "Summary": "Add new competence",
+   "Description": "!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!\n\n* the user can type the competency in the search field and if the search had no results, the user can add a new competency by clicking on the add button\n* the user can see the added competency in the filtered list\n* the user can’t click on the add button if there is at least one result after search",
+   "Σ Time Spent": 58500
+ },
+ {
+   "Issue key": "RA-20",
+   "Summary": "List all competence",
+   "Description": "!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!\n\n* The user can see on the right side of the screen all the existing competencies.\n* The user can close the Competency tab by clicking on the narrow icon.\n* The user can open the Competency tab by clicking on the narrow icon on the closed tab.\n* The user can drag one of the competencies.",
+   "Σ Time Spent": 85500
+ },
+ {
+   "Issue key": "RA-19",
+   "Summary": "Competence component",
+   "Description": "",
+   "Σ Time Spent": 212400
+ },
+ {
+   "Issue key": "RA-18",
+   "Summary": "Company separated display",
+   "Description": "!Screenshot 2023-08-07 at 13.43.27-20230807-114333.png|width=701,height=398!\n\n* The user can see all the possible companies in tab form.\n* The user can see only 1 tab as active\n* The user can add new company by clicking on the + icon and type the name.\n* The user can update a company name by double clicking on the existing company name.\n* The cannot delete a company.\n* The user can only see as active tab the company where she/he belongs.\n* Superadmin can see and edit all the company tabs.",
+   "Σ Time Spent": 250200
+ },
+ {
+   "Issue key": "RA-17",
+   "Summary": "Modify existing project",
+   "Description": "* the user can modify the project data by double-clicking on the selected cell\n* the user can see the saved result by enter or by clicking somewhere else on the site",
+   "Σ Time Spent": 139500
+ },
+ {
+   "Issue key": "RA-16",
+   "Summary": "Add new project",
+   "Description": "* The user can add a new project by clicking on the “add employee” button.\n* The user can type the datas of the new project in the first empty line opened by the “add project” button.\n* The user can see the newly added project in the first line until the page is not reloaded.\n* In case of reload the page, the newly added project has to take its place according to the last configured sorting.\n* As soon es the new line opened for the new project, the max relevant project number is increased by 1.",
+   "Σ Time Spent": 74700
+ },
+ {
+   "Issue key": "RA-15",
+   "Summary": "Display all projects",
+   "Description": "Design same as employees.\n\n* The Minero user can see all the relevant project listed in a table.\n* The Minero user can see how many project is listed and how many project is relevant all together in the lower left corner.\n* The Minero user can turn page and list the next page of the projects by clicking on the right or left arrow in the lower left corner.",
+   "Σ Time Spent": 298800
+ },
+ {
+   "Issue key": "RA-14",
+   "Summary": "Add and delete competence to employee",
+   "Description": "*Add - Scenario 1:*\n\nThe user can add competence to an employee row in the cells junior, medium or senior by drag the competency and drop it in the cell.\n\nThe dropped competence will not disappear from the competence list.\n\n\n\n*Add - Scenario 2:*\n\nThe user can add competence to an employee row in the cells junior, medium or senior by double-clicking in the cell he/she would add and click on the + icon beside the selected competence.\n\n\n\n*Delete*\n\nThe user can delete the competency from the employees cell by clicking on the x at the end of the competency tag.",
+   "Σ Time Spent": 65700
+ },
+ {
+   "Issue key": "RA-13",
+   "Summary": "Modify existing employee",
+   "Description": "* the user can modify the employee data by double-clicking on the selected cell\n* the user can see the saved result by enter or by clicking somewhere else on the site",
+   "Σ Time Spent": 91800
+ },
+ {
+   "Issue key": "RA-12",
+   "Summary": "Add new employee",
+   "Description": "!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!\n\n* The user can add a new employee by clicking on the “add employee” button.\n* The user can type the datas of the new employee in the first empty line opened by the “add employee” button.\n* The user can see the newly added employee in the first line until the page is not reloaded.\n* In case of reload the page, the newly added employee has to take its place according to the last configured sorting.\n* As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.",
+   "Σ Time Spent": 133200
+ },
+ {
+   "Issue key": "RA-11",
+   "Summary": "Display all employees",
+   "Description": "!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!\n\n* The Minero user can see all the relevant employee listed in a table.\n* The Minero user can see how many employee is listed and how many employee is relevant all together in the lower left corner.\n* The Minero user can turn page and list the next page of the employees by clicking on the right or left arrow in the lower left corner.",
+   "Σ Time Spent": 420300
+ },
+ {
+   "Issue key": "RA-10",
+   "Summary": "Sidebar (Navigation)",
+   "Description": "!Screenshot 2023-07-13 at 17.11.57-20230713-151203.png|width=931,height=576!\n\nThe user can see a landing page with sidebar.\nSidebar contains the following menus: user, home, plan, employee, project.\nAs a menu, it only displays the icon. In case the user hover over the icon, the system displays the menu description.\n\nPrecondition: successful login",
+   "Σ Time Spent": 177300
+ },
+ {
+   "Issue key": "RA-9",
+   "Summary": "SSO Gloster Login",
+   "Description": "!Screenshot 2023-07-13 at 16.27.42-20230713-142747.png|width=930,height=571!\n\nThe business user can start the application by clicking on the “sign in with Google” button.\n\nThe business user goes through the google standard login process.",
+   "Σ Time Spent": 592200
+ },
+ {
+   "Issue key": "RA-8",
+   "Summary": "Meetings",
+   "Description": "",
+   "Σ Time Spent": 574200
+ },
+ {
+   "Issue key": "RA-7",
+   "Summary": "Administration",
+   "Description": "",
+   "Σ Time Spent": 633600
+ },
+ {
+   "Issue key": "RA-6",
+   "Summary": "Looking for resource component",
+   "Description": "",
+   "Σ Time Spent": 146700
+ },
+ {
+   "Issue key": "RA-5",
+   "Summary": "Looking for Project component",
+   "Description": "",
+   "Σ Time Spent": 223200
+ },
+ {
+   "Issue key": "RA-4",
+   "Summary": "Plan component",
+   "Description": "",
+   "Σ Time Spent": 541800
+ },
+ {
+   "Issue key": "RA-3",
+   "Summary": "Project component",
+   "Description": "",
+   "Σ Time Spent": 531900
+ },
+ {
+   "Issue key": "RA-2",
+   "Summary": "Employee component",
+   "Description": "",
+   "Σ Time Spent": 639000
+ },
+ {
+   "Issue key": "RA-1",
+   "Summary": "App frame",
+   "Description": "",
+   "Σ Time Spent": 468900
+ }
+]
