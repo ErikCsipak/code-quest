@@ -72,12 +72,6 @@
        "Σ Time Spent":25200
     },
     {
-       "Issue key":"RA-155",
-       "Summary":"Change DB for the scale",
-       "Description":"\nAdd ProjectCompetency\nChange Employee's competency level from enum to 1-10 rating",
-       "Σ Time Spent":16200
-    },
-    {
        "Issue key":"RA-154",
        "Summary":"Deploy and devops",
        "Description":"",
@@ -124,12 +118,6 @@
        "Summary":"Remove minimal overlapping of timeline items",
        "Description":"Change timeline style/remove overlapping of plans to be able to remove stacking\nAdd rounded border to timeline items, remove stacking",
        "Σ Time Spent":5400
-    },
-    {
-       "Issue key":"RA-146",
-       "Summary":"Change plan percentage to number input and range",
-       "Description":"Add a number input to plan creation/modification, change the range values for easier percentage change \nChange position of update percentage inputs on update modal\nChange percentage input to number input field and range with step of 5",
-       "Σ Time Spent":9000
     },
     {
        "Issue key":"RA-145",
@@ -192,12 +180,6 @@
        "Σ Time Spent":3600
     },
     {
-       "Issue key":"RA-135",
-       "Summary":"Add project's employee list to a looking for resource according to plan",
-       "Description":"\nGenerate API after merge\nFormatting with Prettier\nAdd member list to Looking for Resource on frontend",
-       "Σ Time Spent":28800
-    },
-    {
        "Issue key":"RA-134",
        "Summary":"Extend project search with searching by member",
        "Description":"\nExtend project search API with searching by member",
@@ -231,12 +213,6 @@
        "Issue key":"RA-129",
        "Summary":"Filter projects according to status",
        "Description":"",
-       "Σ Time Spent":null
-    },
-    {
-       "Issue key":"RA-128",
-       "Summary":"Extend Project DTO with project status",
-       "Description":"\nExtend ProjectTableDTO with project status",
        "Σ Time Spent":null
     },
     {
@@ -358,12 +334,6 @@
        "Summary":"Pagination stopped working after refactor in search",
        "Description":"\nFix pagination in the looking for projects table",
        "Σ Time Spent":2700
-    },
-    {
-       "Issue key":"RA-107",
-       "Summary":"Backend skeleton for 'Plan'",
-       "Description":"\nInitialize lists in DTOs to avoid null lists\nAdd DTOs for timeline structure\nAdd backend skeleton for Plan",
-       "Σ Time Spent":35100
     },
     {
        "Issue key":"RA-106",

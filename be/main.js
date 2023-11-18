@@ -1,12 +1,14 @@
 
-import OpenAI from 'openai';
-import readline from 'readline';
-import { readFileSync } from 'fs';
+const OpenAIAPI = require('openai');
+const readline = require('readline');
+const fs = require('fs')
+
+module.exports = { sendMessageToAssistant };
 
 
-const openai = new OpenAI({
+const openai = new OpenAIAPI({
     //  apiKey: "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" // This is also the default, can be omitted
-     apiKey: "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"
+     apiKey: "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"
 });
 
 
@@ -93,7 +95,7 @@ async function startChat() {
 async function uploadData() {
   console.log("--------------- uploading data -------------------------------");
 
-  const data = JSON.parse(readFileSync('resource-app-JIRA.json', 'utf8'));
+  const data = JSON.parse(fs.readFileSync('resource-app-JIRA.json', 'utf8'));
   const chunkSize = 30;
   const chunkedData = [];
   for (let i = 0; i < data.length; i += chunkSize) {
@@ -127,7 +129,7 @@ async function main() {
 
 
 async function sendMessageToAssistant(message) {
-
+  const assistantId = 'asst_JBNdKzqlSBQOc9IsA0RmJq2h';
   const threadId = 'thread_00PrqKJfnzSmcFRhBcpahQCf';
   await openai.beta.threads.messages.create(threadId, {
     role: 'user',
@@ -135,7 +137,7 @@ async function sendMessageToAssistant(message) {
   });
 
   const run = await openai.beta.threads.runs.create(threadId, {
-    assistant_id: 'asst_JBNdKzqlSBQOc9IsA0RmJq2h',
+    assistant_id: assistantId,
   });
   const runId = run.id;
 
@@ -146,7 +148,7 @@ async function sendMessageToAssistant(message) {
     const run = await openai.beta.threads.runs.retrieve(threadId, runId);
     if (run.status === 'completed') {
       const messagesFromThread = await openai.beta.threads.messages.list(threadId);
-      return messagesFromThread.data[0].content;
+      return messagesFromThread.data[0].content[0].text.value;
     }
     await new Promise((resolve) => setTimeout(resolve, interval));
     timeElapsed += interval;
@@ -165,8 +167,7 @@ async function startAssistantChat() {
   }
 }
 
-
-startAssistantChat()
+// startAssistantChat()
 
 
 
