@@ -1,7 +1,9 @@
 How to start api:
 
-1. `npm i`
+`npm i`
 
-2. `npm node .\api.js`
+add api key to `main.js`
 
-3. Access server on http://localhost:3000
+`node .\api.js`
+
+Access server on http://localhost:3000
