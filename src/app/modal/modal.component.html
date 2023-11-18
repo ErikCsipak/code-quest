@@ -1,32 +1,29 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-m">
     <div class="modal-content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">AI Issue Assistant</h5>
+              
+              <h5 class="modal-title" id="exampleModalLabel">Minera Issue Assistant</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body d-flex position-relative">
               <estimation-form></estimation-form>
             </div>
-            <div class="modal-footer align-items-start">
+            <div class="modal-footer d-flex justify-content-between">
+              <vertical-accordion></vertical-accordion>
               <div>
-                <button type="submit" class="btn btn-primary">Apply</button>
-                <p>Tip: ctrl + enter</p>
+                <button type="submit" class="btn btn-primary me-2">Apply</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
               </div>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
             </div>
-          </div>
-          <div class="col-md-4 chat-box-container" id="collapseOne">
-             <vertical-accordion></vertical-accordion>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- https://stackoverflow.com/questions/35933924/bootstrap-accordion-collapsing-horizontally -->

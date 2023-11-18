@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VerticalAccordionComponent } from './vertical-accordion.component';
 import { ChatBoxModule } from '../chat-box/chat-box.module';
+import { NbAccordionModule, NbLayoutModule, NbSidebarModule } from '@nebular/theme';
 
 
 
@@ -11,7 +12,10 @@ import { ChatBoxModule } from '../chat-box/chat-box.module';
   ],
   imports: [
     CommonModule,
-    ChatBoxModule
+    ChatBoxModule,
+    NbAccordionModule,
+    NbLayoutModule,
+    NbSidebarModule
   ],
   exports: [
     VerticalAccordionComponent
