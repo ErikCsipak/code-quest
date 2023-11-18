@@ -6,7 +6,7 @@ import { readFileSync } from 'fs';
 
 const openai = new OpenAI({
     //  apiKey: "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" // This is also the default, can be omitted
-     apiKey: "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"
+     apiKey: "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"
 });
 
 
@@ -126,20 +126,18 @@ async function main() {
 //main();
 
 
-async function assistant() {
+async function sendMessageToAssistant(message) {
 
   const threadId = 'thread_00PrqKJfnzSmcFRhBcpahQCf';
-
   await openai.beta.threads.messages.create(threadId, {
     role: 'user',
-    content: 'how many items are in the dataset?',
+    content: message,
   });
 
   const run = await openai.beta.threads.runs.create(threadId, {
     assistant_id: 'asst_JBNdKzqlSBQOc9IsA0RmJq2h',
   });
   const runId = run.id;
-  console.log("salala");
 
   let timeElapsed = 0;
   let interval = 1000;
@@ -148,18 +146,27 @@ async function assistant() {
     const run = await openai.beta.threads.runs.retrieve(threadId, runId);
     if (run.status === 'completed') {
       const messagesFromThread = await openai.beta.threads.messages.list(threadId);
-      console.log(messagesFromThread.data[0].content);
-      return;
+      return messagesFromThread.data[0].content;
     }
     await new Promise((resolve) => setTimeout(resolve, interval));
     timeElapsed += interval;
   }
 
-  console.log("vege");
+  console.log("Timeout");
 }
 
-assistant();
+async function startAssistantChat() {
+  console.log("--------------------- start chat -------------------------------");
+  let consoleInput;
+  while ( consoleInput != 'yes' ) {
+    consoleInput = await question('User says >>>   ');
+    let gptResponse = await sendMessageToAssistant(consoleInput);
+    console.log('API says >>>   ' + JSON.stringify(gptResponse));
+  }
+}
 
+
+startAssistantChat()
 
 
 
