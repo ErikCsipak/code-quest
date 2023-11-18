@@ -7,8 +7,7 @@ module.exports = { sendMessageToAssistant };
 
 
 const openai = new OpenAIAPI({
-    //  apiKey: "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" // This is also the default, can be omitted
-     apiKey: "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"
+     apiKey: process.env.API_KEY
 });
 
 
