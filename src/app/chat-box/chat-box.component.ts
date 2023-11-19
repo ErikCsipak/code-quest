@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild, Renderer2 } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'chat-box',
@@ -8,7 +9,7 @@ import { Component, ElementRef, OnInit, ViewChild, Renderer2 } from '@angular/co
 export class ChatBoxComponent implements OnInit {
   isSidebarActive: boolean = false;
 
-  constructor(private renderer: Renderer2, private el: ElementRef) { }
+  constructor(private renderer: Renderer2, private el: ElementRef, private httpClient: HttpClient) { }
 
   ngOnInit(): void {
   }
@@ -19,7 +20,7 @@ export class ChatBoxComponent implements OnInit {
       date: new Date(),
       reply: false,
       user: {
-        name: 'cqAI',
+        name: 'Minera',
       },
     },
   ];
@@ -33,5 +34,17 @@ export class ChatBoxComponent implements OnInit {
         name: 'John Doe'
       },
     });
+    this.httpClient.post('http://localhost:3000/chat', { message: event.message}).subscribe(
+      (data: any) => {
+        this.messages.push({
+          text: data.message,
+          date: new Date(),
+          reply: false,
+          user: {
+            name: 'Minera'
+          },
+        });
+      }
+    );
   }
 }

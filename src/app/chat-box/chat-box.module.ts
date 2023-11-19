@@ -11,7 +11,8 @@ import { NbChatModule } from '@nebular/theme';
   ],
   imports: [
     CommonModule,
-    NbChatModule
+    NbChatModule,
+    
   ],
   exports: [
     ChatBoxComponent
