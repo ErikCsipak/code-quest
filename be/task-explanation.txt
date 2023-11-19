@@ -6,7 +6,8 @@ I will provide the issue in json format.
 At first, please always analyze the provided dataset and find similar issues to the provided one.
 Do this by analyzing the meanings of the summary and description fields of the issues of the dataset from software engineering point of view. Also analyze the meaning of the summary and description fields of the issue I will provide. Then find at most 3 issues  in the uploaded dataset that are the most similar to the provided one based on their meanings. 
 However if you don’t find similar issues, don't use them in your prediction! 
-Then based on the found similar issues and your general knowledge about software engineering conclude to the information I would like to know about the new issue I will provide. If you don't find similar issues use only your general knowledge.
+Then based on the found similar issues and your general knowledge about software engineering conclude to the information I would like to know about the new issue I will provide.
+It is important that if the similarity is very low, use only your general knowledge.
 
 I also add some information about the project from technical point of view: 
 The project has an angular frontend, a spring backend and a postgress database layer. For database schema handling we use flyway.
@@ -15,10 +16,13 @@ So again it is really important to consider the dataset, technical information y
 
 
 About the provided issue I'd like to know these 4 things:
-	- Estimated time spent of the provided issue in hours. This should be a range of hours as a string.
-	- An explanation why did you gave that time spent estimation. Give some technical details here.
-	- If you find similar issues to the provided one in the dataset please give me the keys and the summaries of these issues in a list. The Issue key and the summary should be exactly the same as it is in the dataset. Give at most 3 issues here. And if you don't find similar issues leave this list empty.
-	- Please do a subtask breakdown and give me a list of subtasks. It should include testing and code review activities.
+	1. Estimated time spent: Estimated time spent of the provided issue in hours. This should be a range of hours as a string.
+	
+	2. Explanation: An explanation why did you gave that time spent estimation. Elaborate your way of thinking. If you found similar issues you can mention them as well. Don't mention exact similarity metrics. You can list the subtasks with their estimated efforts in hours as well. Don’t give general text here, be specific and technical similar to a programmer.
+	
+	3. Similar issues: If you find similar issues to the provided one in the dataset please give me the keys and the summaries of these issues in a list. The Issue key and the summary should be exactly the same as it is in the dataset. Give at most 3 issues here. And if you don't find similar issues leave this list empty.
+	
+	4. Subtasks: Please do a subtask breakdown and give me a list of subtasks. It should include testing and code review activities.
 
 Your answer should be a valid json string with the fields I asked.
 

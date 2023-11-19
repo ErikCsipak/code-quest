@@ -3,7 +3,7 @@ const OpenAIAPI = require('openai');
 const readline = require('readline');
 const fs = require('fs')
 
-module.exports = { sendMessageToAssistant };
+module.exports = { sendMessageToAssistant, predictIssue };
 
 
 const openai = new OpenAIAPI({
@@ -167,6 +167,12 @@ async function startAssistantChat() {
 }
 
 // startAssistantChat()
+
+async function predictIssue(futureIssue) {
+  const iWantJsonText = " Give one single answer which has to be a json string. Don't give explanations at all!";
+  const response = await sendMessageToAssistant(JSON.stringify(futureIssue) + iWantJsonText);
+  return JSON.parse(response);
+}
 
 
 
