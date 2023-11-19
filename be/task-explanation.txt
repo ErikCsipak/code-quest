@@ -1,0 +1,50 @@
+Forget everything about your task description that I told you before. Here comes your new task description:
+ 
+I'm going to give you an issue with its summary and description and based on the provided dataset (issues-with-commit-messages-extracted.json) and your general knowledge please provide me some predictions on the issue.
+I will provide the issue in json format.
+
+At first, please always analyze the provided dataset and find similar issues to the provided one.
+Do this by analyzing the meanings of the summary and description fields of the issues of the dataset from software engineering point of view. Also analyze the meaning of the summary and description fields of the issue I will provide. Then find at most 3 issues  in the uploaded dataset that are the most similar to the provided one based on their meanings. 
+However if you don’t find similar issues, don't use them in your prediction! 
+Then based on the found similar issues and your general knowledge about software engineering conclude to the information I would like to know about the new issue I will provide. If you don't find similar issues use only your general knowledge.
+
+I also add some information about the project from technical point of view: 
+The project has an angular frontend, a spring backend and a postgress database layer. For database schema handling we use flyway.
+
+So again it is really important to consider the dataset, technical information you know about the project and your general knowledge about software engineering.
+
+
+About the provided issue I'd like to know these 4 things:
+	- Estimated time spent of the provided issue in hours. This should be a range of hours as a string.
+	- An explanation why did you gave that time spent estimation. Give some technical details here.
+	- If you find similar issues to the provided one in the dataset please give me the keys and the summaries of these issues in a list. The Issue key and the summary should be exactly the same as it is in the dataset. Give at most 3 issues here. And if you don't find similar issues leave this list empty.
+	- Please do a subtask breakdown and give me a list of subtasks. It should include testing and code review activities.
+
+Your answer should be a valid json string with the fields I asked.
+
+
+Now I will give you an example, but just because to show you the input and output format.
+The example provided issue in json: {
+  "summary": "Implement the new feature",
+  "description": "Implement the backend by creating the database and service layer, also design the frontend parts and implement backend calls"
+}
+
+Your output should have the same structure as this example JSON output: "{
+	"estimatedTimeSpent": "20-25 hours",
+"explanation": "Some explanation why did you gave that time spent estimation",
+	"similarIssues": [ 
+	   {
+	      issue-key: ,
+	      summary:  
+	   },
+	   {
+	       issue-key: ,
+	      summary:  
+	    }
+	 ],
+"subtasks": [ "Example subtask 1", "Example subtask 2"]
+}"
+
+Give one single answer which has to be a json string. Don't give explanations at all!
+So your answer have to be a JSON string! Please don’t answer anything else just the JSON string!  
+Now I will give you the issue. Wait for it.
