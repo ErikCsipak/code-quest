@@ -1,16 +1,13 @@
-
 const OpenAIAPI = require('openai');
 const readline = require('readline');
 const fs = require('fs')
+const { keys } = require('./keys');
 
 module.exports = { sendMessageToAssistant, predictIssue };
 
-
 const openai = new OpenAIAPI({
-     apiKey: process.env.API_KEY
+     apiKey: keys.openAiApiKey
 });
-
-
 
 var cl = readline.createInterface( process.stdin, process.stdout );
 var question = function(q) {
@@ -129,7 +126,7 @@ async function main() {
 
 async function sendMessageToAssistant(message) {
   const assistantId = 'asst_JBNdKzqlSBQOc9IsA0RmJq2h';
-  const threadId = 'thread_00PrqKJfnzSmcFRhBcpahQCf';
+  const threadId = 'thread_fuMIDpJHyw3vOhKOYloWZdDM';
   await openai.beta.threads.messages.create(threadId, {
     role: 'user',
     content: message,
@@ -142,7 +139,7 @@ async function sendMessageToAssistant(message) {
 
   let timeElapsed = 0;
   let interval = 1000;
-  let timeout = 20000;
+  let timeout = 60000;
   while (timeElapsed < timeout) {
     const run = await openai.beta.threads.runs.retrieve(threadId, runId);
     if (run.status === 'completed') {
@@ -170,13 +167,10 @@ async function startAssistantChat() {
 
 async function predictIssue(futureIssue) {
   const iWantJsonText = " Give one single answer which has to be a json string. Don't give explanations at all!";
-  const response = await sendMessageToAssistant(JSON.stringify(futureIssue) + iWantJsonText);
+  let response = await sendMessageToAssistant(JSON.stringify(futureIssue) + iWantJsonText);
+  console.log("first answer: " , response);
+
+  response = await sendMessageToAssistant("Now give back only the JSON string nothing else!");
+
   return JSON.parse(response);
 }
-
-
-
-
-
-
-
