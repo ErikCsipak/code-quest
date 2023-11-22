@@ -1,0 +1,30 @@
+  <button class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#detailsOffCanvas" aria-controls="detailsOffCanvas">
+    <i class="bi bi-card-list"></i>
+  </button>
+  
+  
+  <div class="offcanvas offcanvas-start" tabindex="-2" id="detailsOffCanvas" aria-labelledby="detailsLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="detailsLabel">Issue Details</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+            <h2>Sub-Tasks</h2>
+            <ol class="list-group list-group-numbered mb-5">
+                <li class="list-group-item" 
+                *ngFor="let subtask of subtasks">
+                {{ subtask }}
+                </li>
+            </ol>
+            <h2>Similar Issues</h2>
+            <ol class="list-group">
+                <li class="list-group-item" 
+                *ngFor="let issue of similarIssues">
+                    <p class="fs-3">{{ issue['issue-key'] }}</p>
+                    <p class="fst-italic">{{ issue.summary }}</p>
+                </li>
+            </ol>
+      </div>
+    </div>
+  </div>
