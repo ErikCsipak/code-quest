@@ -1,5 +1,7 @@
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="onOpenModal()">cqAI</button>
+
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
     <div class="modal-dialog modal-m">
         <div class="modal-content">
@@ -15,12 +17,15 @@
                             <estimation-form></estimation-form>
                         </div>
                         <div class="modal-footer d-flex justify-content-between">
-                            <vertical-accordion></vertical-accordion>
+                            <div>
+                                <chat-canvas class="me-2"></chat-canvas>
+                                <detail-canvas></detail-canvas>
+                            </div>
                             <div>
                                 <button *ngIf="loading" class="btn btn-primary me-2" type="button" disabled>
-                  <span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
-                  <span role="status">Loading...</span>
-                </button>
+                                    <span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                                    <span role="status">Loading...</span>
+                                </button>
                                 <button *ngIf="!loading" type="submit" class="btn btn-primary me-2">Apply</button>
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                             </div>

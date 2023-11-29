@@ -4,6 +4,7 @@ import { ModalComponent } from './modal.component';
 import { EstimationFormModule } from '../estimation-form/estimation-form.module';
 import { VerticalAccordionModule } from '../vertical-accordion/vertical-accordion.module';
 import { ChatBoxModule } from '../chat-box/chat-box.module';
+import { DetailsModule } from '../details/details.module';
 
 
 
@@ -15,7 +16,8 @@ import { ChatBoxModule } from '../chat-box/chat-box.module';
     CommonModule,
     EstimationFormModule,
     VerticalAccordionModule,
-    ChatBoxModule
+    ChatBoxModule,
+    DetailsModule
   ],
   exports: [
     ModalComponent
