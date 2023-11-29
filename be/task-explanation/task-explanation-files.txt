@@ -1,6 +1,6 @@
-Forget everything about your task description that I told you before. Here comes your new task description:
+Forget everything about your task description that I told you before.  Here comes your new task description, let's call this task "prediction task".
  
-I'm going to give you an issue with its summary and description and based on the provided dataset (issues-with-files-extracted-3.json) and your general knowledge please provide me some predictions on the issue.
+I'm going to give you an issue with its summary and description and based on the provided json dataset (issues-with-files-extracted-3.json) and your general knowledge please provide me some predictions on the issue.
 I will provide the issue in json format.
 
 At first, please always analyze the provided dataset and find similar issues to the provided one.
@@ -10,7 +10,7 @@ Then based on the found similar issues and your general knowledge about software
 It is important that if the similarity is very low, use only your general knowledge.
 
 I also add some information about the project from technical point of view: 
-The project has an angular frontend, a spring backend and a postgress database layer. For database schema handling we use flyway. The source files of the project are listed in file all-files.txt.
+The project has an angular frontend, a spring backend and a postgress database layer. For database schema handling we use flyway. The source files of the project are listed in txt file (all-files.txt).
 
 So again it is really important to consider the dataset, technical information you know about the project and your general knowledge about software engineering.
 
@@ -22,7 +22,7 @@ About the provided issue I'd like to know these 5 things:
 	
 	3. Similar issues: If you find similar issues to the provided one in the dataset please give me the keys and the summaries of these issues in a list. The Issue key and the summary should be exactly the same as it is in the dataset. Give at most 3 issues here. The similarity must be at least 0.5. If you don't find similar issues leave this list empty.
 	
-	4. Subtasks: Please do a subtask breakdown and give me a list of subtasks. It should include testing and code review activities.
+	4. Subtasks: Please do a subtask breakdown and give me a list of subtasks. It should include various testing activities and code review. Give me here the estimation for each subtask too in the same string as the subtask name.
 
 	5. Files to be modified: Deduce and give back what files will be probably modified by the provided issue. You can choose the files from the all-files.txt uploaded file. If you found similar issues consider the modified files of the found similar issues. Also try to find the files to be modified by matching the main terms and expressions from the provided issue to the filenames in the all-files.txt. Give me an empty file list if you didn't found any good file candidates, give back a file only if you are quite sure it will be modified.
 
@@ -48,17 +48,18 @@ Your output should have the same structure as this example JSON output: "{
 	      summary:  
 	    }
 	 ],
-     "subtasks": [ "Example subtask 1", "Example subtask 2"],
+     "subtasks": [ "Implement the endpoint on backend (6 hours)", "Code review (2-3 hours)", "Testing the frontend (1-2 hours)"],
 	 "filesToBeModified": [
-		resource-app\resource-app-backend\src\main\java\com\minero\resourceapp\plan\dto\PlanDTO.java,
+		resource-app\resource-app-backend\src\main\java\com\minero\resourceapp\plan\dto\Project.java,
 		resource-app\resource-app-backend\src\main\java\com\minero\resourceapp\project\entity\Project.java
 		resource-app\resource-app-backend\src\main\java\com\minero\resourceapp\project\service\ProjectService.java,
 		resource-app\resource-app-frontend\src\app\application\home\home.component.ts
 		resource-app\resource-app-frontend\src\app\application\home\home.component.html
-		resource-app\resource-app-frontend\src\app\application\home\home.component.scss
 	 ]
 }"
 
 Give one single answer which has to be a json string. Don't give explanations at all!
 So your answer have to be a JSON string! Please don’t answer anything else just the JSON string!  
 Now I will give you the issue. Wait for it.
+
+This is the end of the description of "prediction task".

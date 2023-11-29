@@ -2,6 +2,7 @@ const OpenAIAPI = require('openai');
 const readline = require('readline');
 const fs = require('fs')
 const { keys } = require('./keys');
+const OpenAiAssistant = require('./openai-assistant');
 
 module.exports = { sendMessageToAssistant, predictIssue };
 
@@ -165,12 +166,18 @@ async function startAssistantChat() {
 
 // startAssistantChat()
 
-async function predictIssue(futureIssue) {
-  const iWantJsonText = " Give one single answer which has to be a json string. Don't give explanations at all!";
-  let response = await sendMessageToAssistant(JSON.stringify(futureIssue) + iWantJsonText);
-  console.log("first answer: " , response);
 
-  response = await sendMessageToAssistant("Now give back only the JSON string nothing else!");
+// open ai assistant and thread is set on the open ai platform using the task-explanation.txt.
+async function predictIssue(futureIssue) {
+  const assistantId = 'asst_fwqox77MkrHbq8TTqvYXx3dF';
+  const threadId = 'thread_YM7wWW9nUAwaJIdkzTnv8kEU';
+  const ai = new OpenAiAssistant(openai, assistantId, threadId);
+
+  const preInstruction = "Perform the prediction task on this: ";
+  const postInstruction = " Give back only a pure json string without formatting."
+  let response = await ai.sendMessage(preInstruction + JSON.stringify(futureIssue) + postInstruction);
+
+  console.log("first answer: " , response);
 
   return JSON.parse(response);
 }

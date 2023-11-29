@@ -72,9 +72,17 @@ app.post('/chat', async (req, res) => {
  * 
  */
 app.post('/predict', async (req, res) => {
-  console.log('Received data:', req.body);
-  const response = await ai.predictIssue(req.body);
-  res.json(response);
+   try {
+      console.log('Received data:', req.body);
+      const response = await ai.predictIssue(req.body);
+      res.json(response);
+   } catch (ex) {
+      console.error(ex);
+      res.statusCode = 500;
+      res.json({
+         errorMessage: ex.errorMessage
+      });
+   }
 });
 
 // Start the server

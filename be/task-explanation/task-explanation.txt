@@ -1,6 +1,6 @@
 Forget everything about your task description that I told you before. Here comes your new task description:
  
-I'm going to give you an issue with its summary and description and based on the provided dataset (issues-with-commit-messages-extracted.json) and your general knowledge please provide me some predictions on the issue.
+I'm going to give you an issue with its summary and description and based on the provided dataset (dataset A) and your general knowledge please provide me some predictions on the issue.
 I will provide the issue in json format.
 
 At first, please always analyze the provided dataset and find similar issues to the provided one.
@@ -18,9 +18,9 @@ So again it is really important to consider the dataset, technical information y
 About the provided issue I'd like to know these 4 things:
 	1. Estimated time spent: Estimated time spent of the provided issue in hours. This should be a range of hours as a string.
 	
-	2. Explanation: An explanation why did you gave that time spent estimation. Elaborate your way of thinking. If you found similar issues you can mention them as well. Don't mention exact similarity metrics. You can list the subtasks with their estimated efforts in hours as well. Don’t give general text here, be specific and technical similar to a programmer.
+	2. Explanation: An explanation why did you gave that time spent estimation. Elaborate your way of thinking. If you found similar issues you can mention them as well. Don't mention exact similarity metrics. List the subtasks with their estimated efforts in hours as well. Don’t give general text here, be specific and technical similar to a programmer.
 	
-	3. Similar issues: If you find similar issues to the provided one in the dataset please give me the keys and the summaries of these issues in a list. The Issue key and the summary should be exactly the same as it is in the dataset. Give at most 3 issues here. And if you don't find similar issues leave this list empty.
+	3. Similar issues: If you find similar issues to the provided one in the dataset please give me the keys and the summaries of these issues in a list. The Issue key and the summary should be exactly the same as it is in the dataset. Give at most 3 issues here. The similarity must be at least 0.4. If you don't find similar issues or you cannot access the dataset leave this list empty.
 	
 	4. Subtasks: Please do a subtask breakdown and give me a list of subtasks. It should include testing and code review activities.
 
