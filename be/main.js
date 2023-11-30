@@ -1,16 +1,14 @@
-
 const OpenAIAPI = require('openai');
 const readline = require('readline');
 const fs = require('fs')
+const { keys } = require('./keys');
+const OpenAiAssistant = require('./openai-assistant');
 
-module.exports = { sendMessageToAssistant };
-
+module.exports = { sendMessageToAssistant, predictIssue };
 
 const openai = new OpenAIAPI({
-     apiKey: process.env.API_KEY
+     apiKey: keys.openAiApiKey
 });
-
-
 
 var cl = readline.createInterface( process.stdin, process.stdout );
 var question = function(q) {
@@ -129,7 +127,7 @@ async function main() {
 
 async function sendMessageToAssistant(message) {
   const assistantId = 'asst_JBNdKzqlSBQOc9IsA0RmJq2h';
-  const threadId = 'thread_00PrqKJfnzSmcFRhBcpahQCf';
+  const threadId = 'thread_fuMIDpJHyw3vOhKOYloWZdDM';
   await openai.beta.threads.messages.create(threadId, {
     role: 'user',
     content: message,
@@ -142,7 +140,7 @@ async function sendMessageToAssistant(message) {
 
   let timeElapsed = 0;
   let interval = 1000;
-  let timeout = 20000;
+  let timeout = 60000;
   while (timeElapsed < timeout) {
     const run = await openai.beta.threads.runs.retrieve(threadId, runId);
     if (run.status === 'completed') {
@@ -169,8 +167,17 @@ async function startAssistantChat() {
 // startAssistantChat()
 
 
+// open ai assistant and thread is set on the open ai platform using the task-explanation.txt.
+async function predictIssue(futureIssue) {
+  const assistantId = 'asst_fwqox77MkrHbq8TTqvYXx3dF';
+  const threadId = 'thread_YM7wWW9nUAwaJIdkzTnv8kEU';
+  const ai = new OpenAiAssistant(openai, assistantId, threadId);
 
+  const preInstruction = "Perform the prediction task on this: ";
+  const postInstruction = " Give back only a pure json string without formatting."
+  let response = await ai.sendMessage(preInstruction + JSON.stringify(futureIssue) + postInstruction);
 
+  console.log("first answer: " , response);
 
-
-
+  return JSON.parse(response);
+}

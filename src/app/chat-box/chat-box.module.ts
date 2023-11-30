@@ -12,7 +12,7 @@ import { NbChatModule } from '@nebular/theme';
   imports: [
     CommonModule,
     NbChatModule,
-    
+
   ],
   exports: [
     ChatBoxComponent

@@ -2,31 +2,31 @@
     {
        "Issue key":"RA-167",
        "Summary":"Integrate Flyway for DB version handling",
-       "Description":"Add and integrate Flyway dependency.\n\nCreate DB baseline script and replace the hibernate DDL with it.\nChange hibernate ddl-auto to validate\nIntegrate Flyway into project",
+       "Description":"Add and integrate Flyway dependency.          Create DB baseline script and replace the hibernate DDL with it.     Change hibernate ddl-auto to validate     Integrate Flyway into project",
        "Σ Time Spent":54900
     },
     {
        "Issue key":"RA-166",
        "Summary":"Sticky header on plan timeline",
-       "Description":"\nFix vertical scrolling of timeline",
+       "Description":"     Fix vertical scrolling of timeline",
        "Σ Time Spent":18000
     },
     {
        "Issue key":"RA-165",
        "Summary":"Calculate the best 3 match",
-       "Description":"\nRequested changes\nSmall corrections\nChange request type to POST\nSmall refactoring\nAdding smart search logic\nRefactoring PageUtils\nAdding DTOs and comparator",
+       "Description":"     Requested changes     Small corrections     Change request type to POST     Small refactoring     Adding smart search logic     Refactoring PageUtils     Adding DTOs and comparator",
        "Σ Time Spent":117900
     },
     {
        "Issue key":"RA-164",
        "Summary":"Input fields for searching competences",
-       "Description":"\nFilter competencies when the clear all button is clicked\nMake add competency condition button always visible\nAdd a button to clear all the competency conditions\nHandle the cases when the user deletes from the input\nMake the list of inputs scrollable\nImprove validation logic and error visualization in competency condition inputs\nAdd input fields for searching competencies",
+       "Description":"     Filter competencies when the clear all button is clicked     Make add competency condition button always visible     Add a button to clear all the competency conditions     Handle the cases when the user deletes from the input     Make the list of inputs scrollable     Improve validation logic and error visualization in competency condition inputs     Add input fields for searching competencies",
        "Σ Time Spent":86400
     },
     {
        "Issue key":"RA-163",
        "Summary":"New menu and page",
-       "Description":"\nAdd new page and menu item for smart search with base layout",
+       "Description":"     Add new page and menu item for smart search with base layout",
        "Σ Time Spent":9000
     },
     {
@@ -38,7 +38,7 @@
     {
        "Issue key":"RA-161",
        "Summary":"BE algorithm for counting average",
-       "Description":"\nModify API to return the average of top 3 competencies",
+       "Description":"     Modify API to return the average of top 3 competencies",
        "Σ Time Spent":11700
     },
     {
@@ -68,7 +68,7 @@
     {
        "Issue key":"RA-156",
        "Summary":"Adjust CRUD",
-       "Description":"\nAdd error handling to project competency update to avoid duplicated competency levels\nModify project dto structure for better editability\nAdd project competency and employee competency update api\nEmployeeCompetency and ProjectCompetency controller method names to avoid name conflicts\nChange delete id to PathVariable\nAdjust Competency deletion to new data structure of Project\nAdjust Project CRUD for the rated competencies",
+       "Description":"     Add error handling to project competency update to avoid duplicated competency levels     Modify project dto structure for better editability     Add project competency and employee competency update api     EmployeeCompetency and ProjectCompetency controller method names to avoid name conflicts     Change delete id to PathVariable     Adjust Competency deletion to new data structure of Project     Adjust Project CRUD for the rated competencies",
        "Σ Time Spent":25200
     },
     {
@@ -80,25 +80,25 @@
     {
        "Issue key":"RA-153",
        "Summary":"Quick search with more competencies",
-       "Description":"\nMake properties private\nMake heatmap non-dynamic\nChange page sizes to 10\nAdd \"heatmap\" function to show if a competency level is inside the bounds\nMake table scrollable horizontally and style scrollbar\nMake table rows selectable with clicking\nMake tables vertically scrollable\nFix pagination\nCreate component for the result tables with pagination\nGenerate API\nAdd tables to display the search results in with dynamic headers",
+       "Description":"     Make properties private     Make heatmap non-dynamic     Change page sizes to 10     Add \"heatmap\" function to show if a competency level is inside the bounds     Make table scrollable horizontally and style scrollbar     Make table rows selectable with clicking     Make tables vertically scrollable     Fix pagination     Create component for the result tables with pagination     Generate API     Add tables to display the search results in with dynamic headers",
        "Σ Time Spent":241200
     },
     {
        "Issue key":"RA-152",
        "Summary":"Show the average of the top 3 competencies in list",
-       "Description":"\nChange NaN average to 0 when adding a new employee\nAdd frontend for displaying the average of top 3 competencies of employee",
+       "Description":"     Change NaN average to 0 when adding a new employee     Add frontend for displaying the average of top 3 competencies of employee",
        "Σ Time Spent":41400
     },
     {
        "Issue key":"RA-151",
        "Summary":"Competencies in a 1-10 scale",
-       "Description":"*Menu - Employee and Looking for project*\n\n!Screenshot 2023-10-26 at 13.08.42-20231026-110847.png|width=1154,height=702!\n\nThe user can enter the level of the selected competence in the right competence component, right beside the competence.\n\nThe user can see in the list view only one column with competence.\n\n\n\n*Menu - Project and Looking for employee*\n\nRemains the same display: 1 column for the competencies.\nFix arrow icons\nCode refactor according to code review\nCode cleanup after code review\nRequested ui changes, code cleanup according to code review\nFix employee profile component style\nFix bug that competencies can be renamed to empty strings\nChange competency structure to have competency 1-10 competency levels\nAdd method to make new competency structure easier to use on employees\nReplace 3 competency columns in employee table with only one\nGenerate API",
+       "Description":"*Menu - Employee and Looking for project*          !Screenshot 2023-10-26 at 13.08.42-20231026-110847.png|width=1154,height=702!          The user can enter the level of the selected competence in the right competence component, right beside the competence.          The user can see in the list view only one column with competence.                    *Menu - Project and Looking for employee*          Remains the same display: 1 column for the competencies.     Fix arrow icons     Code refactor according to code review     Code cleanup after code review     Requested ui changes, code cleanup according to code review     Fix employee profile component style     Fix bug that competencies can be renamed to empty strings     Change competency structure to have competency 1-10 competency levels     Add method to make new competency structure easier to use on employees     Replace 3 competency columns in employee table with only one     Generate API",
        "Σ Time Spent":240300
     },
     {
        "Issue key":"RA-150",
        "Summary":"Mark the row in case of clicked on it",
-       "Description":"\nMark row with bold font weight when clicked on in every table and reformat code",
+       "Description":"     Mark row with bold font weight when clicked on in every table and reformat code",
        "Σ Time Spent":14400
     },
     {
@@ -116,55 +116,55 @@
     {
        "Issue key":"RA-147",
        "Summary":"Remove minimal overlapping of timeline items",
-       "Description":"Change timeline style/remove overlapping of plans to be able to remove stacking\nAdd rounded border to timeline items, remove stacking",
+       "Description":"Change timeline style/remove overlapping of plans to be able to remove stacking     Add rounded border to timeline items, remove stacking",
        "Σ Time Spent":5400
     },
     {
        "Issue key":"RA-145",
        "Summary":"Datepickers don't change back to labels when out of focus",
-       "Description":"\nFix datepickers in project table",
+       "Description":"     Fix datepickers in project table",
        "Σ Time Spent":3600
     },
     {
        "Issue key":"RA-144",
        "Summary":"Infinitive loop in plan component",
-       "Description":"\nDisable plan animations in company separated display\nRemove unnecessary padding\nDisable nav animations in plan to correct infinite loop bug",
+       "Description":"     Disable plan animations in company separated display     Remove unnecessary padding     Disable nav animations in plan to correct infinite loop bug",
        "Σ Time Spent":111600
     },
     {
        "Issue key":"RA-143",
        "Summary":"Small design changes",
-       "Description":"* dates should be aligned to the center\n* column “fte” should be aligned to the center and can be more narrow\n* change “alkalmazottak” to “tagok” (“employees” to “member”)\n* count in column “members”: it should count all the members with plan from the current day to the future (not just the members on the current day)\n* in case of add new project, the count in column members should be 0 as well (as in competence)\nCenter cell contents, set FTE column width\nAdd empty members displaying to create mode\nChange \"Employees\" header to \"Members\"\nRefactor project members to contain employees who have plans in the future",
+       "Description":"* dates should be aligned to the center     * column “fte” should be aligned to the center and can be more narrow     * change “alkalmazottak” to “tagok” (“employees” to “member”)     * count in column “members”: it should count all the members with plan from the current day to the future (not just the members on the current day)     * in case of add new project, the count in column members should be 0 as well (as in competence)     Center cell contents, set FTE column width     Add empty members displaying to create mode     Change \"Employees\" header to \"Members\"     Refactor project members to contain employees who have plans in the future",
        "Σ Time Spent":12600
     },
     {
        "Issue key":"RA-142",
        "Summary":"Small design changes",
-       "Description":"* Column “planned” can be more narrow\n* Column “position” can be wider\nIncrease width of position column\nEmployee component style fixes",
+       "Description":"* Column “planned” can be more narrow     * Column “position” can be wider     Increase width of position column     Employee component style fixes",
        "Σ Time Spent":13500
     },
     {
        "Issue key":"RA-141",
        "Summary":"Small design changes",
-       "Description":"* Column “free from”: display dates without background\nDisplay dates without white background in the 'free-from' column",
+       "Description":"* Column “free from”: display dates without background     Display dates without white background in the 'free-from' column",
        "Σ Time Spent":4500
     },
     {
        "Issue key":"RA-140",
        "Summary":"Small design changes",
-       "Description":"* Column project state and competence can be more narrow (the size of the column header text)\n* Column member can be wider (rest of the space)\n* Table should fill up the space instead of scrolling\n* Search should be possible by the members with a plan in the future as well (instead of the members on just the current day)\nChange width of table columns, fix bug that table doesn't fill the space\nRefactor LFR search to include future members",
+       "Description":"* Column project state and competence can be more narrow (the size of the column header text)     * Column member can be wider (rest of the space)     * Table should fill up the space instead of scrolling     * Search should be possible by the members with a plan in the future as well (instead of the members on just the current day)     Change width of table columns, fix bug that table doesn't fill the space     Refactor LFR search to include future members",
        "Σ Time Spent":12600
     },
     {
        "Issue key":"RA-139",
        "Summary":"Optimise the API requests",
-       "Description":"\nRefactor subscription handling in the remaining places\nRefactor code to be able to unsubscribe with a single method call without the need for extra checks\nRefactor code to reduce the number of API calls",
+       "Description":"     Refactor subscription handling in the remaining places     Refactor code to be able to unsubscribe with a single method call without the need for extra checks     Refactor code to reduce the number of API calls",
        "Σ Time Spent":25200
     },
     {
        "Issue key":"RA-138",
        "Summary":"Summary API",
-       "Description":"\nRefactor summarizePlans to code review\nExtract daily percentage calculation to separate method\nRefactor summarizePlans for better complexity\nSummary interval fixes\nFix summary interval dates\nImplement summary API",
+       "Description":"     Refactor summarizePlans to code review     Extract daily percentage calculation to separate method     Refactor summarizePlans for better complexity     Summary interval fixes     Fix summary interval dates     Implement summary API",
        "Σ Time Spent":88200
     },
     {
@@ -176,13 +176,13 @@
     {
        "Issue key":"RA-136",
        "Summary":"Extend GetAllLookinfForResources API with member list",
-       "Description":"\nExtend GetAllLookingForResources API with project members",
+       "Description":"     Extend GetAllLookingForResources API with project members",
        "Σ Time Spent":3600
     },
     {
        "Issue key":"RA-134",
        "Summary":"Extend project search with searching by member",
-       "Description":"\nExtend project search API with searching by member",
+       "Description":"     Extend project search API with searching by member",
        "Σ Time Spent":18000
     },
     {
@@ -200,7 +200,7 @@
     {
        "Issue key":"RA-131",
        "Summary":"Extend GetAllProjectsByCompanyid with member list",
-       "Description":"\nExtend GetAllProjectsByCompany API with member list",
+       "Description":"     Extend GetAllProjectsByCompany API with member list",
        "Σ Time Spent":7200
     },
     {
@@ -218,31 +218,31 @@
     {
        "Issue key":"RA-127",
        "Summary":"Add employee list to a project according to plan",
-       "Description":"\nAdd alphabetical sorting to project members\nRefactor project member modal to be reusable at Looking For Resource\nMove project modal component from project package\nAdd member list to a project on frontend",
+       "Description":"     Add alphabetical sorting to project members     Refactor project member modal to be reusable at Looking For Resource     Move project modal component from project package     Add member list to a project on frontend",
        "Σ Time Spent":47700
     },
     {
        "Issue key":"RA-126",
        "Summary":"Add Project status to project data",
-       "Description":"\nResolve merge conflicts, generate API after merge\nAdd extra column, services, and localization changes for displaying a project's status",
+       "Description":"     Resolve merge conflicts, generate API after merge     Add extra column, services, and localization changes for displaying a project's status",
        "Σ Time Spent":19800
     },
     {
        "Issue key":"RA-125",
        "Summary":"Change style of login page with added microsoft login button",
-       "Description":"\nRestyle the authentication component to fit the new login button",
+       "Description":"     Restyle the authentication component to fit the new login button",
        "Σ Time Spent":5400
     },
     {
        "Issue key":"RA-124",
        "Summary":"Selected project is not cleared when closing the sidebar",
-       "Description":"\nClear both selected employee and project when closing the competency sidebar",
+       "Description":"     Clear both selected employee and project when closing the competency sidebar",
        "Σ Time Spent":4500
     },
     {
        "Issue key":"RA-123",
        "Summary":"Change favicon.ico and head title of application",
-       "Description":"\nChange favicon, change head title",
+       "Description":"     Change favicon, change head title",
        "Σ Time Spent":3600
     },
     {
@@ -254,109 +254,109 @@
     {
        "Issue key":"RA-121",
        "Summary":"Backend doesn't prevent the user from saving 2 or more active entities",
-       "Description":"Backend doesn’t prevent the user from saving an IN_PROGRESS or WAITING Looking for Resource entity, when there already is one WAITING or IN_PROGRESS entity. \nAdd `@Transactional` to LookingForResourceService",
+       "Description":"Backend doesn’t prevent the user from saving an IN_PROGRESS or WAITING Looking for Resource entity, when there already is one WAITING or IN_PROGRESS entity.      Add `@Transactional` to LookingForResourceService",
        "Σ Time Spent":3600
     },
     {
        "Issue key":"RA-120",
        "Summary":"Insert logo and image",
-       "Description":"* insert logo in the login page\n\n!Screenshot 2023-09-29 at 13.09.04-20230929-110910.png|width=602,height=389!\n* insert image in home pages in case there’s no element in the table (empty state)\n\n!Screenshot 2023-09-29 at 13.09.15-20230929-110921.png|width=602,height=383!\nAdd requested change\nHide searchbar when the tables are empty\nInsert image to login screen and in place of empty tables",
+       "Description":"* insert logo in the login page          !Screenshot 2023-09-29 at 13.09.04-20230929-110910.png|width=602,height=389!     * insert image in home pages in case there’s no element in the table (empty state)          !Screenshot 2023-09-29 at 13.09.15-20230929-110921.png|width=602,height=383!     Add requested change     Hide searchbar when the tables are empty     Insert image to login screen and in place of empty tables",
        "Σ Time Spent":23400
     },
     {
        "Issue key":"RA-119",
        "Summary":"SearchPlan API",
-       "Description":"\nSort projects for employees on backend\nFix pagination bug when searching\nAdd alphabetical sorting by employee name\nFix error that employees without plans cannot be searched\nFix incorrect pagination\nAdd SearchPlan API",
+       "Description":"     Sort projects for employees on backend     Fix pagination bug when searching     Add alphabetical sorting by employee name     Fix error that employees without plans cannot be searched     Fix incorrect pagination     Add SearchPlan API",
        "Σ Time Spent":63000
     },
     {
        "Issue key":"RA-118",
        "Summary":"Add comment field to employee dto",
-       "Description":"\nExpand EmployeeDTO with a comment field",
+       "Description":"     Expand EmployeeDTO with a comment field",
        "Σ Time Spent":2700
     },
     {
        "Issue key":"RA-117",
        "Summary":"DeletePlan API",
-       "Description":"\nAdd DeletePlan API",
+       "Description":"     Add DeletePlan API",
        "Σ Time Spent":3600
     },
     {
        "Issue key":"RA-116",
        "Summary":"CreatePlan API",
-       "Description":"\nAdd validation to create to avoid overlapping of plans with the same employee and project\nAdd CreatePlan API",
+       "Description":"     Add validation to create to avoid overlapping of plans with the same employee and project     Add CreatePlan API",
        "Σ Time Spent":11700
     },
     {
        "Issue key":"RA-115",
        "Summary":"UpdatePlan API",
-       "Description":"\nAdd validation to update to avoid overlapping of plans with the same employee and project\nAdd UpdatePlan API",
+       "Description":"     Add validation to update to avoid overlapping of plans with the same employee and project     Add UpdatePlan API",
        "Σ Time Spent":11700
     },
     {
        "Issue key":"RA-114",
        "Summary":"Design changes",
-       "Description":"* sidebar can be half wide as it is now\n* the sidebar icons (except the user icon) can be much smaller (e.g. tempo icons)\nResize and recolor sidebar",
+       "Description":"* sidebar can be half wide as it is now     * the sidebar icons (except the user icon) can be much smaller (e.g. tempo icons)     Resize and recolor sidebar",
        "Σ Time Spent":11700
     },
     {
        "Issue key":"RA-113",
        "Summary":"Employee and project competencies shown at the same time in home component",
-       "Description":"\nFix display of competencies in the 'looking for...' tables",
+       "Description":"     Fix display of competencies in the 'looking for...' tables",
        "Σ Time Spent":null
     },
     {
        "Issue key":"RA-112",
        "Summary":"App colours",
-       "Description":"In the app we use the official Gloster colours:\n\nOrange: #E95A1A\nDark blue: #212852\nLight grey: #E6E6E6 (opacity 30%)\n\n!Screenshot 2023-09-26 at 16.09.45-20230926-140952.png|width=1066,height=633!\nChange color and font weight of competencies\nRefactor application colors and add minor style fix",
+       "Description":"In the app we use the official Gloster colours:          Orange: #E95A1A     Dark blue: #212852     Light grey: #E6E6E6 (opacity 30%)          !Screenshot 2023-09-26 at 16.09.45-20230926-140952.png|width=1066,height=633!     Change color and font weight of competencies     Refactor application colors and add minor style fix",
        "Σ Time Spent":9900
     },
     {
        "Issue key":"RA-111",
        "Summary":"GetAllPlansByCompany API",
-       "Description":"\nRefactor GetAllPlansByCompany API to only return planned employees\nAdd GetAllPlansByCompany API for displaying on the timeline",
+       "Description":"     Refactor GetAllPlansByCompany API to only return planned employees     Add GetAllPlansByCompany API for displaying on the timeline",
        "Σ Time Spent":21600
     },
     {
        "Issue key":"RA-110",
        "Summary":"Search includes whitespace characters",
-       "Description":"\nFix search in the looking for project table to ignore bordering whitespaces",
+       "Description":"     Fix search in the looking for project table to ignore bordering whitespaces",
        "Σ Time Spent":2700
     },
     {
        "Issue key":"RA-109",
        "Summary":"Refactor employee search to use RxJS",
-       "Description":"\nRefactor search in the employee table to use RxJS",
+       "Description":"     Refactor search in the employee table to use RxJS",
        "Σ Time Spent":5400
     },
     {
        "Issue key":"RA-108",
        "Summary":"Pagination stopped working after refactor in search",
-       "Description":"\nFix pagination in the looking for projects table",
+       "Description":"     Fix pagination in the looking for projects table",
        "Σ Time Spent":2700
     },
     {
        "Issue key":"RA-106",
        "Summary":"Modal throws error when dismissed",
-       "Description":"When subscribing to a modal, there are no reject functions provided for the then() function, only resolves. This results in an error being thrown.\n\n*Solution*: instead of dismissing, close the modal with  a ‘false’ parameter or provide a reject function (first suggestion is more suitable here)\nAdd empty reject function to prevent the error when clicking outside the modal\nRefactor code to not throw an error when canceling or closing a modal",
+       "Description":"When subscribing to a modal, there are no reject functions provided for the then() function, only resolves. This results in an error being thrown.          *Solution*: instead of dismissing, close the modal with  a ‘false’ parameter or provide a reject function (first suggestion is more suitable here)     Add empty reject function to prevent the error when clicking outside the modal     Refactor code to not throw an error when canceling or closing a modal",
        "Σ Time Spent":1800
     },
     {
        "Issue key":"RA-105",
        "Summary":"GetAllProjects API",
-       "Description":"\nRename getAllSelectDtos() method to avoid name conflicts in generated code\nAdd GetAllProjects API",
+       "Description":"     Rename getAllSelectDtos() method to avoid name conflicts in generated code     Add GetAllProjects API",
        "Σ Time Spent":7200
     },
     {
        "Issue key":"RA-104",
        "Summary":"AddLookingForResource API",
-       "Description":"\nAdd validation for CreateLookingForResource API\nAdd CreateLookingForResource API",
+       "Description":"     Add validation for CreateLookingForResource API     Add CreateLookingForResource API",
        "Σ Time Spent":17100
     },
     {
        "Issue key":"RA-103",
        "Summary":"SearchLookingForResource API",
-       "Description":"\nImplement Looking for Resource search",
+       "Description":"     Implement Looking for Resource search",
        "Σ Time Spent":10800
     },
     {
@@ -368,19 +368,19 @@
     {
        "Issue key":"RA-101",
        "Summary":"Update LookingForResource API",
-       "Description":"\nRefactor LFR update according to Project changes\nImplementation of update for LFR",
+       "Description":"     Refactor LFR update according to Project changes     Implementation of update for LFR",
        "Σ Time Spent":28800
     },
     {
        "Issue key":"RA-100",
        "Summary":"GetAllEmployees API",
-       "Description":"\nChange GetAllEmployees API to only return id and name for better performance\nAdd GetAllEmployees API",
+       "Description":"     Change GetAllEmployees API to only return id and name for better performance     Add GetAllEmployees API",
        "Σ Time Spent":7200
     },
     {
        "Issue key":"RA-99",
        "Summary":"Refactor Employee's getAllEmployees() method to getAllEmployeesByCompany()",
-       "Description":"\nRefactor `findAll()` service method to `findAllByCompanyId()`\nRefactor getAllEmployees() method to getAllEmployeesByCompanyId()",
+       "Description":"     Refactor `findAll()` service method to `findAllByCompanyId()`     Refactor getAllEmployees() method to getAllEmployeesByCompanyId()",
        "Σ Time Spent":2700
     },
     {
@@ -392,133 +392,133 @@
     {
        "Issue key":"RA-97",
        "Summary":"Employee search is case sensitive",
-       "Description":"!image-20230919-122405.png|width=1385,height=490!\n\n!image-20230919-122429.png|width=1091,height=502!\n\nThe search is case-sensitive. If we want to look up a competency that has uppercase letters and we use lowercase letters in the search bar, the competency will not be circled.\n\n*Solution*:\n\nAdd lowerCase() function to both strings before comparing them in the isSearchResult() method of tr-employee.component.ts\nMake employee search case-insensitive",
+       "Description":"!image-20230919-122405.png|width=1385,height=490!          !image-20230919-122429.png|width=1091,height=502!          The search is case-sensitive. If we want to look up a competency that has uppercase letters and we use lowercase letters in the search bar, the competency will not be circled.          *Solution*:          Add lowerCase() function to both strings before comparing them in the isSearchResult() method of tr-employee.component.ts     Make employee search case-insensitive",
        "Σ Time Spent":900
     },
     {
        "Issue key":"RA-96",
        "Summary":"AddLookingForProject API",
-       "Description":"\nRefactor create to only be able to have one active Looking For Project\nAdd Looking For Project creation logic",
+       "Description":"     Refactor create to only be able to have one active Looking For Project     Add Looking For Project creation logic",
        "Σ Time Spent":43200
     },
     {
        "Issue key":"RA-95",
        "Summary":"GetAllLookingForResources API",
-       "Description":"\nChange FTE type to Double to avoid NullPointerException\nRefactor Looking For Resources according to Project\nRefactor Looking For Resources according to Project\nAdded pagination\nImplementation of getAllLookingForResources",
+       "Description":"     Change FTE type to Double to avoid NullPointerException     Refactor Looking For Resources according to Project     Refactor Looking For Resources according to Project     Added pagination     Implementation of getAllLookingForResources",
        "Σ Time Spent":24300
     },
     {
        "Issue key":"RA-94",
        "Summary":"Backend skeleton for 'Looking for Resource'",
-       "Description":"\nRequested change\nLooking for resource base",
+       "Description":"     Requested change     Looking for resource base",
        "Σ Time Spent":37800
     },
     {
        "Issue key":"RA-93",
        "Summary":"ModifyLookingForProject API",
-       "Description":"\nAdd `@SchemaProperty` annotation for correct swagger code generation\nRefactor update to only be able to have one active Looking For Project for an Employee\nAdd repository method for checking if there is an active Looking For Project for an Employee\nAdd modification logic for Looking For Project\nAdd DTO for Looking For Project modification",
+       "Description":"     Add `@SchemaProperty` annotation for correct swagger code generation     Refactor update to only be able to have one active Looking For Project for an Employee     Add repository method for checking if there is an active Looking For Project for an Employee     Add modification logic for Looking For Project     Add DTO for Looking For Project modification",
        "Σ Time Spent":33300
     },
     {
        "Issue key":"RA-92",
        "Summary":"SearchLookingForProject API",
-       "Description":"\nFix bug that Looking For Projects for employees with 0 competencies could not be found\nRemove status from searchable fields\nAdd Looking For Project search API",
+       "Description":"     Fix bug that Looking For Projects for employees with 0 competencies could not be found     Remove status from searchable fields     Add Looking For Project search API",
        "Σ Time Spent":27900
     },
     {
        "Issue key":"RA-90",
        "Summary":"GetAllLookingForProjects API",
-       "Description":"\nAdd `@NotNull` annotations\nAdd `@Tag` to controller\nAdd API endpoint for getting all Looking for projects",
+       "Description":"     Add `@NotNull` annotations     Add `@Tag` to controller     Add API endpoint for getting all Looking for projects",
        "Σ Time Spent":25200
     },
     {
        "Issue key":"RA-89",
        "Summary":"Backend skeleton for 'Looking for Project'",
-       "Description":"\nAdd backend skeleton for Looking For Project",
+       "Description":"     Add backend skeleton for Looking For Project",
        "Σ Time Spent":24300
     },
     {
        "Issue key":"RA-88",
        "Summary":"Tab display for 'Looking for...' components",
-       "Description":"\nCreate initial skeleton for the home page",
+       "Description":"     Create initial skeleton for the home page",
        "Σ Time Spent":5400
     },
     {
        "Issue key":"RA-87",
        "Summary":"Add and delete competency API",
-       "Description":"\nChange the endpoints to get the ids in Request Body instead of as Path Variables\nChange api endpoints to `PutMapping`\nAdd backend logic for removing a competency from project\nAdd backend logic for adding a competency to project",
+       "Description":"     Change the endpoints to get the ids in Request Body instead of as Path Variables     Change api endpoints to `PutMapping`     Add backend logic for removing a competency from project     Add backend logic for adding a competency to project",
        "Σ Time Spent":36900
     },
     {
        "Issue key":"RA-86",
        "Summary":"Add and delete competency to project",
-       "Description":"\ni18n update\nAdd new project and search fixes\nAdd error fix\nTemporary changes",
+       "Description":"     i18n update     Add new project and search fixes     Add error fix     Temporary changes",
        "Σ Time Spent":45900
     },
     {
        "Issue key":"RA-85",
        "Summary":"Add and delete employee competency API",
-       "Description":"\nRequested changes\nValidation for creating and deleting employee-competencies\nAdding and deleting EmployeeCompetency without validation",
+       "Description":"     Requested changes     Validation for creating and deleting employee-competencies     Adding and deleting EmployeeCompetency without validation",
        "Σ Time Spent":24300
     },
     {
        "Issue key":"RA-84",
        "Summary":"Add new project to the list",
-       "Description":"!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!\n\n\n\n* The user can add new project to the list, by clicking on the “add project” button.\n* The user can type the name of the new project in the first empty line opened by the “add project” button.\n* The user can see the newly added project in the first line until the page is not reloaded.\n* In case of reload the page, the newly added project has to take its place according to the last configured sorting.\n* As soon es the new line opened for the new project, the max relevant project number is increased by 1.\nRemove duplicate import\nRegenerate API and resolve conflicts after merge\nRemove duplicate id in html\nRefactor retrieval of projects\nFix typo\nUse new colors\nImplement creating a new 'looking for resource' entity with error handling\nGenerate API and refactor method call",
+       "Description":"!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!                    * The user can add new project to the list, by clicking on the “add project” button.     * The user can type the name of the new project in the first empty line opened by the “add project” button.     * The user can see the newly added project in the first line until the page is not reloaded.     * In case of reload the page, the newly added project has to take its place according to the last configured sorting.     * As soon es the new line opened for the new project, the max relevant project number is increased by 1.     Remove duplicate import     Regenerate API and resolve conflicts after merge     Remove duplicate id in html     Refactor retrieval of projects     Fix typo     Use new colors     Implement creating a new 'looking for resource' entity with error handling     Generate API and refactor method call",
        "Σ Time Spent":48600
     },
     {
        "Issue key":"RA-83",
        "Summary":"Add new employee to the list",
-       "Description":"!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!\n\n\n\n* The user can add new employee to the list, by clicking on the “add employee” button.\n* The user can choose the name of the new employee from a dropbox in the first empty line opened by the “add employee” button.\n* The user can search for an employee’s name in the dropbox opened in the “name” cell.\n* The user can see the employee’s other data (role, cv, competencies) automatically filled by enter.\n* The user can see the newly added employee in the first line until the page is not reloaded.\n* In case of reload the page, the newly added employee has to take its place according to the last configured sorting.\n* As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.\nChange colors to a new color scheme\nRegenerate API after merge\nRefactor after resolving merge conflicts\nRefactor selects to be NgbTypeaheads\nAdd creation of a new 'looking for project' with error handling",
+       "Description":"!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!                    * The user can add new employee to the list, by clicking on the “add employee” button.     * The user can choose the name of the new employee from a dropbox in the first empty line opened by the “add employee” button.     * The user can search for an employee’s name in the dropbox opened in the “name” cell.     * The user can see the employee’s other data (role, cv, competencies) automatically filled by enter.     * The user can see the newly added employee in the first line until the page is not reloaded.     * In case of reload the page, the newly added employee has to take its place according to the last configured sorting.     * As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.     Change colors to a new color scheme     Regenerate API after merge     Refactor after resolving merge conflicts     Refactor selects to be NgbTypeaheads     Add creation of a new 'looking for project' with error handling",
        "Σ Time Spent":96300
     },
     {
        "Issue key":"RA-82",
        "Summary":"GetAllPositions API",
-       "Description":"\nThe complete getAllPositions API",
+       "Description":"     The complete getAllPositions API",
        "Σ Time Spent":null
     },
     {
        "Issue key":"RA-81",
        "Summary":"General exception handling",
-       "Description":"\nAdding missing logging for handleSimpleValidationErrors method\nException handling base (ExceptionDTO might be expanded in the future)",
+       "Description":"     Adding missing logging for handleSimpleValidationErrors method     Exception handling base (ExceptionDTO might be expanded in the future)",
        "Σ Time Spent":6300
     },
     {
        "Issue key":"RA-80",
        "Summary":"Employee Search API",
-       "Description":"\nMerging search and findAll into a single endpoint\nAdding distinct keyword to search query\nSearch employee base (there are problems with pagination with low page sizes)",
+       "Description":"     Merging search and findAll into a single endpoint     Adding distinct keyword to search query     Search employee base (there are problems with pagination with low page sizes)",
        "Σ Time Spent":50400
     },
     {
        "Issue key":"RA-79",
        "Summary":"SearchProject API",
-       "Description":"\nRefactor get all API and search API to use the same endpoint\nAdd DTOs, service and controller\nAdd DTOs, service and controller\nAdd DTOs, service and controller\nAdd paginated project search to backend\nAdd DTOs, service and controller",
+       "Description":"     Refactor get all API and search API to use the same endpoint     Add DTOs, service and controller     Add DTOs, service and controller     Add DTOs, service and controller     Add paginated project search to backend     Add DTOs, service and controller",
        "Σ Time Spent":44100
     },
     {
        "Issue key":"RA-78",
        "Summary":"UpdateProject API",
-       "Description":"\nRemove unnecessary `equals` and `hashcode` override\nRename `findById` to `findEntityById`\nChange start and end fields to LocalDate instead of Date\nExpand ProjectTableDTO with companyId\nAdd name uniqueness check in project update\nChange start and end fields to LocalDate instead of Date\nChange start and end fields to LocalDate instead of Date\nChange start and end fields to LocalDate instead of Date\nChange start and end fields to LocalDate instead of Date\nAdd `@NotNull` annotation and validation\nAdd project update API",
+       "Description":"     Remove unnecessary `equals` and `hashcode` override     Rename `findById` to `findEntityById`     Change start and end fields to LocalDate instead of Date     Expand ProjectTableDTO with companyId     Add name uniqueness check in project update     Change start and end fields to LocalDate instead of Date     Change start and end fields to LocalDate instead of Date     Change start and end fields to LocalDate instead of Date     Change start and end fields to LocalDate instead of Date     Add `@NotNull` annotation and validation     Add project update API",
        "Σ Time Spent":41400
     },
     {
        "Issue key":"RA-76",
        "Summary":"Add Swagger",
-       "Description":"Add OpenAPI documentation, and angular client generation, to avoid manually created frontend API services and models\nCarry out requested changes according to code review\nRemove unnecessary requestMatchers, remove magic strings\nModify OpenApi client generation to generate from yaml instead of JSON\nChange the destination of code generation to the shared folder\nRemove unused API services and models from frontend\nAdd OpenApi documentation and client generation to the project",
+       "Description":"Add OpenAPI documentation, and angular client generation, to avoid manually created frontend API services and models     Carry out requested changes according to code review     Remove unnecessary requestMatchers, remove magic strings     Modify OpenApi client generation to generate from yaml instead of JSON     Change the destination of code generation to the shared folder     Remove unused API services and models from frontend     Add OpenApi documentation and client generation to the project",
        "Σ Time Spent":66600
     },
     {
        "Issue key":"RA-75",
        "Summary":"CORS configuration",
-       "Description":"\nRename CorsConfigurationParser to CorsConfiguration\nAdd automatic CORS filtering",
+       "Description":"     Rename CorsConfigurationParser to CorsConfiguration     Add automatic CORS filtering",
        "Σ Time Spent":20700
     },
     {
        "Issue key":"RA-74",
        "Summary":"Microsoft configuration",
-       "Description":"\nRequested changes\nModify redirect URI on Microsoft login so that the intermediate login page does not show up\nQuick fix/ workaround for Microsoft auth\nAdd initial Microsoft login configuration",
+       "Description":"     Requested changes     Modify redirect URI on Microsoft login so that the intermediate login page does not show up     Quick fix/ workaround for Microsoft auth     Add initial Microsoft login configuration",
        "Σ Time Spent":69300
     },
     {
@@ -536,7 +536,7 @@
     {
        "Issue key":"RA-71",
        "Summary":"Implement drag&drop for competencies",
-       "Description":"\nAdd drag and drop to competency list",
+       "Description":"     Add drag and drop to competency list",
        "Σ Time Spent":10800
     },
     {
@@ -548,13 +548,13 @@
     {
        "Issue key":"RA-68",
        "Summary":"Search in looking for resource",
-       "Description":"* the user can search for some text in the table by typing the text in the search field\n* the user can search in all text contained field in the table by typing in the search field\n* the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.\nFix search term being cleared by pagination\nUse new colors\nRegenerate API after merge\nImplement searching in 'looking for resource' table",
+       "Description":"* the user can search for some text in the table by typing the text in the search field     * the user can search in all text contained field in the table by typing in the search field     * the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.     Fix search term being cleared by pagination     Use new colors     Regenerate API after merge     Implement searching in 'looking for resource' table",
        "Σ Time Spent":21600
     },
     {
        "Issue key":"RA-67",
        "Summary":"Display all the element of the looking for resource list",
-       "Description":"!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!\n\n* The user can see the list of projects that has free capacity.\n* As a 1st version, the list is filled only manually.\nFix pagination in the looking for resources table\nDisplay project competencies in the looking for resources table\nRegenerate API after merge\nReplace select with label\nAdd sorting to looking for resources table\nAdd select for project state\nDisplay looking for resources except for competencies and members\nAdd skeleton for table rows of looking for resource entities\nAdd looking for resource table layout, headers and pagination, prepare sorting\nAdd 'looking for resource' component",
+       "Description":"!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!          * The user can see the list of projects that has free capacity.     * As a 1st version, the list is filled only manually.     Fix pagination in the looking for resources table     Display project competencies in the looking for resources table     Regenerate API after merge     Replace select with label     Add sorting to looking for resources table     Add select for project state     Display looking for resources except for competencies and members     Add skeleton for table rows of looking for resource entities     Add looking for resource table layout, headers and pagination, prepare sorting     Add 'looking for resource' component",
        "Σ Time Spent":51300
     },
     {
@@ -566,19 +566,19 @@
     {
        "Issue key":"RA-65",
        "Summary":"Update list element",
-       "Description":"!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!\n\n\n\n* The user can update the following fields by double clicking in the cell:\n** assigned to\n** status\n** free from\n\n* the user can see the saved result by enter or by clicking somewhere else on the site\nAdjust code to refactored search mechanism\nRefactor update logic and add error handling\nImplement update of 'looking for project' entities without error handling",
+       "Description":"!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!                    * The user can update the following fields by double clicking in the cell:     ** assigned to     ** status     ** free from          * the user can see the saved result by enter or by clicking somewhere else on the site     Adjust code to refactored search mechanism     Refactor update logic and add error handling     Implement update of 'looking for project' entities without error handling",
        "Σ Time Spent":76500
     },
     {
        "Issue key":"RA-64",
        "Summary":"Search in looking for project",
-       "Description":"* the user can search for some text in the table by typing the text in the search field\n* the user can search in all text contained field in the table by typing in the search field\n* the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.\nRefactor search mechanism to use rxjs\nRemove console.log()\nImplement search in 'looking for project' entities",
+       "Description":"* the user can search for some text in the table by typing the text in the search field     * the user can search in all text contained field in the table by typing in the search field     * the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.     Refactor search mechanism to use rxjs     Remove console.log()     Implement search in 'looking for project' entities",
        "Σ Time Spent":64800
     },
     {
        "Issue key":"RA-63",
        "Summary":"Display all the element of the looking for project list",
-       "Description":"!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!\n\n\n\n* The user can see the list of employees who will be available for the next project.\n* As a 1st version, the list is filled only manually.\nAdd null check to page observables\nDisplay competencies of a 'looking for project' entity without being able to modify them\nAdjust to the added 'not null' annotations\nDisplay actual data of looking for project entities and add sorting\nAdd generated DTO-s and services, fix method name\nFix style and header strings\nAdd skeleton for table rows of looking for project entities\nAdd looking for project table layout, headers and pagination, prepare sorting\nAdd 'looking for project' component",
+       "Description":"!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!                    * The user can see the list of employees who will be available for the next project.     * As a 1st version, the list is filled only manually.     Add null check to page observables     Display competencies of a 'looking for project' entity without being able to modify them     Adjust to the added 'not null' annotations     Display actual data of looking for project entities and add sorting     Add generated DTO-s and services, fix method name     Fix style and header strings     Add skeleton for table rows of looking for project entities     Add looking for project table layout, headers and pagination, prepare sorting     Add 'looking for project' component",
        "Σ Time Spent":90000
     },
     {
@@ -590,19 +590,19 @@
     {
        "Issue key":"RA-61",
        "Summary":"Search in plan",
-       "Description":"\nRegenerate API after merge\nReformat code, fix subscription and fix error when calling toString()\nRemove comments\nImplement search in plans\nGenerate API",
+       "Description":"     Regenerate API after merge     Reformat code, fix subscription and fix error when calling toString()     Remove comments     Implement search in plans     Generate API",
        "Σ Time Spent":116100
     },
     {
        "Issue key":"RA-59",
        "Summary":"Connect project to an employee",
-       "Description":"\nAdd requested changes\nImplement and style modifying and deleting plans\nImplement and style creating a new plan\nModifying, deleting, moving plans\nMerge modify and create backend",
+       "Description":"     Add requested changes     Implement and style modifying and deleting plans     Implement and style creating a new plan     Modifying, deleting, moving plans     Merge modify and create backend",
        "Σ Time Spent":109800
     },
     {
        "Issue key":"RA-58",
        "Summary":"Display calendar view of employee",
-       "Description":"\nChange sql keywords to uppercase\nClean up and refactor code, remove breaking image\nAdd spinner to html\nShow image instead of empty timeline\nMake timeline scrollable along the y-axis to avoid overflow\nFix pagination, reformat code, and fix typos\nGenerate API\nDisplay fixes\nSmall CSS\nDisplay bugfix\nTimeline base with data display",
+       "Description":"     Change sql keywords to uppercase     Clean up and refactor code, remove breaking image     Add spinner to html     Show image instead of empty timeline     Make timeline scrollable along the y-axis to avoid overflow     Fix pagination, reformat code, and fix typos     Generate API     Display fixes     Small CSS     Display bugfix     Timeline base with data display",
        "Σ Time Spent":242100
     },
     {
@@ -614,19 +614,19 @@
     {
        "Issue key":"RA-56",
        "Summary":"CreateCompany API",
-       "Description":"\nAdd createCompany API",
+       "Description":"     Add createCompany API",
        "Σ Time Spent":5400
     },
     {
        "Issue key":"RA-55",
        "Summary":"UpdateCompany API",
-       "Description":"\nAdd updateCompany API",
+       "Description":"     Add updateCompany API",
        "Σ Time Spent":null
     },
     {
        "Issue key":"RA-54",
        "Summary":"Sequencies",
-       "Description":"\nReplace GenerationType.AUTO with .IDENTITY on all entities that had it, so that ids are assigned automatically",
+       "Description":"     Replace GenerationType.AUTO with .IDENTITY on all entities that had it, so that ids are assigned automatically",
        "Σ Time Spent":3600
     },
     {
@@ -638,37 +638,37 @@
     {
        "Issue key":"RA-52",
        "Summary":"Table sorting",
-       "Description":"Default sorting of the table is alphabetical order by name.\n\nThe user can select other sorting columns:\n\n* name\n* e-mail\n\n(other filter options can be done by search function)\nAdd sorting to boolean columns\nImplement employee table sorting\nAdd sorting to boolean columns\nImplement employee table sorting",
+       "Description":"Default sorting of the table is alphabetical order by name.          The user can select other sorting columns:          * name     * e-mail          (other filter options can be done by search function)     Add sorting to boolean columns     Implement employee table sorting     Add sorting to boolean columns     Implement employee table sorting",
        "Σ Time Spent":18900
     },
     {
        "Issue key":"RA-51",
        "Summary":"GetEmployeesByCompany API",
-       "Description":"\nAdding NotNull annotations to the DTO\nCompetency map of EmployeeDTO should contain only the ids of the competencies as values\nExpanded entity and DTO, added @Tag to controller",
+       "Description":"     Adding NotNull annotations to the DTO     Competency map of EmployeeDTO should contain only the ids of the competencies as values     Expanded entity and DTO, added @Tag to controller",
        "Σ Time Spent":10800
     },
     {
        "Issue key":"RA-50",
        "Summary":"UpdateEmployee API",
-       "Description":"\nRefactor NotNull annotations in Position entity and PositionDTO\nNotNull annotations for Position and PositionDTO\nCorrect HttpStatus\nTypeo, setting id as company id\nUnique email validation\nUpdate employee API base",
+       "Description":"     Refactor NotNull annotations in Position entity and PositionDTO     NotNull annotations for Position and PositionDTO     Correct HttpStatus     Typeo, setting id as company id     Unique email validation     Update employee API base",
        "Σ Time Spent":47700
     },
     {
        "Issue key":"RA-49",
        "Summary":"CreateEmployee API",
-       "Description":"\nRemove default setting of active and planned on create\nSet \"planned\" to true by default\nCreate Employee logic",
+       "Description":"     Remove default setting of active and planned on create     Set \"planned\" to true by default     Create Employee logic",
        "Σ Time Spent":85500
     },
     {
        "Issue key":"RA-48",
        "Summary":"GetAllCompanies API",
-       "Description":"\nAdd getAllCompanies API",
+       "Description":"     Add getAllCompanies API",
        "Σ Time Spent":9900
     },
     {
        "Issue key":"RA-47",
        "Summary":"DeleteCompetence API",
-       "Description":"\nAdd backend API for deleting a competency",
+       "Description":"     Add backend API for deleting a competency",
        "Σ Time Spent":null
     },
     {
@@ -680,13 +680,13 @@
     {
        "Issue key":"RA-45",
        "Summary":"Update competence",
-       "Description":"* the user can update the competency name by double-clicking on the the name\nAdd update logic to competency component\nCreate backend API for updating a competence",
+       "Description":"* the user can update the competency name by double-clicking on the the name     Add update logic to competency component     Create backend API for updating a competence",
        "Σ Time Spent":28800
     },
     {
        "Issue key":"RA-44",
        "Summary":"CreateCompetence API",
-       "Description":"\nAdd createCompetence API",
+       "Description":"     Add createCompetence API",
        "Σ Time Spent":null
     },
     {
@@ -728,13 +728,13 @@
     {
        "Issue key":"RA-36",
        "Summary":"Login screen",
-       "Description":"\nChange login container's layout to container-fluid\nAdd login page frontend",
+       "Description":"     Change login container's layout to container-fluid     Add login page frontend",
        "Σ Time Spent":57600
     },
     {
        "Issue key":"RA-35",
        "Summary":"Redis research",
-       "Description":"The purpose of using Redis is to increase the security of the API by making the authentication stateful.\n\nThis way we can revoke the token of a user and thus implementing a logout on the server side as well, not just on the frontend.\n\nThis can be done by configuring a Redis instance to be used in the application and saving the active token for each user in it as well as checking this token with every http request that is made to the API.\n\nEven though this would increase the security of the application, the improvement is not high priority momentarily and its configuration and implementation could take several days.\n\nThe implementation should be kept in the backlog and we should get back to it later if we have the time or see the need for it.",
+       "Description":"The purpose of using Redis is to increase the security of the API by making the authentication stateful.          This way we can revoke the token of a user and thus implementing a logout on the server side as well, not just on the frontend.          This can be done by configuring a Redis instance to be used in the application and saving the active token for each user in it as well as checking this token with every http request that is made to the API.          Even though this would increase the security of the application, the improvement is not high priority momentarily and its configuration and implementation could take several days.          The implementation should be kept in the backlog and we should get back to it later if we have the time or see the need for it.",
        "Σ Time Spent":5400
     },
     {
@@ -752,13 +752,13 @@
     {
        "Issue key":"RA-32",
        "Summary":"Create model classes",
-       "Description":"\nRefactor PositionType to String and rename State to ProjectState\nRemove redundant ColumnDefinition and Column annotations, reformat code\nAdd LookingForProject and LookingForResource entities and Status enum\nAdd Plan entity\nAdd plans and positions to employee\nAdd competencies to project, change type of fte attribute\nRemove comment\nRename role-authority junction table\nAdd Project entity and State enum\nAdd EmployeeCompetency entity and Level enum\nAdd Employee entity\nAdd Position entity, Seniority and Type enums\nAdd Competency entity\nAdd Company entity\nAdd User, Role and Authority entities",
+       "Description":"     Refactor PositionType to String and rename State to ProjectState     Remove redundant ColumnDefinition and Column annotations, reformat code     Add LookingForProject and LookingForResource entities and Status enum     Add Plan entity     Add plans and positions to employee     Add competencies to project, change type of fte attribute     Remove comment     Rename role-authority junction table     Add Project entity and State enum     Add EmployeeCompetency entity and Level enum     Add Employee entity     Add Position entity, Seniority and Type enums     Add Competency entity     Add Company entity     Add User, Role and Authority entities",
        "Σ Time Spent":95400
     },
     {
        "Issue key":"RA-31",
        "Summary":"Environment setup",
-       "Description":"\nIgnore .editorconfig files\nUpdate Angular version from 15 to 16\nAdjust folder name",
+       "Description":"     Ignore .editorconfig files     Update Angular version from 15 to 16     Adjust folder name",
        "Σ Time Spent":68400
     },
     {
@@ -776,7 +776,7 @@
     {
        "Issue key":"RA-28",
        "Summary":"Search project",
-       "Description":"* the user can search for some text in the table by typing the text in the search field\n* the user can search in all text contained field in the table by typing in the search field\n* the user have to type at least 3 character to start a search\n* the user can see the result 3sec after last typed character. The result is a filtered table and the searched text is highlighted.\nShow searchbar when the table is empty because of a search term\nAdd fixes to search in project table\nAdd error fixes",
+       "Description":"* the user can search for some text in the table by typing the text in the search field     * the user can search in all text contained field in the table by typing in the search field     * the user have to type at least 3 character to start a search     * the user can see the result 3sec after last typed character. The result is a filtered table and the searched text is highlighted.     Show searchbar when the table is empty because of a search term     Add fixes to search in project table     Add error fixes",
        "Σ Time Spent":104400
     },
     {
@@ -788,19 +788,19 @@
     {
        "Issue key":"RA-26",
        "Summary":"Search employee",
-       "Description":"* the user can search for some text in the table by typing the text in the search field\n* the user can search in all text contained field in the table by typing in the search field\n* -the user have to type at least 3 character to start a search-\n* the user can see the result 3sec after last typed character. The result is a filtered table and -the searched text is highlighted.- the result in competencies is marked with red.\nResolve conflicts and regenerate frontend with openapi\nRefactor getting all employees to include the search term too\nImplement searching in employee table and highlight search results in the competencies",
+       "Description":"* the user can search for some text in the table by typing the text in the search field     * the user can search in all text contained field in the table by typing in the search field     * -the user have to type at least 3 character to start a search-     * the user can see the result 3sec after last typed character. The result is a filtered table and -the searched text is highlighted.- the result in competencies is marked with red.     Resolve conflicts and regenerate frontend with openapi     Refactor getting all employees to include the search term too     Implement searching in employee table and highlight search results in the competencies",
        "Σ Time Spent":102600
     },
     {
        "Issue key":"RA-25",
        "Summary":"Fill up profile form",
-       "Description":"The user can see the “document” icon in case the employee’s comment field is not empty.\n\nThe user can see a + icon in case the employee’s comment field is empty.\n\nIn both case the user can click on the icons and will see the the profile of the employee.\n\n!Screenshot 2023-09-27 at 11.21.39-20230927-092144.png|width=396,height=731!\n\n\n\nThe user can edit the experience section.\n\nThe user cannot edit the competence section.\n\nThe user can save the changes by clicking on the save button.\n\nThe user can discard the changes by clicking on the cancel button or clicking outside of the form.\nFix overflowing text\nApp profile modal and implement functionality\nReplace method call\nGenerate API",
+       "Description":"The user can see the “document” icon in case the employee’s comment field is not empty.          The user can see a + icon in case the employee’s comment field is empty.          In both case the user can click on the icons and will see the the profile of the employee.          !Screenshot 2023-09-27 at 11.21.39-20230927-092144.png|width=396,height=731!                    The user can edit the experience section.          The user cannot edit the competence section.          The user can save the changes by clicking on the save button.          The user can discard the changes by clicking on the cancel button or clicking outside of the form.     Fix overflowing text     App profile modal and implement functionality     Replace method call     Generate API",
        "Σ Time Spent":39600
     },
     {
        "Issue key":"RA-24",
        "Summary":"Employee's position",
-       "Description":"The user add roles (position) to an employee by choosing one from the dropdown list.\n\n(please work with dummy positions eg. Frontend Developer, Backend developer, Business Analyst)",
+       "Description":"The user add roles (position) to an employee by choosing one from the dropdown list.          (please work with dummy positions eg. Frontend Developer, Backend developer, Business Analyst)",
        "Σ Time Spent":3600
     },
     {
@@ -812,19 +812,19 @@
     {
        "Issue key":"RA-22",
        "Summary":"Delete competence",
-       "Description":"!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=1788,height=1098!\n\n* the user can delete a competency by clicking on the bin icon at the end of the line\n* the user got a warning message if the selected competency is already used by employees or projects. The user can decide whether to continue the delete or not.\n* the deleted competency is no more shown in the list\nFix confirmation dialog close button\nFix competency sidebar position\nAdd deletion logic to competency component\nAdd confirmation dialog to notify users when competence is being used before delete",
+       "Description":"!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=1788,height=1098!          * the user can delete a competency by clicking on the bin icon at the end of the line     * the user got a warning message if the selected competency is already used by employees or projects. The user can decide whether to continue the delete or not.     * the deleted competency is no more shown in the list     Fix confirmation dialog close button     Fix competency sidebar position     Add deletion logic to competency component     Add confirmation dialog to notify users when competence is being used before delete",
        "Σ Time Spent":39600
     },
     {
        "Issue key":"RA-21",
        "Summary":"Add new competence",
-       "Description":"!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!\n\n* the user can type the competency in the search field and if the search had no results, the user can add a new competency by clicking on the add button\n* the user can see the added competency in the filtered list\n* the user can’t click on the add button if there is at least one result after search\nRename hasSearchResult to isAddButtonDisabled\nFix bug that empty string can be added as competency\nRename service save method to createCompetency\nSeparate competency search logic from competency adding ability's logic\nChange competency search to check equality\nAdd frontend logic for creating a competency",
+       "Description":"!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!          * the user can type the competency in the search field and if the search had no results, the user can add a new competency by clicking on the add button     * the user can see the added competency in the filtered list     * the user can’t click on the add button if there is at least one result after search     Rename hasSearchResult to isAddButtonDisabled     Fix bug that empty string can be added as competency     Rename service save method to createCompetency     Separate competency search logic from competency adding ability's logic     Change competency search to check equality     Add frontend logic for creating a competency",
        "Σ Time Spent":58500
     },
     {
        "Issue key":"RA-20",
        "Summary":"List all competence",
-       "Description":"!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!\n\n* The user can see on the right side of the screen all the existing competencies.\n* The user can close the Competency tab by clicking on the narrow icon.\n* The user can open the Competency tab by clicking on the narrow icon on the closed tab.\n* The user can drag one of the competencies.\nEncapsulate competency sidebar in components that need it\nAdd error message to competency sidebar if API call fails\nFix login button color\nChange competency API URL, add use of constructors in toDto and toEntity\nRename delete-competency-color to delete-competency-button-color, extract magic string to colors.scss\nAdd competency component with competency listing\nCreate getAllCompetencies() API\nAdd necessary strings to hu.json",
+       "Description":"!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!          * The user can see on the right side of the screen all the existing competencies.     * The user can close the Competency tab by clicking on the narrow icon.     * The user can open the Competency tab by clicking on the narrow icon on the closed tab.     * The user can drag one of the competencies.     Encapsulate competency sidebar in components that need it     Add error message to competency sidebar if API call fails     Fix login button color     Change competency API URL, add use of constructors in toDto and toEntity     Rename delete-competency-color to delete-competency-button-color, extract magic string to colors.scss     Add competency component with competency listing     Create getAllCompetencies() API     Add necessary strings to hu.json",
        "Σ Time Spent":85500
     },
     {
@@ -836,61 +836,61 @@
     {
        "Issue key":"RA-18",
        "Summary":"Company separated display",
-       "Description":"!Screenshot 2023-08-07 at 13.43.27-20230807-114333.png|width=701,height=398!\n\n* The user can see all the possible companies in tab form.\n* The user can see only 1 tab as active\n* The user can add new company by clicking on the + icon and type the name.\n* The user can update a company name by double clicking on the existing company name.\n* The cannot delete a company.\n* The user can only see as active tab the company where she/he belongs.\n* Superadmin can see and edit all the company tabs.\nFix requested changes\nFix bug in adding new company\nFix code smell in sorting\nAdd requested changes\nFix sidebar icon hover width\nReplace subject logic with event emitter\nRefactor to fa icon\nIntegrate UI of competency component and company separated display\nUse company separated display component\nAdd company separated display component\nUpdate hu.json",
+       "Description":"!Screenshot 2023-08-07 at 13.43.27-20230807-114333.png|width=701,height=398!          * The user can see all the possible companies in tab form.     * The user can see only 1 tab as active     * The user can add new company by clicking on the + icon and type the name.     * The user can update a company name by double clicking on the existing company name.     * The cannot delete a company.     * The user can only see as active tab the company where she/he belongs.     * Superadmin can see and edit all the company tabs.     Fix requested changes     Fix bug in adding new company     Fix code smell in sorting     Add requested changes     Fix sidebar icon hover width     Replace subject logic with event emitter     Refactor to fa icon     Integrate UI of competency component and company separated display     Use company separated display component     Add company separated display component     Update hu.json",
        "Σ Time Spent":250200
     },
     {
        "Issue key":"RA-17",
        "Summary":"Modify existing project",
-       "Description":"* the user can modify the project data by double-clicking on the selected cell\n* the user can see the saved result by enter or by clicking somewhere else on the site\nDev API generation\nPR\nCompetency selection bugfix\nCompetency search bar bugfix\nModify projects\nModify",
+       "Description":"* the user can modify the project data by double-clicking on the selected cell     * the user can see the saved result by enter or by clicking somewhere else on the site     Dev API generation     PR     Competency selection bugfix     Competency search bar bugfix     Modify projects     Modify",
        "Σ Time Spent":139500
     },
     {
        "Issue key":"RA-16",
        "Summary":"Add new project",
-       "Description":"* The user can add a new project by clicking on the “add employee” button.\n* The user can type the datas of the new project in the first empty line opened by the “add project” button.\n* The user can see the newly added project in the first line until the page is not reloaded.\n* In case of reload the page, the newly added project has to take its place according to the last configured sorting.\n* As soon es the new line opened for the new project, the max relevant project number is increased by 1.\nRegenerate API after merge, reformat code for searching and creating projects\nAdd requested code changes and fixes regarding adding a new project",
+       "Description":"* The user can add a new project by clicking on the “add employee” button.     * The user can type the datas of the new project in the first empty line opened by the “add project” button.     * The user can see the newly added project in the first line until the page is not reloaded.     * In case of reload the page, the newly added project has to take its place according to the last configured sorting.     * As soon es the new line opened for the new project, the max relevant project number is increased by 1.     Regenerate API after merge, reformat code for searching and creating projects     Add requested code changes and fixes regarding adding a new project",
        "Σ Time Spent":74700
     },
     {
        "Issue key":"RA-15",
        "Summary":"Display all projects",
-       "Description":"Design same as employees.\n\n* The Minero user can see all the relevant project listed in a table.\n* The Minero user can see how many project is listed and how many project is relevant all together in the lower left corner.\n* The Minero user can turn page and list the next page of the projects by clicking on the right or left arrow in the lower left corner.\nChange requests\nChange requests\nChange requests\nAdded 2 missing models\nSmall CSS fix\nskeleton\nMake toEntity and toDto methods not static\nRefactor UserDTO to UserLoginDTO, add UserDTO with all fields\nChange return value of API endpoint to ProjectTableDTO to avoid redundant data\nAdd `@Tag` to ProjectController\nAdd `@NotNull` to required fields in ProjectDTO\nChange FTE to Double type so it can be set to null\nChange ProjectDTO to only contain IDs of assignee, company, and competencies\nChange constant string names, add constant strings to page number and page size\nMake toEntity and toDto methods not static\nChange entity and dto setters to builder setters\nRemove magic strings from ProjectController\nAdd GetProjectsByCompany API with pagination and sorting\nRefactor UserDTO to UserLoginDTO, add UserDTO with all fields",
+       "Description":"Design same as employees.          * The Minero user can see all the relevant project listed in a table.     * The Minero user can see how many project is listed and how many project is relevant all together in the lower left corner.     * The Minero user can turn page and list the next page of the projects by clicking on the right or left arrow in the lower left corner.     Change requests     Change requests     Change requests     Added 2 missing models     Small CSS fix     skeleton     Make toEntity and toDto methods not static     Refactor UserDTO to UserLoginDTO, add UserDTO with all fields     Change return value of API endpoint to ProjectTableDTO to avoid redundant data     Add `@Tag` to ProjectController     Add `@NotNull` to required fields in ProjectDTO     Change FTE to Double type so it can be set to null     Change ProjectDTO to only contain IDs of assignee, company, and competencies     Change constant string names, add constant strings to page number and page size     Make toEntity and toDto methods not static     Change entity and dto setters to builder setters     Remove magic strings from ProjectController     Add GetProjectsByCompany API with pagination and sorting     Refactor UserDTO to UserLoginDTO, add UserDTO with all fields",
        "Σ Time Spent":298800
     },
     {
        "Issue key":"RA-14",
        "Summary":"Add and delete competence to employee",
-       "Description":"*Add - Scenario 1:*\n\nThe user can add competence to an employee row in the cells junior, medium or senior by drag the competency and drop it in the cell.\n\nThe dropped competence will not disappear from the competence list.\n\n\n\n*Add - Scenario 2:*\n\nThe user can add competence to an employee row in the cells junior, medium or senior by double-clicking in the cell he/she would add and click on the + icon beside the selected competence.\n\n\n\n*Delete*\n\nThe user can delete the competency from the employees cell by clicking on the x at the end of the competency tag.\nFix typo\nAdd requested code changes\nFix issues that occur when updating and deleting associated competencies\nResolve conflicts and add error handling to creating and deleting employee competencies\nImplement adding and removing competencies to an employee on frontend",
+       "Description":"*Add - Scenario 1:*          The user can add competence to an employee row in the cells junior, medium or senior by drag the competency and drop it in the cell.          The dropped competence will not disappear from the competence list.                    *Add - Scenario 2:*          The user can add competence to an employee row in the cells junior, medium or senior by double-clicking in the cell he/she would add and click on the + icon beside the selected competence.                    *Delete*          The user can delete the competency from the employees cell by clicking on the x at the end of the competency tag.     Fix typo     Add requested code changes     Fix issues that occur when updating and deleting associated competencies     Resolve conflicts and add error handling to creating and deleting employee competencies     Implement adding and removing competencies to an employee on frontend",
        "Σ Time Spent":65700
     },
     {
        "Issue key":"RA-13",
        "Summary":"Modify existing employee",
-       "Description":"* the user can modify the employee data by double-clicking on the selected cell\n* the user can see the saved result by enter or by clicking somewhere else on the site\nRegenerate frontend with openapi\nRefactor large equality check to a function call\nRemove duplicate import statement\nImplement the update of employees on frontend\nResolve merge conflicts",
+       "Description":"* the user can modify the employee data by double-clicking on the selected cell     * the user can see the saved result by enter or by clicking somewhere else on the site     Regenerate frontend with openapi     Refactor large equality check to a function call     Remove duplicate import statement     Implement the update of employees on frontend     Resolve merge conflicts",
        "Σ Time Spent":91800
     },
     {
        "Issue key":"RA-12",
        "Summary":"Add new employee",
-       "Description":"!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!\n\n* The user can add a new employee by clicking on the “add employee” button.\n* The user can type the datas of the new employee in the first empty line opened by the “add employee” button.\n* The user can see the newly added employee in the first line until the page is not reloaded.\n* In case of reload the page, the newly added employee has to take its place according to the last configured sorting.\n* As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.\nAdd comment explaining why ts-ignore is necessary\nAdd requested code changes, fix bugs\nRemove console.log and correct pageSize\nAdd API usage for creating new employee and handle errors\nAdd initial implementation of adding a new employee on frontend",
+       "Description":"!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!          * The user can add a new employee by clicking on the “add employee” button.     * The user can type the datas of the new employee in the first empty line opened by the “add employee” button.     * The user can see the newly added employee in the first line until the page is not reloaded.     * In case of reload the page, the newly added employee has to take its place according to the last configured sorting.     * As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.     Add comment explaining why ts-ignore is necessary     Add requested code changes, fix bugs     Remove console.log and correct pageSize     Add API usage for creating new employee and handle errors     Add initial implementation of adding a new employee on frontend",
        "Σ Time Spent":133200
     },
     {
        "Issue key":"RA-11",
        "Summary":"Display all employees",
-       "Description":"!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!\n\n* The Minero user can see all the relevant employee listed in a table.\n* The Minero user can see how many employee is listed and how many employee is relevant all together in the lower left corner.\n* The Minero user can turn page and list the next page of the employees by clicking on the right or left arrow in the lower left corner.\nAdd requested code changes\nFix typo, reformat code\nFix overflowing text in competency sidebar\nFix the width of the columns and the input fields they contain\nStyle the display of employee competencies\nRefactor the competency sidebar to display the competencies of a selected user at the selected level\nFix numbers for table information\nRefactor translations for the employee table\nRefactor generated code usage\nStyle pills to display competencies\nRefactor to use generated code\nResolve merge conflict with OpenAPI\nRefactor overflowing text\nAdd information about number of relevant vs shown employees\nAdd spinner for loading data\nRemove inline styling\nAdd Employee table with pagination\nAdd requested code changes\nFix typo, reformat code\nFix overflowing text in competency sidebar\nFix the width of the columns and the input fields they contain\nStyle the display of employee competencies\nRefactor the competency sidebar to display the competencies of a selected user at the selected level\nFix numbers for table information\nRefactor translations for the employee table\nRefactor generated code usage\nStyle pills to display competencies\nRefactor to use generated code\nResolve merge conflict with OpenAPI\nRefactor overflowing text\nAdd information about the number of relevant vs shown employees\nAdd spinner for loading data\nRemove inline styling\nAdd Employee table with pagination\nExpand EmployeeDTO with id\nExpand EmployeeDTO with active and competencyMap fields\n(Cherry pick from RA-15-BE) Static method for CompetencyDTO conversion are needed here\nfindAllEmployeesByCompany API with pagination and basic EmployeeDTO",
+       "Description":"!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!          * The Minero user can see all the relevant employee listed in a table.     * The Minero user can see how many employee is listed and how many employee is relevant all together in the lower left corner.     * The Minero user can turn page and list the next page of the employees by clicking on the right or left arrow in the lower left corner.     Add requested code changes     Fix typo, reformat code     Fix overflowing text in competency sidebar     Fix the width of the columns and the input fields they contain     Style the display of employee competencies     Refactor the competency sidebar to display the competencies of a selected user at the selected level     Fix numbers for table information     Refactor translations for the employee table     Refactor generated code usage     Style pills to display competencies     Refactor to use generated code     Resolve merge conflict with OpenAPI     Refactor overflowing text     Add information about number of relevant vs shown employees     Add spinner for loading data     Remove inline styling     Add Employee table with pagination     Add requested code changes     Fix typo, reformat code     Fix overflowing text in competency sidebar     Fix the width of the columns and the input fields they contain     Style the display of employee competencies     Refactor the competency sidebar to display the competencies of a selected user at the selected level     Fix numbers for table information     Refactor translations for the employee table     Refactor generated code usage     Style pills to display competencies     Refactor to use generated code     Resolve merge conflict with OpenAPI     Refactor overflowing text     Add information about the number of relevant vs shown employees     Add spinner for loading data     Remove inline styling     Add Employee table with pagination     Expand EmployeeDTO with id     Expand EmployeeDTO with active and competencyMap fields     (Cherry pick from RA-15-BE) Static method for CompetencyDTO conversion are needed here     findAllEmployeesByCompany API with pagination and basic EmployeeDTO",
        "Σ Time Spent":420300
     },
     {
        "Issue key":"RA-10",
        "Summary":"Sidebar (Navigation)",
-       "Description":"!Screenshot 2023-07-13 at 17.11.57-20230713-151203.png|width=931,height=576!\n\nThe user can see a landing page with sidebar.\nSidebar contains the following menus: user, home, plan, employee, project.\nAs a menu, it only displays the icon. In case the user hover over the icon, the system displays the menu description.\n\nPrecondition: successful login\nChange sidebar to resize when window size changes\nAdjust size of icons\nChange FontAwesome icons from <i> to <fa-icon>\nReformat code\nAdd empty components for navigating, add sidebar\nAdd Font Awesome icons, and Hungarian translation\nExtract colors to a separate css\nAdd Bootstrap to project\nUpdate Angular version from 16.1.4 to 16.1.5",
+       "Description":"!Screenshot 2023-07-13 at 17.11.57-20230713-151203.png|width=931,height=576!          The user can see a landing page with sidebar.     Sidebar contains the following menus: user, home, plan, employee, project.     As a menu, it only displays the icon. In case the user hover over the icon, the system displays the menu description.          Precondition: successful login     Change sidebar to resize when window size changes     Adjust size of icons     Change FontAwesome icons from <i> to <fa-icon>     Reformat code     Add empty components for navigating, add sidebar     Add Font Awesome icons, and Hungarian translation     Extract colors to a separate css     Add Bootstrap to project     Update Angular version from 16.1.4 to 16.1.5",
        "Σ Time Spent":177300
     },
     {
        "Issue key":"RA-9",
        "Summary":"SSO Gloster Login",
-       "Description":"!Screenshot 2023-07-13 at 16.27.42-20230713-142747.png|width=930,height=571!\n\nThe business user can start the application by clicking on the “sign in with Google” button.\n\nThe business user goes through the google standard login process.",
+       "Description":"!Screenshot 2023-07-13 at 16.27.42-20230713-142747.png|width=930,height=571!          The business user can start the application by clicking on the “sign in with Google” button.          The business user goes through the google standard login process.",
        "Σ Time Spent":592200
     },
     {

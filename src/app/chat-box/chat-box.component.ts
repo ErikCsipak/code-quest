@@ -34,7 +34,7 @@ export class ChatBoxComponent implements OnInit {
         name: 'John Doe'
       },
     });
-    this.httpClient.post('http://localhost:3000/chat', { message: event.message}).subscribe(
+    this.httpClient.post('http://localhost:3000/chat', { message: event.message }).subscribe(
       (data: any) => {
         this.messages.push({
           text: data.message,

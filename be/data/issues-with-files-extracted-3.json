@@ -1,0 +1,1101 @@
+[
+    {
+        "Issue key": "RA-167",
+        "Summary": "Integrate Flyway for DB version handling",
+        "Description": "Add and integrate Flyway dependency.          Create DB baseline script and replace the hibernate DDL with it.     Change hibernate ddl-auto to validate     Integrate Flyway into project",
+        "Σ Time Spent": 54900,
+        "modifiedFiles": "resource-app-backend/src/main/resources/application.yaml, resource-app-backend/pom.xml, resource-app-backend/src/main/resources/db/migration/V202311101441__init_database_structure.sql"
+    },
+    {
+        "Issue key": "RA-166",
+        "Summary": "Sticky header on plan timeline",
+        "Description": "     Fix vertical scrolling of timeline",
+        "Σ Time Spent": 18000,
+        "modifiedFiles": "resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.scss, resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.ts"
+    },
+    {
+        "Issue key": "RA-165",
+        "Summary": "Calculate the best 3 match",
+        "Description": "     Requested changes     Small corrections     Change request type to POST     Small refactoring     Adding smart search logic     Refactoring PageUtils     Adding DTOs and comparator",
+        "Σ Time Spent": 117900,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/smart_search/service/SmartSearchService.java, resource-app-backend/src/main/java/com/minero/resourceapp/smart_search/service/RelevancyComparator.java, resource-app-backend/src/main/java/com/minero/resourceapp/utils/PageUtils.java, resource-app-backend/src/main/java/com/minero/resourceapp/smart_search/controller/SmartSearchController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/exception/handler/GlobalExceptionHandler.java, resource-app-backend/src/main/java/com/minero/resourceapp/smart_search/dto/CompetencyCondition.java, resource-app-backend/src/main/java/com/minero/resourceapp/smart_search/dto/EmployeeSearchDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/smart_search/dto/SmartSearchResponseDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/smart_search/service/RelevancyComperator.java"
+    },
+    {
+        "Issue key": "RA-164",
+        "Summary": "Input fields for searching competences",
+        "Description": "     Filter competencies when the clear all button is clicked     Make add competency condition button always visible     Add a button to clear all the competency conditions     Handle the cases when the user deletes from the input     Make the list of inputs scrollable     Improve validation logic and error visualization in competency condition inputs     Add input fields for searching competencies",
+        "Σ Time Spent": 86400,
+        "modifiedFiles": "resource-app-frontend/src/app/application/smart-search/search-sidebar/search-sidebar.component.ts, resource-app-frontend/src/app/application/smart-search/search-sidebar/search-sidebar.component.html, resource-app-frontend/src/app/application/smart-search/search-sidebar/search-sidebar.component.scss, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/app/application/smart-search/search-sidebar/competency-search-input/competency-search-input.component.html, resource-app-frontend/src/app/application/smart-search/search-sidebar/competency-search-input/competency-search-input.component.ts, resource-app-frontend/src/app/application/smart-search/search-sidebar/competency-search-input/competency-search-input.component.scss, resource-app-frontend/src/app/application/smart-search/search-sidebar/competency-search-input/competency-search-input.component.spec.ts, resource-app-frontend/src/shared/models/competency-condition.model.ts"
+    },
+    {
+        "Issue key": "RA-163",
+        "Summary": "New menu and page",
+        "Description": "     Add new page and menu item for smart search with base layout",
+        "Σ Time Spent": 9000,
+        "modifiedFiles": "resource-app-frontend/src/app/app-routing.module.ts, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/home/create-looking-for-project/create-looking-for-project.component.scss, resource-app-frontend/src/app/application/home/create-looking-for-resource/create-looking-for-resource.component.scss, resource-app-frontend/src/app/application/sidebar/sidebar.component.html, resource-app-frontend/src/app/application/smart-search/search-sidebar/search-sidebar.component.html, resource-app-frontend/src/app/application/smart-search/search-sidebar/search-sidebar.component.scss, resource-app-frontend/src/app/application/smart-search/search-sidebar/search-sidebar.component.spec.ts, resource-app-frontend/src/app/application/smart-search/search-sidebar/search-sidebar.component.ts, resource-app-frontend/src/app/application/smart-search/smart-search.component.html, resource-app-frontend/src/app/application/smart-search/smart-search.component.scss, resource-app-frontend/src/app/application/smart-search/smart-search.component.spec.ts, resource-app-frontend/src/app/application/smart-search/smart-search.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/styles.scss"
+    },
+    {
+        "Issue key": "RA-162",
+        "Summary": "Tooltip for counters",
+        "Description": "",
+        "Σ Time Spent": 1800,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-161",
+        "Summary": "BE algorithm for counting average",
+        "Description": "     Modify API to return the average of top 3 competencies",
+        "Σ Time Spent": 11700,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeeDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/dto/LookingForProjectDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/service/LookingForProjectService.java"
+    },
+    {
+        "Issue key": "RA-160",
+        "Summary": "Competence component refactor",
+        "Description": "",
+        "Σ Time Spent": 16200,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-159",
+        "Summary": "Adjust \"looking for ...\" pages",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-158",
+        "Summary": "Redesign profil form",
+        "Description": "",
+        "Σ Time Spent": 21600,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-157",
+        "Summary": "Add input field in competence component",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-156",
+        "Summary": "Adjust CRUD",
+        "Description": "     Add error handling to project competency update to avoid duplicated competency levels     Modify project dto structure for better editability     Add project competency and employee competency update api     EmployeeCompetency and ProjectCompetency controller method names to avoid name conflicts     Change delete id to PathVariable     Adjust Competency deletion to new data structure of Project     Adjust Project CRUD for the rated competencies",
+        "Σ Time Spent": 25200,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/project_competency/service/ProjectCompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/dto/LookingForResourceDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/service/LookingForResourceService.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectTableDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/controller/EmployeeCompetencyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/service/EmployeeCompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/project_competency/controller/ProjectCompetencyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/repository/LookingForResourceRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/controller/ProjectController.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/repository/ProjectRepository.java"
+    },
+    {
+        "Issue key": "RA-154",
+        "Summary": "Deploy and devops",
+        "Description": "",
+        "Σ Time Spent": 18000,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-153",
+        "Summary": "Quick search with more competencies",
+        "Description": "     Make properties private     Make heatmap non-dynamic     Change page sizes to 10     Add \"heatmap\" function to show if a competency level is inside the bounds     Make table scrollable horizontally and style scrollbar     Make table rows selectable with clicking     Make tables vertically scrollable     Fix pagination     Create component for the result tables with pagination     Generate API     Add tables to display the search results in with dynamic headers",
+        "Σ Time Spent": 241200,
+        "modifiedFiles": "resource-app-frontend/src/app/application/smart-search/search-sidebar/search-sidebar.component.ts, resource-app-frontend/src/app/application/smart-search/smart-search.component.html, resource-app-frontend/src/app/application/smart-search/smart-search.component.ts, resource-app-frontend/src/app/application/smart-search/table-smart-search-result/table-smart-search-result.component.ts, resource-app-frontend/src/app/application/smart-search/table-smart-search-result/table-smart-search-result.component.html, resource-app-frontend/src/shared/models/competency-condition.model.ts, resource-app-frontend/src/shared/styles/colors.scss, resource-app-frontend/src/styles.scss, resource-app-frontend/src/app/application/smart-search/smart-search.component.scss, resource-app-frontend/src/app/application/smart-search/table-smart-search-result/table-smart-search-result.component.scss, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/smart-search/search-sidebar/competency-search-input/competency-search-input.component.ts, resource-app-frontend/src/app/application/smart-search/table-smart-search-result/table-smart-search-result.component.spec.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/api.ts, resource-app-frontend/src/shared/api/generated/api/smartSearch.service.ts, resource-app-frontend/src/shared/api/generated/model/competencyCondition.ts, resource-app-frontend/src/shared/api/generated/model/employeeSearchDTO.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeePlanDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeSearchDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/smartSearchResponseDTO.ts, resource-app-frontend/src/app/application/smart-search/search-sidebar/search-sidebar.component.html, resource-app-frontend/src/assets/i18n/hu.json"
+    },
+    {
+        "Issue key": "RA-152",
+        "Summary": "Show the average of the top 3 competencies in list",
+        "Description": "     Change NaN average to 0 when adding a new employee     Add frontend for displaying the average of top 3 competencies of employee",
+        "Σ Time Spent": 41400,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/app/application/competency/employee-competency/employee-competency.component.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.html, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.html, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.ts, resource-app-frontend/src/app/application/project/table-project/table-project.component.html, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/model/employeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/lookingForProjectDTO.ts, resource-app-frontend/src/shared/services/competency-manager.service.ts"
+    },
+    {
+        "Issue key": "RA-151",
+        "Summary": "Competencies in a 1-10 scale",
+        "Description": "*Menu - Employee and Looking for project*          !Screenshot 2023-10-26 at 13.08.42-20231026-110847.png|width=1154,height=702!          The user can enter the level of the selected competence in the right competence component, right beside the competence.          The user can see in the list view only one column with competence.                    *Menu - Project and Looking for employee*          Remains the same display: 1 column for the competencies.     Fix arrow icons     Code refactor according to code review     Code cleanup after code review     Requested ui changes, code cleanup according to code review     Fix employee profile component style     Fix bug that competencies can be renamed to empty strings     Change competency structure to have competency 1-10 competency levels     Add method to make new competency structure easier to use on employees     Replace 3 competency columns in employee table with only one     Generate API",
+        "Σ Time Spent": 240300,
+        "modifiedFiles": "resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/competency/employee-competency/employee-competency.component.ts, resource-app-frontend/src/app/application/competency/project-competency/project-competency.component.ts, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/app/application/competency/employee-competency/employee-competency.component.scss, resource-app-frontend/src/app/application/competency/project-competency/project-competency.component.scss, resource-app-frontend/src/app/application/employee/employee-profile/employee-profile.component.scss, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/competency/competency.component.scss, resource-app-frontend/src/app/application/competency/employee-competency/employee-competency.component.html, resource-app-frontend/src/app/application/competency/employee-competency/employee-competency.component.spec.ts, resource-app-frontend/src/app/application/competency/project-competency/project-competency.component.html, resource-app-frontend/src/app/application/competency/project-competency/project-competency.component.spec.ts, resource-app-frontend/src/app/application/employee/employee-profile/employee-profile.component.html, resource-app-frontend/src/app/application/employee/employee-profile/employee-profile.component.ts, resource-app-frontend/src/app/application/employee/employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/app/application/home/home.component.html, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.ts, resource-app-frontend/src/app/application/project/project.component.html, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/employeeCompetency.service.ts, resource-app-frontend/src/shared/api/generated/api/project.service.ts, resource-app-frontend/src/shared/api/generated/api/projectCompetency.service.ts, resource-app-frontend/src/shared/api/generated/model/employeeCompetencyDTO.ts, resource-app-frontend/src/shared/api/generated/model/employeeDTOCompetencies.ts, resource-app-frontend/src/shared/api/generated/model/lookingForProjectDTOCompetencies.ts, resource-app-frontend/src/shared/api/generated/model/lookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeePlanDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/projectCompetencyDTO.ts, resource-app-frontend/src/shared/api/generated/model/projectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/projectTableDTOCompetencies.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts, resource-app-frontend/src/shared/models/display-and-edit-employee-competency.model.ts, resource-app-frontend/src/shared/models/display-and-edit-project-competency.model.ts, resource-app-frontend/src/shared/services/competency-manager.service.ts, resource-app-frontend/src/shared/util/convert-employee-competencies.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/shared/api/generated/api/api.ts"
+    },
+    {
+        "Issue key": "RA-150",
+        "Summary": "Mark the row in case of clicked on it",
+        "Description": "     Mark row with bold font weight when clicked on in every table and reformat code",
+        "Σ Time Spent": 14400,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.scss, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.html, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.ts, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.scss, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.scss, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.ts, resource-app-frontend/src/app/application/project/table-project/table-project.component.html, resource-app-frontend/src/app/application/project/table-project/table-project.component.ts, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.html, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.scss, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.ts, resource-app-frontend/src/styles.scss"
+    },
+    {
+        "Issue key": "RA-149",
+        "Summary": "Meetings & PO tasks",
+        "Description": "",
+        "Σ Time Spent": 43200,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-148",
+        "Summary": "Competencies in 1-10 scale and komplex competence search",
+        "Description": "",
+        "Σ Time Spent": 292500,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-147",
+        "Summary": "Remove minimal overlapping of timeline items",
+        "Description": "Change timeline style/remove overlapping of plans to be able to remove stacking     Add rounded border to timeline items, remove stacking",
+        "Σ Time Spent": 5400,
+        "modifiedFiles": "resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.ts, resource-app-frontend/src/styles.scss"
+    },
+    {
+        "Issue key": "RA-145",
+        "Summary": "Datepickers don't change back to labels when out of focus",
+        "Description": "     Fix datepickers in project table",
+        "Σ Time Spent": 3600,
+        "modifiedFiles": "resource-app-frontend/src/app/application/project/tr-project/tr-project.component.html"
+    },
+    {
+        "Issue key": "RA-144",
+        "Summary": "Infinitive loop in plan component",
+        "Description": "     Disable plan animations in company separated display     Remove unnecessary padding     Disable nav animations in plan to correct infinite loop bug",
+        "Σ Time Spent": 111600,
+        "modifiedFiles": "resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.html, resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.ts, resource-app-frontend/src/app/application/plan/plan.component.html, resource-app-frontend/src/app/application/plan/plan.component.ts"
+    },
+    {
+        "Issue key": "RA-143",
+        "Summary": "Small design changes",
+        "Description": "* dates should be aligned to the center     * column “fte” should be aligned to the center and can be more narrow     * change “alkalmazottak” to “tagok” (“employees” to “member”)     * count in column “members”: it should count all the members with plan from the current day to the future (not just the members on the current day)     * in case of add new project, the count in column members should be 0 as well (as in competence)     Center cell contents, set FTE column width     Add empty members displaying to create mode     Change \"Employees\" header to \"Members\"     Refactor project members to contain employees who have plans in the future",
+        "Σ Time Spent": 12600,
+        "modifiedFiles": "resource-app-frontend/src/app/application/project/table-project/table-project.component.html, resource-app-frontend/src/app/application/project/table-project/table-project.component.scss, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.html, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.scss, resource-app-frontend/src/app/application/project/table-project/table-project.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/repository/ProjectRepository.java"
+    },
+    {
+        "Issue key": "RA-142",
+        "Summary": "Small design changes",
+        "Description": "* Column “planned” can be more narrow     * Column “position” can be wider     Increase width of position column     Employee component style fixes",
+        "Σ Time Spent": 13500,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.scss"
+    },
+    {
+        "Issue key": "RA-141",
+        "Summary": "Small design changes",
+        "Description": "* Column “free from”: display dates without background     Display dates without white background in the 'free-from' column",
+        "Σ Time Spent": 4500,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.ts"
+    },
+    {
+        "Issue key": "RA-140",
+        "Summary": "Small design changes",
+        "Description": "* Column project state and competence can be more narrow (the size of the column header text)     * Column member can be wider (rest of the space)     * Table should fill up the space instead of scrolling     * Search should be possible by the members with a plan in the future as well (instead of the members on just the current day)     Change width of table columns, fix bug that table doesn't fill the space     Refactor LFR search to include future members",
+        "Σ Time Spent": 12600,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.scss, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/repository/LookingForResourceRepository.java"
+    },
+    {
+        "Issue key": "RA-139",
+        "Summary": "Optimise the API requests",
+        "Description": "     Refactor subscription handling in the remaining places     Refactor code to be able to unsubscribe with a single method call without the need for extra checks     Refactor code to reduce the number of API calls",
+        "Σ Time Spent": 25200,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.ts, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.ts, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/app/application/project/table-project/table-project.component.ts"
+    },
+    {
+        "Issue key": "RA-138",
+        "Summary": "Summary API",
+        "Description": "     Refactor summarizePlans to code review     Extract daily percentage calculation to separate method     Refactor summarizePlans for better complexity     Summary interval fixes     Fix summary interval dates     Implement summary API",
+        "Σ Time Spent": 88200,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/plan/service/PlanService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeePlanDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/dto/PlanSummaryDTO.java"
+    },
+    {
+        "Issue key": "RA-137",
+        "Summary": "Extend Looking For Resource search with searching by project members",
+        "Description": "",
+        "Σ Time Spent": 7200,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-136",
+        "Summary": "Extend GetAllLookinfForResources API with member list",
+        "Description": "     Extend GetAllLookingForResources API with project members",
+        "Σ Time Spent": 3600,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/dto/LookingForResourceDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/repository/LookingForResourceRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/service/LookingForResourceService.java"
+    },
+    {
+        "Issue key": "RA-134",
+        "Summary": "Extend project search with searching by member",
+        "Description": "     Extend project search API with searching by member",
+        "Σ Time Spent": 18000,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/project/repository/ProjectRepository.java"
+    },
+    {
+        "Issue key": "RA-133",
+        "Summary": "Import employees from HR Master (first load)",
+        "Description": "",
+        "Σ Time Spent": 182700,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-132",
+        "Summary": "Non functional reqs",
+        "Description": "",
+        "Σ Time Spent": 237600,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-131",
+        "Summary": "Extend GetAllProjectsByCompanyid with member list",
+        "Description": "     Extend GetAllProjectsByCompany API with member list",
+        "Σ Time Spent": 7200,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/entity/Plan.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectTableDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java"
+    },
+    {
+        "Issue key": "RA-130",
+        "Summary": "Filter employees according to status",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-129",
+        "Summary": "Filter projects according to status",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-127",
+        "Summary": "Add employee list to a project according to plan",
+        "Description": "     Add alphabetical sorting to project members     Refactor project member modal to be reusable at Looking For Resource     Move project modal component from project package     Add member list to a project on frontend",
+        "Σ Time Spent": 47700,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java, resource-app-frontend/src/app/application/project-members-modal/project-members-modal.component.html, resource-app-frontend/src/app/application/project-members-modal/project-members-modal.component.ts, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.ts, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/project-members-modal/project-members-modal.component.scss, resource-app-frontend/src/app/application/project-members-modal/project-members-modal.component.spec.ts, resource-app-frontend/src/app/application/project/project-members-modal/project-members-modal.component.html, resource-app-frontend/src/app/application/project/project-members-modal/project-members-modal.component.scss, resource-app-frontend/src/app/application/project/project-members-modal/project-members-modal.component.spec.ts, resource-app-frontend/src/app/application/project/project-members-modal/project-members-modal.component.ts, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.html, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.scss, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/projectTableDTO.ts"
+    },
+    {
+        "Issue key": "RA-126",
+        "Summary": "Add Project status to project data",
+        "Description": "     Resolve merge conflicts, generate API after merge     Add extra column, services, and localization changes for displaying a project's status",
+        "Σ Time Spent": 19800,
+        "modifiedFiles": "resource-app-frontend/src/app/application/project/tr-project/tr-project.component.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeePlanDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts, resource-app-frontend/src/app/application/project/table-project/table-project.component.html, resource-app-frontend/src/app/application/project/table-project/table-project.component.ts, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.html, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/api/generated/model/lookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/projectTableDTO.ts"
+    },
+    {
+        "Issue key": "RA-125",
+        "Summary": "Change style of login page with added microsoft login button",
+        "Description": "     Restyle the authentication component to fit the new login button",
+        "Σ Time Spent": 5400,
+        "modifiedFiles": "resource-app-frontend/src/app/authentication/authentication.component.html, resource-app-frontend/src/app/authentication/authentication.component.scss"
+    },
+    {
+        "Issue key": "RA-124",
+        "Summary": "Selected project is not cleared when closing the sidebar",
+        "Description": "     Clear both selected employee and project when closing the competency sidebar",
+        "Σ Time Spent": 4500,
+        "modifiedFiles": "resource-app-frontend/src/app/application/competency/competency.component.ts"
+    },
+    {
+        "Issue key": "RA-123",
+        "Summary": "Change favicon.ico and head title of application",
+        "Description": "     Change favicon, change head title",
+        "Σ Time Spent": 3600,
+        "modifiedFiles": "resource-app-frontend/src/favicon.ico, resource-app-frontend/src/index.html"
+    },
+    {
+        "Issue key": "RA-122",
+        "Summary": "Sorting does not work in employee table, table does not refresh on update",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-121",
+        "Summary": "Backend doesn't prevent the user from saving 2 or more active entities",
+        "Description": "Backend doesn’t prevent the user from saving an IN_PROGRESS or WAITING Looking for Resource entity, when there already is one WAITING or IN_PROGRESS entity.      Add `@Transactional` to LookingForResourceService",
+        "Σ Time Spent": 3600,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/service/LookingForResourceService.java"
+    },
+    {
+        "Issue key": "RA-120",
+        "Summary": "Insert logo and image",
+        "Description": "* insert logo in the login page          !Screenshot 2023-09-29 at 13.09.04-20230929-110910.png|width=602,height=389!     * insert image in home pages in case there’s no element in the table (empty state)          !Screenshot 2023-09-29 at 13.09.15-20230929-110921.png|width=602,height=383!     Add requested change     Hide searchbar when the tables are empty     Insert image to login screen and in place of empty tables",
+        "Σ Time Spent": 23400,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.html, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.html, resource-app-frontend/src/app/application/project/table-project/table-project.component.html, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.scss, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.scss, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.scss, resource-app-frontend/src/app/application/project/table-project/table-project.component.scss, resource-app-frontend/src/app/authentication/authentication.component.html, resource-app-frontend/src/app/authentication/authentication.component.scss, resource-app-frontend/src/assets/img/squirrel.png"
+    },
+    {
+        "Issue key": "RA-119",
+        "Summary": "SearchPlan API",
+        "Description": "     Sort projects for employees on backend     Fix pagination bug when searching     Add alphabetical sorting by employee name     Fix error that employees without plans cannot be searched     Fix incorrect pagination     Add SearchPlan API",
+        "Σ Time Spent": 63000,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/plan/service/PlanService.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectPlanDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/utils/PageUtils.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/controller/PlanController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/repository/PlanRepository.java"
+    },
+    {
+        "Issue key": "RA-118",
+        "Summary": "Add comment field to employee dto",
+        "Description": "     Expand EmployeeDTO with a comment field",
+        "Σ Time Spent": 2700,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeeDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java"
+    },
+    {
+        "Issue key": "RA-117",
+        "Summary": "DeletePlan API",
+        "Description": "     Add DeletePlan API",
+        "Σ Time Spent": 3600,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/plan/controller/PlanController.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/service/PlanService.java"
+    },
+    {
+        "Issue key": "RA-116",
+        "Summary": "CreatePlan API",
+        "Description": "     Add validation to create to avoid overlapping of plans with the same employee and project     Add CreatePlan API",
+        "Σ Time Spent": 11700,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/plan/repository/PlanRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/service/PlanService.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/controller/PlanController.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/dto/PlanCreateDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/entity/Plan.java"
+    },
+    {
+        "Issue key": "RA-115",
+        "Summary": "UpdatePlan API",
+        "Description": "     Add validation to update to avoid overlapping of plans with the same employee and project     Add UpdatePlan API",
+        "Σ Time Spent": 11700,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/plan/repository/PlanRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/service/PlanService.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/controller/PlanController.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/dto/PlanDTO.java"
+    },
+    {
+        "Issue key": "RA-114",
+        "Summary": "Design changes",
+        "Description": "* sidebar can be half wide as it is now     * the sidebar icons (except the user icon) can be much smaller (e.g. tempo icons)     Resize and recolor sidebar",
+        "Σ Time Spent": 11700,
+        "modifiedFiles": "resource-app-frontend/src/app/application/application.component.scss, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.scss, resource-app-frontend/src/app/application/sidebar/sidebar.component.html, resource-app-frontend/src/app/application/sidebar/sidebar.component.scss"
+    },
+    {
+        "Issue key": "RA-113",
+        "Summary": "Employee and project competencies shown at the same time in home component",
+        "Description": "     Fix display of competencies in the 'looking for...' tables",
+        "Σ Time Spent": null,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.ts, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.ts"
+    },
+    {
+        "Issue key": "RA-112",
+        "Summary": "App colours",
+        "Description": "In the app we use the official Gloster colours:          Orange: #E95A1A     Dark blue: #212852     Light grey: #E6E6E6 (opacity 30%)          !Screenshot 2023-09-26 at 16.09.45-20230926-140952.png|width=1066,height=633!     Change color and font weight of competencies     Refactor application colors and add minor style fix",
+        "Σ Time Spent": 9900,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.scss, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.scss, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.scss, resource-app-frontend/src/shared/styles/colors.scss, resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.html, resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.scss, resource-app-frontend/src/app/application/competency/competency.component.scss, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.scss, resource-app-frontend/src/app/application/home/home.component.html, resource-app-frontend/src/app/application/home/home.component.scss, resource-app-frontend/src/app/application/project/table-project/table-project.component.scss, resource-app-frontend/src/app/application/sidebar/sidebar.component.scss, resource-app-frontend/src/app/authentication/authentication.component.scss, resource-app-frontend/src/styles.scss"
+    },
+    {
+        "Issue key": "RA-111",
+        "Summary": "GetAllPlansByCompany API",
+        "Description": "     Refactor GetAllPlansByCompany API to only return planned employees     Add GetAllPlansByCompany API for displaying on the timeline",
+        "Σ Time Spent": 21600,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/service/PlanService.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/controller/PlanController.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/repository/PlanRepository.java"
+    },
+    {
+        "Issue key": "RA-110",
+        "Summary": "Search includes whitespace characters",
+        "Description": "     Fix search in the looking for project table to ignore bordering whitespaces",
+        "Σ Time Spent": 2700,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.ts"
+    },
+    {
+        "Issue key": "RA-109",
+        "Summary": "Refactor employee search to use RxJS",
+        "Description": "     Refactor search in the employee table to use RxJS",
+        "Σ Time Spent": 5400,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts"
+    },
+    {
+        "Issue key": "RA-108",
+        "Summary": "Pagination stopped working after refactor in search",
+        "Description": "     Fix pagination in the looking for projects table",
+        "Σ Time Spent": 2700,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.html"
+    },
+    {
+        "Issue key": "RA-106",
+        "Summary": "Modal throws error when dismissed",
+        "Description": "When subscribing to a modal, there are no reject functions provided for the then() function, only resolves. This results in an error being thrown.          *Solution*: instead of dismissing, close the modal with  a ‘false’ parameter or provide a reject function (first suggestion is more suitable here)     Add empty reject function to prevent the error when clicking outside the modal     Refactor code to not throw an error when canceling or closing a modal",
+        "Σ Time Spent": 1800,
+        "modifiedFiles": "resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.ts, resource-app-frontend/src/app/application/confirmation-modal/confirmation-modal.component.html"
+    },
+    {
+        "Issue key": "RA-105",
+        "Summary": "GetAllProjects API",
+        "Description": "     Rename getAllSelectDtos() method to avoid name conflicts in generated code     Add GetAllProjects API",
+        "Σ Time Spent": 7200,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/controller/EmployeeController.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/controller/ProjectController.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectSelectDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java"
+    },
+    {
+        "Issue key": "RA-104",
+        "Summary": "AddLookingForResource API",
+        "Description": "     Add validation for CreateLookingForResource API     Add CreateLookingForResource API",
+        "Σ Time Spent": 17100,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/dto/LookingForResourceCreateDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/controller/LookingForResourceController.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/repository/LookingForResourceRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/service/LookingForResourceService.java"
+    },
+    {
+        "Issue key": "RA-103",
+        "Summary": "SearchLookingForResource API",
+        "Description": "     Implement Looking for Resource search",
+        "Σ Time Spent": 10800,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/controller/LookingForResourceController.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/repository/LookingForResourceRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/service/LookingForResourceService.java"
+    },
+    {
+        "Issue key": "RA-102",
+        "Summary": "Devops tasks",
+        "Description": "",
+        "Σ Time Spent": 486000,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-101",
+        "Summary": "Update LookingForResource API",
+        "Description": "     Refactor LFR update according to Project changes     Implementation of update for LFR",
+        "Σ Time Spent": 28800,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/dto/LookingForResourceDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/controller/LookingForResourceController.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/dto/LookingForResourceModifyDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/entity/LookingForResource.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/repository/LookingForResourceRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/service/LookingForResourceService.java"
+    },
+    {
+        "Issue key": "RA-100",
+        "Summary": "GetAllEmployees API",
+        "Description": "     Change GetAllEmployees API to only return id and name for better performance     Add GetAllEmployees API",
+        "Σ Time Spent": 7200,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/controller/EmployeeController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeeSelectDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java"
+    },
+    {
+        "Issue key": "RA-99",
+        "Summary": "Refactor Employee's getAllEmployees() method to getAllEmployeesByCompany()",
+        "Description": "     Refactor `findAll()` service method to `findAllByCompanyId()`     Refactor getAllEmployees() method to getAllEmployeesByCompanyId()",
+        "Σ Time Spent": 2700,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/controller/EmployeeController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/employee.service.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts"
+    },
+    {
+        "Issue key": "RA-98",
+        "Summary": "getAllLookingForResources API",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-97",
+        "Summary": "Employee search is case sensitive",
+        "Description": "!image-20230919-122405.png|width=1385,height=490!          !image-20230919-122429.png|width=1091,height=502!          The search is case-sensitive. If we want to look up a competency that has uppercase letters and we use lowercase letters in the search bar, the competency will not be circled.          *Solution*:          Add lowerCase() function to both strings before comparing them in the isSearchResult() method of tr-employee.component.ts     Make employee search case-insensitive",
+        "Σ Time Spent": 900,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts"
+    },
+    {
+        "Issue key": "RA-96",
+        "Summary": "AddLookingForProject API",
+        "Description": "     Refactor create to only be able to have one active Looking For Project     Add Looking For Project creation logic",
+        "Σ Time Spent": 43200,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/repository/LookingForProjectRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/service/LookingForProjectService.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/controller/LookingForProjectController.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/dto/LookingForProjectCreateDTO.java"
+    },
+    {
+        "Issue key": "RA-95",
+        "Summary": "GetAllLookingForResources API",
+        "Description": "     Change FTE type to Double to avoid NullPointerException     Refactor Looking For Resources according to Project     Refactor Looking For Resources according to Project     Added pagination     Implementation of getAllLookingForResources",
+        "Σ Time Spent": 24300,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/dto/LookingForResourceDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/entity/LookingForResource.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/service/LookingForResourceService.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/controller/LookingForResourceController.java"
+    },
+    {
+        "Issue key": "RA-94",
+        "Summary": "Backend skeleton for 'Looking for Resource'",
+        "Description": "     Requested change     Looking for resource base",
+        "Σ Time Spent": 37800,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/service/LookingForResourceService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/controller/LookingForResourceController.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/dto/LookingForResourceDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/entity/LookingForResource.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/repository/LookingForResourceRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java"
+    },
+    {
+        "Issue key": "RA-93",
+        "Summary": "ModifyLookingForProject API",
+        "Description": "     Add `@SchemaProperty` annotation for correct swagger code generation     Refactor update to only be able to have one active Looking For Project for an Employee     Add repository method for checking if there is an active Looking For Project for an Employee     Add modification logic for Looking For Project     Add DTO for Looking For Project modification",
+        "Σ Time Spent": 33300,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeeDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/dto/LookingForProjectDTO.java, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/lookingForProject.service.ts, resource-app-frontend/src/shared/api/generated/model/employeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/employeeDTOCompetencies.ts, resource-app-frontend/src/shared/api/generated/model/lookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/lookingForProjectDTOCompetencies.ts, resource-app-frontend/src/shared/api/generated/model/lookingForProjectModifyDTO.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/service/LookingForProjectService.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/repository/LookingForProjectRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/controller/LookingForProjectController.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/dto/LookingForProjectModifyDTO.java"
+    },
+    {
+        "Issue key": "RA-92",
+        "Summary": "SearchLookingForProject API",
+        "Description": "     Fix bug that Looking For Projects for employees with 0 competencies could not be found     Remove status from searchable fields     Add Looking For Project search API",
+        "Σ Time Spent": 27900,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/repository/LookingForProjectRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/controller/LookingForProjectController.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/service/LookingForProjectService.java"
+    },
+    {
+        "Issue key": "RA-90",
+        "Summary": "GetAllLookingForProjects API",
+        "Description": "     Add `@NotNull` annotations     Add `@Tag` to controller     Add API endpoint for getting all Looking for projects",
+        "Σ Time Spent": 25200,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/dto/LookingForProjectDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/service/LookingForProjectService.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/controller/LookingForProjectController.java"
+    },
+    {
+        "Issue key": "RA-89",
+        "Summary": "Backend skeleton for 'Looking for Project'",
+        "Description": "     Add backend skeleton for Looking For Project",
+        "Σ Time Spent": 24300,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/controller/LookingForProjectController.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/dto/LookingForProjectDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/entity/LookingForProject.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/repository/LookingForProjectRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/service/LookingForProjectService.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/user/service/UserService.java"
+    },
+    {
+        "Issue key": "RA-88",
+        "Summary": "Tab display for 'Looking for...' components",
+        "Description": "     Create initial skeleton for the home page",
+        "Σ Time Spent": 5400,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/home.component.html, resource-app-frontend/src/app/application/home/home.component.scss, resource-app-frontend/src/assets/i18n/hu.json"
+    },
+    {
+        "Issue key": "RA-87",
+        "Summary": "Add and delete competency API",
+        "Description": "     Change the endpoints to get the ids in Request Body instead of as Path Variables     Change api endpoints to `PutMapping`     Add backend logic for removing a competency from project     Add backend logic for adding a competency to project",
+        "Σ Time Spent": 36900,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/project/controller/ProjectController.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/entity/Competency.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java"
+    },
+    {
+        "Issue key": "RA-86",
+        "Summary": "Add and delete competency to project",
+        "Description": "     i18n update     Add new project and search fixes     Add error fix     Temporary changes",
+        "Σ Time Spent": 45900,
+        "modifiedFiles": "resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/app/application/project/table-project/table-project.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/project.service.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts"
+    },
+    {
+        "Issue key": "RA-85",
+        "Summary": "Add and delete employee competency API",
+        "Description": "     Requested changes     Validation for creating and deleting employee-competencies     Adding and deleting EmployeeCompetency without validation",
+        "Σ Time Spent": 24300,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/controller/EmployeeCompetencyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/dto/EmployeeCompetencyDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/service/EmployeeCompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/entity/EmployeeCompetency.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/entity/EmployeeCompetencyId.java"
+    },
+    {
+        "Issue key": "RA-84",
+        "Summary": "Add new project to the list",
+        "Description": "!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!                    * The user can add new project to the list, by clicking on the “add project” button.     * The user can type the name of the new project in the first empty line opened by the “add project” button.     * The user can see the newly added project in the first line until the page is not reloaded.     * In case of reload the page, the newly added project has to take its place according to the last configured sorting.     * As soon es the new line opened for the new project, the max relevant project number is increased by 1.     Remove duplicate import     Regenerate API and resolve conflicts after merge     Remove duplicate id in html     Refactor retrieval of projects     Fix typo     Use new colors     Implement creating a new 'looking for resource' entity with error handling     Generate API and refactor method call",
+        "Σ Time Spent": 48600,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/controller/LookingForResourceController.java, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/lookingForResource.service.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/app/application/home/create-looking-for-resource/create-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/create-looking-for-resource/create-looking-for-resource.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.scss, resource-app-frontend/src/app/application/home/create-looking-for-resource/create-looking-for-resource.component.scss, resource-app-frontend/src/app/application/home/create-looking-for-resource/create-looking-for-resource.component.spec.ts, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.scss, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.ts, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/employee.service.ts, resource-app-frontend/src/shared/api/generated/api/project.service.ts, resource-app-frontend/src/shared/api/generated/model/lookingForResourceCreateDTO.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/projectSelectDTO.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts"
+    },
+    {
+        "Issue key": "RA-83",
+        "Summary": "Add new employee to the list",
+        "Description": "!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!                    * The user can add new employee to the list, by clicking on the “add employee” button.     * The user can choose the name of the new employee from a dropbox in the first empty line opened by the “add employee” button.     * The user can search for an employee’s name in the dropbox opened in the “name” cell.     * The user can see the employee’s other data (role, cv, competencies) automatically filled by enter.     * The user can see the newly added employee in the first line until the page is not reloaded.     * In case of reload the page, the newly added employee has to take its place according to the last configured sorting.     * As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.     Change colors to a new color scheme     Regenerate API after merge     Refactor after resolving merge conflicts     Refactor selects to be NgbTypeaheads     Add creation of a new 'looking for project' with error handling",
+        "Σ Time Spent": 96300,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/create-looking-for-project/create-looking-for-project.component.html, resource-app-frontend/src/app/application/home/create-looking-for-project/create-looking-for-project.component.scss, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.scss, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/lookingForProject.service.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts, resource-app-frontend/src/app/application/home/create-looking-for-project/create-looking-for-project.component.ts, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.html, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/employee.service.ts, resource-app-frontend/src/shared/api/generated/model/employeeSelectDTO.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/home/create-looking-for-project/create-looking-for-project.component.spec.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/api/generated/model/lookingForProjectCreateDTO.ts"
+    },
+    {
+        "Issue key": "RA-82",
+        "Summary": "GetAllPositions API",
+        "Description": "     The complete getAllPositions API",
+        "Σ Time Spent": null,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/position/controller/PositionController.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/dto/PositionDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/entity/Position.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/repository/PositionRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/service/PositionService.java"
+    },
+    {
+        "Issue key": "RA-81",
+        "Summary": "General exception handling",
+        "Description": "     Adding missing logging for handleSimpleValidationErrors method     Exception handling base (ExceptionDTO might be expanded in the future)",
+        "Σ Time Spent": 6300,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/exception/handler/GlobalExceptionHandler.java, resource-app-backend/pom.xml, resource-app-backend/src/main/java/com/minero/resourceapp/exception/ConflictException.java, resource-app-backend/src/main/java/com/minero/resourceapp/exception/NotFoundException.java, resource-app-backend/src/main/java/com/minero/resourceapp/exception/RAException.java, resource-app-backend/src/main/java/com/minero/resourceapp/exception/dto/ExceptionDTO.java"
+    },
+    {
+        "Issue key": "RA-80",
+        "Summary": "Employee Search API",
+        "Description": "     Merging search and findAll into a single endpoint     Adding distinct keyword to search query     Search employee base (there are problems with pagination with low page sizes)",
+        "Σ Time Spent": 50400,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/controller/EmployeeController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java"
+    },
+    {
+        "Issue key": "RA-79",
+        "Summary": "SearchProject API",
+        "Description": "     Refactor get all API and search API to use the same endpoint     Add DTOs, service and controller     Add DTOs, service and controller     Add DTOs, service and controller     Add paginated project search to backend     Add DTOs, service and controller",
+        "Σ Time Spent": 44100,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/project/controller/ProjectController.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/service/CompanyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/config/TokenProvider.java, resource-app-backend/src/main/java/com/minero/resourceapp/config/oauth2/OAuth2UserServiceImpl.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectTableDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/entity/Project.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/user/dto/UserDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/user/dto/UserLoginDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/user/service/UserService.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/repository/ProjectRepository.java"
+    },
+    {
+        "Issue key": "RA-78",
+        "Summary": "UpdateProject API",
+        "Description": "     Remove unnecessary `equals` and `hashcode` override     Rename `findById` to `findEntityById`     Change start and end fields to LocalDate instead of Date     Expand ProjectTableDTO with companyId     Add name uniqueness check in project update     Change start and end fields to LocalDate instead of Date     Change start and end fields to LocalDate instead of Date     Change start and end fields to LocalDate instead of Date     Change start and end fields to LocalDate instead of Date     Add `@NotNull` annotation and validation     Add project update API",
+        "Σ Time Spent": 41400,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/competency/entity/Competency.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectTableDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/entity/Project.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/controller/ProjectController.java"
+    },
+    {
+        "Issue key": "RA-76",
+        "Summary": "Add Swagger",
+        "Description": "Add OpenAPI documentation, and angular client generation, to avoid manually created frontend API services and models     Carry out requested changes according to code review     Remove unnecessary requestMatchers, remove magic strings     Modify OpenApi client generation to generate from yaml instead of JSON     Change the destination of code generation to the shared folder     Remove unused API services and models from frontend     Add OpenApi documentation and client generation to the project",
+        "Σ Time Spent": 66600,
+        "modifiedFiles": "resource-app-backend/pom.xml, resource-app-backend/src/main/java/com/minero/resourceapp/company/controller/CompanyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/dto/CompanyDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/controller/CompetencyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/dto/CompetencyDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/config/SecurityConfig.java, resource-app-backend/src/main/resources/application.yaml, resource-app-frontend/openapitools.json, resource-app-frontend/package-lock.json, resource-app-frontend/package.json, resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.ts, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/app/application/employee/employee.component.ts, resource-app-frontend/src/app/application/plan/plan.component.ts, resource-app-frontend/src/app/application/project/project.component.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/.openapi-generator-ignore, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/.openapi-generator/VERSION, resource-app-frontend/src/shared/api/generated/README.md, resource-app-frontend/src/shared/api/generated/api/api.ts, resource-app-frontend/src/shared/api/generated/api/company.service.ts, resource-app-frontend/src/shared/api/generated/api/competency.service.ts, resource-app-frontend/src/shared/api/generated/git_push.sh, resource-app-frontend/src/shared/api/generated/model/companyDTO.ts, resource-app-frontend/src/shared/api/generated/model/competencyDTO.ts, resource-app-backend/src/main/java/com/minero/resourceapp/config/OpenApiConfig.java, resource-app-frontend/src/shared/api/openapi_docs.json, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/shared/api/generated/.gitignore, resource-app-frontend/src/shared/api/generated/api.module.ts, resource-app-frontend/src/shared/api/generated/api/companyController.service.ts, resource-app-frontend/src/shared/api/generated/api/competencyController.service.ts, resource-app-frontend/src/shared/api/generated/configuration.ts, resource-app-frontend/src/shared/api/generated/encoder.ts, resource-app-frontend/src/shared/api/generated/index.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/param.ts, resource-app-frontend/src/shared/api/generated/variables.ts, resource-app-frontend/src/shared/models/company.model.ts, resource-app-frontend/src/shared/models/competency.model.ts, resource-app-frontend/src/shared/services/api-services/company.service.ts, resource-app-frontend/src/shared/services/api-services/competency.service.ts, resource-app-frontend/src/app/api/generated/.gitignore, resource-app-frontend/src/app/api/generated/.openapi-generator-ignore, resource-app-frontend/src/app/api/generated/.openapi-generator/FILES, resource-app-frontend/src/app/api/generated/.openapi-generator/VERSION, resource-app-frontend/src/app/api/generated/README.md, resource-app-frontend/src/app/api/generated/api.module.ts, resource-app-frontend/src/app/api/generated/api/api.ts, resource-app-frontend/src/app/api/generated/api/companyController.service.ts, resource-app-frontend/src/app/api/generated/api/competencyController.service.ts, resource-app-frontend/src/app/api/generated/configuration.ts, resource-app-frontend/src/app/api/generated/encoder.ts, resource-app-frontend/src/app/api/generated/git_push.sh, resource-app-frontend/src/app/api/generated/index.ts, resource-app-frontend/src/app/api/generated/model/companyDTO.ts, resource-app-frontend/src/app/api/generated/model/competencyDTO.ts, resource-app-frontend/src/app/api/generated/model/models.ts, resource-app-frontend/src/app/api/generated/param.ts, resource-app-frontend/src/app/api/generated/variables.ts, resource-app-frontend/src/app/api/openapi_docs.json"
+    },
+    {
+        "Issue key": "RA-75",
+        "Summary": "CORS configuration",
+        "Description": "     Rename CorsConfigurationParser to CorsConfiguration     Add automatic CORS filtering",
+        "Σ Time Spent": 20700,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/config/CorsConfiguration.java, resource-app-backend/src/main/java/com/minero/resourceapp/config/SecurityConfig.java, resource-app-backend/src/main/java/com/minero/resourceapp/ResourceAppApplication.java, resource-app-backend/src/main/java/com/minero/resourceapp/config/CorsConfigurationParser.java, resource-app-backend/src/main/java/com/minero/resourceapp/config/SimpleCorsFilter.java, resource-app-backend/src/main/resources/application.yaml"
+    },
+    {
+        "Issue key": "RA-74",
+        "Summary": "Microsoft configuration",
+        "Description": "     Requested changes     Modify redirect URI on Microsoft login so that the intermediate login page does not show up     Quick fix/ workaround for Microsoft auth     Add initial Microsoft login configuration",
+        "Σ Time Spent": 69300,
+        "modifiedFiles": "resource-app-backend/pom.xml, resource-app-backend/src/main/resources/application.yaml, resource-app-frontend/src/environments/environment.ts, resource-app-backend/src/main/java/com/minero/resourceapp/config/TokenProvider.java, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/authentication/authentication.component.html, resource-app-frontend/src/app/authentication/authentication.component.ts, resource-app-frontend/src/assets/i18n/hu.json"
+    },
+    {
+        "Issue key": "RA-73",
+        "Summary": "Project table sorting",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-72",
+        "Summary": "GetProjectByCompany API",
+        "Description": "",
+        "Σ Time Spent": 32400,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-71",
+        "Summary": "Implement drag&drop for competencies",
+        "Description": "     Add drag and drop to competency list",
+        "Σ Time Spent": 10800,
+        "modifiedFiles": "resource-app-frontend/package-lock.json, resource-app-frontend/package.json, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/application.component.html, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/competency/competency.component.scss, resource-app-frontend/src/app/application/competency/competency.component.ts"
+    },
+    {
+        "Issue key": "RA-70",
+        "Summary": "Workflow logic",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-68",
+        "Summary": "Search in looking for resource",
+        "Description": "* the user can search for some text in the table by typing the text in the search field     * the user can search in all text contained field in the table by typing in the search field     * the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.     Fix search term being cleared by pagination     Use new colors     Regenerate API after merge     Implement searching in 'looking for resource' table",
+        "Σ Time Spent": 21600,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.ts, resource-app-frontend/src/app/application/confirmation-modal/confirmation-modal.component.html, resource-app-frontend/src/app/application/confirmation-modal/confirmation-modal.component.scss, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.scss, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.scss, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.ts, resource-app-frontend/src/shared/api/generated/api/lookingForResource.service.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts"
+    },
+    {
+        "Issue key": "RA-67",
+        "Summary": "Display all the element of the looking for resource list",
+        "Description": "!Screenshot 2023-09-08 at 10.27.33-20230908-082738.png|width=1140,height=693!          * The user can see the list of projects that has free capacity.     * As a 1st version, the list is filled only manually.     Fix pagination in the looking for resources table     Display project competencies in the looking for resources table     Regenerate API after merge     Replace select with label     Add sorting to looking for resources table     Add select for project state     Display looking for resources except for competencies and members     Add skeleton for table rows of looking for resource entities     Add looking for resource table layout, headers and pagination, prepare sorting     Add 'looking for resource' component",
+        "Σ Time Spent": 51300,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.html, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/home/home.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.scss, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.ts, resource-app-frontend/src/shared/api/generated/api/api.ts, resource-app-frontend/src/shared/api/generated/api/lookingForResource.service.ts, resource-app-frontend/src/shared/api/generated/model/lookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/home/tr-looking-for-resource/tr-looking-for-resource.component.spec.ts, resource-app-frontend/src/app/application/home/home.component.html, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.scss, resource-app-frontend/src/app/application/home/home.component.scss, resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.spec.ts"
+    },
+    {
+        "Issue key": "RA-66",
+        "Summary": "Workflow logic",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-65",
+        "Summary": "Update list element",
+        "Description": "!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!                    * The user can update the following fields by double clicking in the cell:     ** assigned to     ** status     ** free from          * the user can see the saved result by enter or by clicking somewhere else on the site     Adjust code to refactored search mechanism     Refactor update logic and add error handling     Implement update of 'looking for project' entities without error handling",
+        "Σ Time Spent": 76500,
+        "modifiedFiles": "resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.html, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.scss, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/lookingForProject.service.ts, resource-app-frontend/src/shared/api/generated/model/employeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/lookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/lookingForProjectDTOCompetencies.ts, resource-app-frontend/src/shared/api/generated/model/lookingForProjectModifyDTO.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts"
+    },
+    {
+        "Issue key": "RA-64",
+        "Summary": "Search in looking for project",
+        "Description": "* the user can search for some text in the table by typing the text in the search field     * the user can search in all text contained field in the table by typing in the search field     * the user can see the result 3sec after last typed character. The result is a filtered table and the result in competencies is marked with red.     Refactor search mechanism to use rxjs     Remove console.log()     Implement search in 'looking for project' entities",
+        "Σ Time Spent": 64800,
+        "modifiedFiles": "resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.html, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.ts, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.scss, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.html, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/lookingForProject.service.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts"
+    },
+    {
+        "Issue key": "RA-63",
+        "Summary": "Display all the element of the looking for project list",
+        "Description": "!Screenshot 2023-09-08 at 10.59.07-20230908-085913.png|width=1066,height=656!                    * The user can see the list of employees who will be available for the next project.     * As a 1st version, the list is filled only manually.     Add null check to page observables     Display competencies of a 'looking for project' entity without being able to modify them     Adjust to the added 'not null' annotations     Display actual data of looking for project entities and add sorting     Add generated DTO-s and services, fix method name     Fix style and header strings     Add skeleton for table rows of looking for project entities     Add looking for project table layout, headers and pagination, prepare sorting     Add 'looking for project' component",
+        "Σ Time Spent": 90000,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.ts, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.ts, resource-app-frontend/src/shared/models/display-and-edit-employee-competency.model.ts, resource-app-frontend/src/shared/services/competency-manager.service.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/model/lookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.html, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.scss, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/directives/ngbd-sortable-header.directive.ts, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/api.ts, resource-app-frontend/src/shared/api/generated/api/employee.service.ts, resource-app-frontend/src/shared/api/generated/api/employeeCompetency.service.ts, resource-app-frontend/src/shared/api/generated/api/lookingForProject.service.ts, resource-app-frontend/src/shared/api/generated/api/user.service.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/userSelectDTO.ts, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.scss, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.spec.ts, resource-app-frontend/src/app/application/home/home.component.html, resource-app-frontend/src/app/application/home/home.component.scss, resource-app-frontend/src/app/application/home/table-looking-for-project/table-looking-for-project.component.spec.ts"
+    },
+    {
+        "Issue key": "RA-62",
+        "Summary": "Add employee to a looking for project list",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-61",
+        "Summary": "Search in plan",
+        "Description": "     Regenerate API after merge     Reformat code, fix subscription and fix error when calling toString()     Remove comments     Implement search in plans     Generate API",
+        "Σ Time Spent": 116100,
+        "modifiedFiles": "resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeePlanDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/app/application/plan/create-plan/create-plan.component.ts, resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.ts, resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.html, resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.scss, resource-app-frontend/src/shared/api/generated/api/plan.service.ts"
+    },
+    {
+        "Issue key": "RA-59",
+        "Summary": "Connect project to an employee",
+        "Description": "     Add requested changes     Implement and style modifying and deleting plans     Implement and style creating a new plan     Modifying, deleting, moving plans     Merge modify and create backend",
+        "Σ Time Spent": 109800,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/plan/controller/PlanController.java, resource-app-frontend/package.json, resource-app-frontend/src/app/application/plan/create-plan/create-plan.component.ts, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/plan/modify-plan/modify-plan.component.html, resource-app-frontend/src/app/application/plan/modify-plan/modify-plan.component.scss, resource-app-frontend/src/app/application/plan/modify-plan/modify-plan.component.spec.ts, resource-app-frontend/src/app/application/plan/modify-plan/modify-plan.component.ts, resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/app/application/plan/create-plan/create-plan.component.html, resource-app-frontend/src/app/application/plan/create-plan/create-plan.component.scss, resource-app-frontend/src/app/application/plan/create-plan/create-plan.component.spec.ts, resource-app-backend/src/main/java/com/minero/resourceapp/plan/repository/PlanRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/service/PlanService.java, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/api.ts, resource-app-frontend/src/shared/api/generated/api/plan.service.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/planCreateDTO.ts, resource-app-frontend/src/shared/api/generated/model/planDTO.ts"
+    },
+    {
+        "Issue key": "RA-58",
+        "Summary": "Display calendar view of employee",
+        "Description": "     Change sql keywords to uppercase     Clean up and refactor code, remove breaking image     Add spinner to html     Show image instead of empty timeline     Make timeline scrollable along the y-axis to avoid overflow     Fix pagination, reformat code, and fix typos     Generate API     Display fixes     Small CSS     Display bugfix     Timeline base with data display",
+        "Σ Time Spent": 242100,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/repository/PlanRepository.java, resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.html, resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.ts, resource-app-frontend/src/index.html, resource-app-frontend/src/styles.scss, resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.scss, resource-app-frontend/src/app/application/plan/plan.component.html, resource-app-frontend/src/app/application/plan/plan.component.scss, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeePlanDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/package-lock.json, resource-app-frontend/package.json, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.spec.ts, resource-app-frontend/src/app/application/plan/plan.component.ts, resource-app-frontend/src/app/application/project/project.component.html, resource-app-frontend/src/shared/api/generated/api/api.ts, resource-app-frontend/src/shared/api/generated/api/plan.service.ts, resource-app-frontend/src/shared/api/generated/model/employeePlanDTO.ts, resource-app-frontend/src/shared/api/generated/model/planDTO.ts, resource-app-frontend/src/shared/api/generated/model/projectPlanDTO.ts"
+    },
+    {
+        "Issue key": "RA-57",
+        "Summary": "PM & PO tasks",
+        "Description": "",
+        "Σ Time Spent": 59400,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-56",
+        "Summary": "CreateCompany API",
+        "Description": "     Add createCompany API",
+        "Σ Time Spent": 5400,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/company/controller/CompanyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/servide/CompanyService.java"
+    },
+    {
+        "Issue key": "RA-55",
+        "Summary": "UpdateCompany API",
+        "Description": "     Add updateCompany API",
+        "Σ Time Spent": null,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/company/controller/CompanyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/servide/CompanyService.java"
+    },
+    {
+        "Issue key": "RA-54",
+        "Summary": "Sequencies",
+        "Description": "     Replace GenerationType.AUTO with .IDENTITY on all entities that had it, so that ids are assigned automatically",
+        "Σ Time Spent": 3600,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/company/entity/Company.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/entity/Competency.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/entity/Employee.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_project/entity/LookingForProject.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/entity/LookingForResource.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/entity/Plan.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/entity/Position.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/entity/Project.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/user/entity/User.java"
+    },
+    {
+        "Issue key": "RA-53",
+        "Summary": "Swagger",
+        "Description": "",
+        "Σ Time Spent": 3600,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-52",
+        "Summary": "Table sorting",
+        "Description": "Default sorting of the table is alphabetical order by name.          The user can select other sorting columns:          * name     * e-mail          (other filter options can be done by search function)     Add sorting to boolean columns     Implement employee table sorting     Add sorting to boolean columns     Implement employee table sorting",
+        "Σ Time Spent": 18900,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/shared/directives/ngbd-sortable-header.directive.ts, resource-app-frontend/src/shared/services/api-services/employee.service.ts, resource-app-frontend/src/styles.scss"
+    },
+    {
+        "Issue key": "RA-51",
+        "Summary": "GetEmployeesByCompany API",
+        "Description": "     Adding NotNull annotations to the DTO     Competency map of EmployeeDTO should contain only the ids of the competencies as values     Expanded entity and DTO, added @Tag to controller",
+        "Σ Time Spent": 10800,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeeDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/controller/EmployeeController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/entity/Employee.java"
+    },
+    {
+        "Issue key": "RA-50",
+        "Summary": "UpdateEmployee API",
+        "Description": "     Refactor NotNull annotations in Position entity and PositionDTO     NotNull annotations for Position and PositionDTO     Correct HttpStatus     Typeo, setting id as company id     Unique email validation     Update employee API base",
+        "Σ Time Spent": 47700,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/position/dto/PositionDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/entity/Position.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/controller/EmployeeController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/service/CompanyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeeDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/entity/Employee.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/repository/PositionRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/service/PositionService.java"
+    },
+    {
+        "Issue key": "RA-49",
+        "Summary": "CreateEmployee API",
+        "Description": "     Remove default setting of active and planned on create     Set \"planned\" to true by default     Create Employee logic",
+        "Σ Time Spent": 85500,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeeDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/entity/Employee.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/service/CompanyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/controller/EmployeeController.java"
+    },
+    {
+        "Issue key": "RA-48",
+        "Summary": "GetAllCompanies API",
+        "Description": "     Add getAllCompanies API",
+        "Σ Time Spent": 9900,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/company/controller/CompanyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/dto/CompanyDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/repository/CompanyRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/servide/CompanyService.java"
+    },
+    {
+        "Issue key": "RA-47",
+        "Summary": "DeleteCompetence API",
+        "Description": "     Add backend API for deleting a competency",
+        "Σ Time Spent": null,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/competency/controller/CompetencyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/repository/CompetencyRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/repository/EmployeeCompetencyRepository.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/repository/ProjectRepository.java"
+    },
+    {
+        "Issue key": "RA-46",
+        "Summary": "UpdateCompetence API",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-45",
+        "Summary": "Update competence",
+        "Description": "* the user can update the competency name by double-clicking on the the name     Add update logic to competency component     Create backend API for updating a competence",
+        "Σ Time Spent": 28800,
+        "modifiedFiles": "resource-app-frontend/src/shared/models/company.model.ts, resource-app-frontend/src/shared/services/company.service.ts, resource-app-backend/src/main/java/com/minero/resourceapp/competency/controller/CompetencyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java"
+    },
+    {
+        "Issue key": "RA-44",
+        "Summary": "CreateCompetence API",
+        "Description": "     Add createCompetence API",
+        "Σ Time Spent": null,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/competency/controller/CompetencyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java"
+    },
+    {
+        "Issue key": "RA-43",
+        "Summary": "GetAllCompetencies API",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-42",
+        "Summary": "Separate application, and authentication components",
+        "Description": "Separate the application components from the authentication component(s) (login component) for correct navigation",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-41",
+        "Summary": "i18n internationalization",
+        "Description": "Delegate displayed texts in order to avoid “magic strings”, and help internationalization",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-39",
+        "Summary": "language basics",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-38",
+        "Summary": "Empty screen",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-37",
+        "Summary": "Project structure plan",
+        "Description": "",
+        "Σ Time Spent": 25200,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-36",
+        "Summary": "Login screen",
+        "Description": "     Change login container's layout to container-fluid     Add login page frontend",
+        "Σ Time Spent": 57600,
+        "modifiedFiles": "resource-app-frontend/src/app/authentication/authentication.component.html, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/authentication/authentication.component.scss, resource-app-frontend/src/app/authentication/authentication.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/colors.scss"
+    },
+    {
+        "Issue key": "RA-35",
+        "Summary": "Redis research",
+        "Description": "The purpose of using Redis is to increase the security of the API by making the authentication stateful.          This way we can revoke the token of a user and thus implementing a logout on the server side as well, not just on the frontend.          This can be done by configuring a Redis instance to be used in the application and saving the active token for each user in it as well as checking this token with every http request that is made to the API.          Even though this would increase the security of the application, the improvement is not high priority momentarily and its configuration and implementation could take several days.          The implementation should be kept in the backlog and we should get back to it later if we have the time or see the need for it.",
+        "Σ Time Spent": 5400,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-34",
+        "Summary": "User entity (role+authority)",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-33",
+        "Summary": "Create developer user",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-32",
+        "Summary": "Create model classes",
+        "Description": "     Refactor PositionType to String and rename State to ProjectState     Remove redundant ColumnDefinition and Column annotations, reformat code     Add LookingForProject and LookingForResource entities and Status enum     Add Plan entity     Add plans and positions to employee     Add competencies to project, change type of fte attribute     Remove comment     Rename role-authority junction table     Add Project entity and State enum     Add EmployeeCompetency entity and Level enum     Add Employee entity     Add Position entity, Seniority and Type enums     Add Competency entity     Add Company entity     Add User, Role and Authority entities",
+        "Σ Time Spent": 95400,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/position/Position.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/Type.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/Project.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/ProjectState.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/entity/Company.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/entity/Competency.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/entity/Employee.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/Level.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/entity/EmployeeCompetency.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/entity/EmployeeCompetencyId.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/entity/Level.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/entity/LookingForProject.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/entity/LookingForResource.java, resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/entity/Status.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/entity/Plan.java, resource-app-backend/src/main/java/com/minero/resourceapp/position/Seniority.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/authority/Authority.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/role/Role.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/user/User.java, resource-app-backend/src/main/java/com/minero/resourceapp/look/Status.java, resource-app-backend/src/main/java/com/minero/resourceapp/look/looking_for_project/LookingForProject.java, resource-app-backend/src/main/java/com/minero/resourceapp/look/looking_for_resources/LookingForResource.java, resource-app-backend/src/main/java/com/minero/resourceapp/plan/Plan.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/Employee.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/EmployeeCompetencyId.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/State.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee_competency/EmployeeCompetency.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/Competency.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/Company.java"
+    },
+    {
+        "Issue key": "RA-31",
+        "Summary": "Environment setup",
+        "Description": "     Ignore .editorconfig files     Update Angular version from 15 to 16     Adjust folder name",
+        "Σ Time Spent": 68400,
+        "modifiedFiles": ".gitignore, resource-app-frontend/.editorconfig, resource-app-frontend/package-lock.json, resource-app-frontend/package.json, resource-app-backend/.mvn/wrapper/maven-wrapper.jar, resource-app-backend/.mvn/wrapper/maven-wrapper.properties, resource-app-backend/mvnw, resource-app-backend/mvnw.cmd, resource-app-backend/pom.xml, resource-app-backend/src/main/java/com/minero/resourceapp/ResourceAppApplication.java, resource-app-backend/src/main/resources/application.properties, resource-app-backend/src/test/java/com/minero/resourceapp/ResourceAppApplicationTests.java"
+    },
+    {
+        "Issue key": "RA-30",
+        "Summary": "EK diagramm + DB tervezés",
+        "Description": "",
+        "Σ Time Spent": 75600,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-29",
+        "Summary": "Architecture",
+        "Description": "",
+        "Σ Time Spent": 828900,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-28",
+        "Summary": "Search project",
+        "Description": "* the user can search for some text in the table by typing the text in the search field     * the user can search in all text contained field in the table by typing in the search field     * the user have to type at least 3 character to start a search     * the user can see the result 3sec after last typed character. The result is a filtered table and the searched text is highlighted.     Show searchbar when the table is empty because of a search term     Add fixes to search in project table     Add error fixes",
+        "Σ Time Spent": 104400,
+        "modifiedFiles": "resource-app-frontend/src/app/application/project/table-project/table-project.component.html, resource-app-frontend/src/app/application/project/table-project/table-project.component.ts, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.html, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.ts, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectTableDTO.java, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/project.service.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts"
+    },
+    {
+        "Issue key": "RA-27",
+        "Summary": "Export CVs",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-26",
+        "Summary": "Search employee",
+        "Description": "* the user can search for some text in the table by typing the text in the search field     * the user can search in all text contained field in the table by typing in the search field     * -the user have to type at least 3 character to start a search-     * the user can see the result 3sec after last typed character. The result is a filtered table and -the searched text is highlighted.- the result in competencies is marked with red.     Resolve conflicts and regenerate frontend with openapi     Refactor getting all employees to include the search term too     Implement searching in employee table and highlight search results in the competencies",
+        "Σ Time Spent": 102600,
+        "modifiedFiles": "resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/shared/api/generated/api/employee.service.ts, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.scss, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.scss, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/assets/i18n/hu.json"
+    },
+    {
+        "Issue key": "RA-25",
+        "Summary": "Fill up profile form",
+        "Description": "The user can see the “document” icon in case the employee’s comment field is not empty.          The user can see a + icon in case the employee’s comment field is empty.          In both case the user can click on the icons and will see the the profile of the employee.          !Screenshot 2023-09-27 at 11.21.39-20230927-092144.png|width=396,height=731!                    The user can edit the experience section.          The user cannot edit the competence section.          The user can save the changes by clicking on the save button.          The user can discard the changes by clicking on the cancel button or clicking outside of the form.     Fix overflowing text     App profile modal and implement functionality     Replace method call     Generate API",
+        "Σ Time Spent": 39600,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/employee-profile/employee-profile.component.html, resource-app-frontend/src/app/application/employee/employee-profile/employee-profile.component.scss, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/app/application/employee/employee-profile/employee-profile.component.spec.ts, resource-app-frontend/src/app/application/employee/employee-profile/employee-profile.component.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.scss, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/app/application/home/tr-looking-for-project/tr-looking-for-project.component.scss, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/services/competency-manager.service.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/model/employeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts"
+    },
+    {
+        "Issue key": "RA-24",
+        "Summary": "Employee's position",
+        "Description": "The user add roles (position) to an employee by choosing one from the dropdown list.          (please work with dummy positions eg. Frontend Developer, Backend developer, Business Analyst)",
+        "Σ Time Spent": 3600,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-23",
+        "Summary": "Roles and rights",
+        "Description": "",
+        "Σ Time Spent": null,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-22",
+        "Summary": "Delete competence",
+        "Description": "!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=1788,height=1098!          * the user can delete a competency by clicking on the bin icon at the end of the line     * the user got a warning message if the selected competency is already used by employees or projects. The user can decide whether to continue the delete or not.     * the deleted competency is no more shown in the list     Fix confirmation dialog close button     Fix competency sidebar position     Add deletion logic to competency component     Add confirmation dialog to notify users when competence is being used before delete",
+        "Σ Time Spent": 39600,
+        "modifiedFiles": "resource-app-frontend/src/app/application/confirmation-modal/confirmation-modal.component.html, resource-app-frontend/src/app/application/application.component.html, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/shared/services/api-services/competency.service.ts, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/confirmation-modal/confirmation-modal.component.scss, resource-app-frontend/src/app/application/confirmation-modal/confirmation-modal.component.spec.ts, resource-app-frontend/src/app/application/confirmation-modal/confirmation-modal.component.ts, resource-app-frontend/src/assets/i18n/hu.json"
+    },
+    {
+        "Issue key": "RA-21",
+        "Summary": "Add new competence",
+        "Description": "!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!          * the user can type the competency in the search field and if the search had no results, the user can add a new competency by clicking on the add button     * the user can see the added competency in the filtered list     * the user can’t click on the add button if there is at least one result after search     Rename hasSearchResult to isAddButtonDisabled     Fix bug that empty string can be added as competency     Rename service save method to createCompetency     Separate competency search logic from competency adding ability's logic     Change competency search to check equality     Add frontend logic for creating a competency",
+        "Σ Time Spent": 58500,
+        "modifiedFiles": "resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-backend/src/main/java/com/minero/resourceapp/competency/controller/CompetencyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-frontend/src/shared/services/api-services/competency.service.ts"
+    },
+    {
+        "Issue key": "RA-20",
+        "Summary": "List all competence",
+        "Description": "!Screenshot 2023-08-01 at 13.48.11-20230801-114817.png|width=894,height=549!          * The user can see on the right side of the screen all the existing competencies.     * The user can close the Competency tab by clicking on the narrow icon.     * The user can open the Competency tab by clicking on the narrow icon on the closed tab.     * The user can drag one of the competencies.     Encapsulate competency sidebar in components that need it     Add error message to competency sidebar if API call fails     Fix login button color     Change competency API URL, add use of constructors in toDto and toEntity     Rename delete-competency-color to delete-competency-button-color, extract magic string to colors.scss     Add competency component with competency listing     Create getAllCompetencies() API     Add necessary strings to hu.json",
+        "Σ Time Spent": 85500,
+        "modifiedFiles": "resource-app-frontend/src/app/application/application.component.html, resource-app-frontend/src/app/application/application.component.scss, resource-app-frontend/src/app/application/application.component.ts, resource-app-frontend/src/app/application/employee/employee.component.html, resource-app-frontend/src/app/application/employee/employee.component.scss, resource-app-frontend/src/app/application/project/project.component.html, resource-app-frontend/src/app/application/project/project.component.scss, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/app/authentication/authentication.component.scss, resource-app-backend/src/main/java/com/minero/resourceapp/competency/controller/CompetencyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/dto/CompetencyDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-frontend/src/shared/services/api-services/competency.service.ts, resource-app-frontend/src/app/application/competency/competency.component.scss, resource-app-frontend/src/shared/styles/colors.scss, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/competency/competency.component.spec.ts, resource-app-frontend/src/shared/models/competency.model.ts, resource-app-backend/src/main/java/com/minero/resourceapp/competency/repository/CompetencyRepository.java"
+    },
+    {
+        "Issue key": "RA-19",
+        "Summary": "Competence component",
+        "Description": "",
+        "Σ Time Spent": 212400,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-18",
+        "Summary": "Company separated display",
+        "Description": "!Screenshot 2023-08-07 at 13.43.27-20230807-114333.png|width=701,height=398!          * The user can see all the possible companies in tab form.     * The user can see only 1 tab as active     * The user can add new company by clicking on the + icon and type the name.     * The user can update a company name by double clicking on the existing company name.     * The cannot delete a company.     * The user can only see as active tab the company where she/he belongs.     * Superadmin can see and edit all the company tabs.     Fix requested changes     Fix bug in adding new company     Fix code smell in sorting     Add requested changes     Fix sidebar icon hover width     Replace subject logic with event emitter     Refactor to fa icon     Integrate UI of competency component and company separated display     Use company separated display component     Add company separated display component     Update hu.json",
+        "Σ Time Spent": 250200,
+        "modifiedFiles": "resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.html, resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.scss, resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.ts, resource-app-frontend/src/app/application/employee/employee.component.ts, resource-app-frontend/src/app/application/plan/plan.component.ts, resource-app-frontend/src/app/application/project/project.component.ts, resource-app-backend/src/main/java/com/minero/resourceapp/company/controller/CompanyController.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/entity/Company.java, resource-app-backend/src/main/java/com/minero/resourceapp/company/service/CompanyService.java, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/employee/employee.component.html, resource-app-frontend/src/app/application/plan/plan.component.html, resource-app-frontend/src/app/application/project/project.component.html, resource-app-frontend/src/shared/directives/autofocus.ts, resource-app-frontend/src/shared/directives/company-marker.ts, resource-app-frontend/src/shared/directives/marker.ts, resource-app-frontend/src/app/application/sidebar/sidebar.component.scss, resource-app-frontend/src/shared/services/api-services/company.service.ts, resource-app-frontend/src/app/application/application.component.html, resource-app-frontend/src/app/application/application.component.scss, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/competency/competency.component.scss, resource-app-frontend/src/app/application/employee/employee.component.scss, resource-app-frontend/src/app/application/plan/plan.component.scss, resource-app-frontend/src/app/application/project/project.component.scss, resource-app-frontend/src/styles.scss, resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.spec.ts, resource-app-frontend/src/shared/styles/colors.scss, resource-app-frontend/src/assets/i18n/hu.json"
+    },
+    {
+        "Issue key": "RA-17",
+        "Summary": "Modify existing project",
+        "Description": "* the user can modify the project data by double-clicking on the selected cell     * the user can see the saved result by enter or by clicking somewhere else on the site     Dev API generation     PR     Competency selection bugfix     Competency search bar bugfix     Modify projects     Modify",
+        "Σ Time Spent": 139500,
+        "modifiedFiles": "resource-app-frontend/src/app/application/project/tr-project/tr-project.component.html, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/lookingForProject.service.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/app/application/employee/employee.component.ts, resource-app-frontend/src/app/application/project/project.component.ts, resource-app-frontend/src/shared/services/competency-manager.service.ts, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.ts, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/shared/api/generated/api/project.service.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts, resource-app-backend/src/main/java/com/minero/resourceapp/project/controller/ProjectController.java, resource-app-frontend/src/app/application/project/table-project/table-project.component.html, resource-app-frontend/src/app/application/project/table-project/table-project.component.ts, resource-app-frontend/src/shared/api/generated/model/projectTableDTO.ts, resource-app-frontend/src/shared/models/display-and-edit-project-competency.model.ts"
+    },
+    {
+        "Issue key": "RA-16",
+        "Summary": "Add new project",
+        "Description": "* The user can add a new project by clicking on the “add employee” button.     * The user can type the datas of the new project in the first empty line opened by the “add project” button.     * The user can see the newly added project in the first line until the page is not reloaded.     * In case of reload the page, the newly added project has to take its place according to the last configured sorting.     * As soon es the new line opened for the new project, the max relevant project number is increased by 1.     Regenerate API after merge, reformat code for searching and creating projects     Add requested code changes and fixes regarding adding a new project",
+        "Σ Time Spent": 74700,
+        "modifiedFiles": "resource-app-frontend/src/app/application/project/table-project/table-project.component.html, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/project.service.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForProjectDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageLookingForResourceDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageProjectTableDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/app/application/project/project.component.html, resource-app-frontend/src/app/application/project/project.component.scss, resource-app-frontend/src/app/application/project/table-project/table-project.component.ts, resource-app-frontend/src/assets/i18n/hu.json"
+    },
+    {
+        "Issue key": "RA-15",
+        "Summary": "Display all projects",
+        "Description": "Design same as employees.          * The Minero user can see all the relevant project listed in a table.     * The Minero user can see how many project is listed and how many project is relevant all together in the lower left corner.     * The Minero user can turn page and list the next page of the projects by clicking on the right or left arrow in the lower left corner.     Change requests     Change requests     Change requests     Added 2 missing models     Small CSS fix     skeleton     Make toEntity and toDto methods not static     Refactor UserDTO to UserLoginDTO, add UserDTO with all fields     Change return value of API endpoint to ProjectTableDTO to avoid redundant data     Add `@Tag` to ProjectController     Add `@NotNull` to required fields in ProjectDTO     Change FTE to Double type so it can be set to null     Change ProjectDTO to only contain IDs of assignee, company, and competencies     Change constant string names, add constant strings to page number and page size     Make toEntity and toDto methods not static     Change entity and dto setters to builder setters     Remove magic strings from ProjectController     Add GetProjectsByCompany API with pagination and sorting     Refactor UserDTO to UserLoginDTO, add UserDTO with all fields",
+        "Σ Time Spent": 298800,
+        "modifiedFiles": "resource-app-frontend/src/app/application/project/tr-project/tr-project.component.scss, resource-app-frontend/src/app/application/project/table-project/table-project.component.ts, resource-app-frontend/src/app/application/project/table-project/table-project.component.html, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.html, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/app/application/project/project.component.scss, resource-app-frontend/src/app/application/project/table-project/table-project.component.scss, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/project/table-project/table-project.component.spec.ts, resource-app-frontend/src/app/application/project/tr-project/tr-project.component.spec.ts, resource-app-frontend/src/shared/services/api-services/project.service.ts, resource-app-backend/src/main/java/com/minero/resourceapp/company/service/CompanyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/user/service/UserService.java, resource-app-backend/src/main/java/com/minero/resourceapp/config/TokenProvider.java, resource-app-backend/src/main/java/com/minero/resourceapp/config/oauth2/OAuth2UserServiceImpl.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/user/dto/UserDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/user_management/user/dto/UserLoginDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/controller/ProjectController.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectTableDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/entity/Project.java, resource-app-backend/src/main/java/com/minero/resourceapp/project/repository/ProjectRepository.java"
+    },
+    {
+        "Issue key": "RA-14",
+        "Summary": "Add and delete competence to employee",
+        "Description": "*Add - Scenario 1:*          The user can add competence to an employee row in the cells junior, medium or senior by drag the competency and drop it in the cell.          The dropped competence will not disappear from the competence list.                    *Add - Scenario 2:*          The user can add competence to an employee row in the cells junior, medium or senior by double-clicking in the cell he/she would add and click on the + icon beside the selected competence.                    *Delete*          The user can delete the competency from the employees cell by clicking on the x at the end of the competency tag.     Fix typo     Add requested code changes     Fix issues that occur when updating and deleting associated competencies     Resolve conflicts and add error handling to creating and deleting employee competencies     Implement adding and removing competencies to an employee on frontend",
+        "Σ Time Spent": 65700,
+        "modifiedFiles": "resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/shared/services/competency-manager.service.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/api.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/app/application/competency/competency.component.scss, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/employeeCompetency.service.ts, resource-app-frontend/src/shared/api/generated/model/employeeCompetencyDTO.ts, resource-app-frontend/src/shared/api/generated/model/models.ts"
+    },
+    {
+        "Issue key": "RA-13",
+        "Summary": "Modify existing employee",
+        "Description": "* the user can modify the employee data by double-clicking on the selected cell     * the user can see the saved result by enter or by clicking somewhere else on the site     Regenerate frontend with openapi     Refactor large equality check to a function call     Remove duplicate import statement     Implement the update of employees on frontend     Resolve merge conflicts",
+        "Σ Time Spent": 91800,
+        "modifiedFiles": "resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/employee.service.ts, resource-app-frontend/src/shared/api/generated/model/employeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/employeeDTOCompetencies.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/api/generated/model/positionDTO.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/shared/util/is-deep-equal.ts, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/confirmation-modal/confirmation-modal.component.html, resource-app-frontend/src/app/application/confirmation-modal/confirmation-modal.component.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.scss, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/api.ts, resource-app-frontend/src/shared/api/generated/api/position.service.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/app/application/employee/employee.component.ts"
+    },
+    {
+        "Issue key": "RA-12",
+        "Summary": "Add new employee",
+        "Description": "!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!          * The user can add a new employee by clicking on the “add employee” button.     * The user can type the datas of the new employee in the first empty line opened by the “add employee” button.     * The user can see the newly added employee in the first line until the page is not reloaded.     * In case of reload the page, the newly added employee has to take its place according to the last configured sorting.     * As soon es the new line opened for the new employee, the max relevant employee number is increased by 1.     Add comment explaining why ts-ignore is necessary     Add requested code changes, fix bugs     Remove console.log and correct pageSize     Add API usage for creating new employee and handle errors     Add initial implementation of adding a new employee on frontend",
+        "Σ Time Spent": 133200,
+        "modifiedFiles": "resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/api/employee.service.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.scss, resource-app-frontend/src/assets/i18n/hu.json"
+    },
+    {
+        "Issue key": "RA-11",
+        "Summary": "Display all employees",
+        "Description": "!Screenshot 2023-08-07 at 13.56.16-20230807-115621.png|width=827,height=624!          * The Minero user can see all the relevant employee listed in a table.     * The Minero user can see how many employee is listed and how many employee is relevant all together in the lower left corner.     * The Minero user can turn page and list the next page of the employees by clicking on the right or left arrow in the lower left corner.     Add requested code changes     Fix typo, reformat code     Fix overflowing text in competency sidebar     Fix the width of the columns and the input fields they contain     Style the display of employee competencies     Refactor the competency sidebar to display the competencies of a selected user at the selected level     Fix numbers for table information     Refactor translations for the employee table     Refactor generated code usage     Style pills to display competencies     Refactor to use generated code     Resolve merge conflict with OpenAPI     Refactor overflowing text     Add information about number of relevant vs shown employees     Add spinner for loading data     Remove inline styling     Add Employee table with pagination     Add requested code changes     Fix typo, reformat code     Fix overflowing text in competency sidebar     Fix the width of the columns and the input fields they contain     Style the display of employee competencies     Refactor the competency sidebar to display the competencies of a selected user at the selected level     Fix numbers for table information     Refactor translations for the employee table     Refactor generated code usage     Style pills to display competencies     Refactor to use generated code     Resolve merge conflict with OpenAPI     Refactor overflowing text     Add information about the number of relevant vs shown employees     Add spinner for loading data     Remove inline styling     Add Employee table with pagination     Expand EmployeeDTO with id     Expand EmployeeDTO with active and competencyMap fields     (Cherry pick from RA-15-BE) Static method for CompetencyDTO conversion are needed here     findAllEmployeesByCompany API with pagination and basic EmployeeDTO",
+        "Σ Time Spent": 420300,
+        "modifiedFiles": "resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.html, resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.ts, resource-app-frontend/src/app/application/competency/competency.component.html, resource-app-frontend/src/app/application/competency/competency.component.ts, resource-app-frontend/src/app/application/employee/employee.component.html, resource-app-frontend/src/app/application/employee/employee.component.ts, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.html, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.html, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.ts, resource-app-frontend/src/app/application/plan/plan.component.html, resource-app-frontend/src/app/application/plan/plan.component.ts, resource-app-frontend/src/app/application/project/project.component.html, resource-app-frontend/src/app/application/project/project.component.ts, resource-app-frontend/src/shared/api/api-docs.yaml, resource-app-frontend/src/shared/api/generated/model/employeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/employeeDTOCompetencies.ts, resource-app-frontend/src/shared/api/generated/model/pageEmployeeDTO.ts, resource-app-frontend/src/shared/api/generated/model/pageableObject.ts, resource-app-frontend/src/shared/services/competency-manager.service.ts, resource-app-frontend/src/app/application/competency/competency.component.scss, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.scss, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/shared/models/display-and-edit-employee-competency.model.ts, resource-app-frontend/src/shared/api/generated/.openapi-generator/FILES, resource-app-frontend/src/shared/api/generated/api/api.ts, resource-app-frontend/src/shared/api/generated/api/employee.service.ts, resource-app-frontend/src/shared/api/generated/api/employeeController.service.ts, resource-app-frontend/src/shared/api/generated/model/models.ts, resource-app-frontend/src/shared/api/generated/model/sortObject.ts, resource-app-frontend/src/shared/directives/ngbd-sortable-header.directive.ts, resource-app-frontend/src/shared/models/employee/employee-model.ts, resource-app-frontend/src/shared/models/employee/employee-page-model.ts, resource-app-frontend/src/shared/services/api-services/employee.service.ts, resource-app-frontend/src/app/application/company-separated-display/company-separated-display.component.scss, resource-app-frontend/src/styles.scss, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.scss, resource-app-frontend/angular.json, resource-app-frontend/package-lock.json, resource-app-frontend/package.json, resource-app-frontend/src/app/application/employee/employee.component.scss, resource-app-frontend/src/app/application/employee/table-employee/table-employee.component.spec.ts, resource-app-frontend/src/app/application/employee/tr-employee/tr-employee.component.spec.ts, resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeeDTO.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/service/EmployeeService.java, resource-app-backend/src/main/java/com/minero/resourceapp/competency/service/CompetencyService.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/controller/EmployeeController.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/entity/Employee.java, resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java"
+    },
+    {
+        "Issue key": "RA-10",
+        "Summary": "Sidebar (Navigation)",
+        "Description": "!Screenshot 2023-07-13 at 17.11.57-20230713-151203.png|width=931,height=576!          The user can see a landing page with sidebar.     Sidebar contains the following menus: user, home, plan, employee, project.     As a menu, it only displays the icon. In case the user hover over the icon, the system displays the menu description.          Precondition: successful login     Change sidebar to resize when window size changes     Adjust size of icons     Change FontAwesome icons from <i> to <fa-icon>     Reformat code     Add empty components for navigating, add sidebar     Add Font Awesome icons, and Hungarian translation     Extract colors to a separate css     Add Bootstrap to project     Update Angular version from 16.1.4 to 16.1.5",
+        "Σ Time Spent": 177300,
+        "modifiedFiles": "resource-app-frontend/src/app/application/sidebar/sidebar.component.html, resource-app-frontend/src/app/application/sidebar/sidebar.component.scss, resource-app-frontend/package-lock.json, resource-app-frontend/package.json, resource-app-frontend/src/app/app.module.ts, resource-app-frontend/src/app/application/sidebar/sidebar.component.ts, resource-app-frontend/src/app/app-routing.module.ts, resource-app-frontend/src/app/app.component.html, resource-app-frontend/src/app/app.component.ts, resource-app-frontend/src/app/application/application.component.html, resource-app-frontend/src/app/application/application.component.scss, resource-app-frontend/src/app/application/application.component.ts, resource-app-frontend/src/assets/i18n/hu.json, resource-app-frontend/src/colors.scss, resource-app-frontend/src/styles.scss, resource-app-frontend/src/app/application/application.component.spec.ts, resource-app-frontend/src/app/application/employee/employee.component.html, resource-app-frontend/src/app/application/employee/employee.component.scss, resource-app-frontend/src/app/application/employee/employee.component.spec.ts, resource-app-frontend/src/app/application/employee/employee.component.ts, resource-app-frontend/src/app/application/home/home.component.html, resource-app-frontend/src/app/application/home/home.component.scss, resource-app-frontend/src/app/application/home/home.component.spec.ts, resource-app-frontend/src/app/application/home/home.component.ts, resource-app-frontend/src/app/application/plan/plan.component.html, resource-app-frontend/src/app/application/plan/plan.component.scss, resource-app-frontend/src/app/application/plan/plan.component.spec.ts, resource-app-frontend/src/app/application/plan/plan.component.ts, resource-app-frontend/src/app/application/profile/profile.component.html, resource-app-frontend/src/app/application/profile/profile.component.scss, resource-app-frontend/src/app/application/profile/profile.component.spec.ts, resource-app-frontend/src/app/application/profile/profile.component.ts, resource-app-frontend/src/app/application/project/project.component.html, resource-app-frontend/src/app/application/project/project.component.scss, resource-app-frontend/src/app/application/project/project.component.spec.ts, resource-app-frontend/src/app/application/project/project.component.ts, resource-app-frontend/src/app/application/sidebar/sidebar.component.spec.ts, resource-app-frontend/src/app/authentication/authentication.component.html, resource-app-frontend/src/app/authentication/authentication.component.scss, resource-app-frontend/src/app/authentication/authentication.component.spec.ts, resource-app-frontend/src/app/authentication/authentication.component.ts, resource-app-frontend/angular.json, resource-app-frontend/src/main.ts, resource-app-frontend/tsconfig.app.json, resource-app-frontend/tsconfig.spec.json"
+    },
+    {
+        "Issue key": "RA-9",
+        "Summary": "SSO Gloster Login",
+        "Description": "!Screenshot 2023-07-13 at 16.27.42-20230713-142747.png|width=930,height=571!          The business user can start the application by clicking on the “sign in with Google” button.          The business user goes through the google standard login process.",
+        "Σ Time Spent": 592200,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-8",
+        "Summary": "Meetings",
+        "Description": "",
+        "Σ Time Spent": 574200,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-7",
+        "Summary": "Administration",
+        "Description": "",
+        "Σ Time Spent": 633600,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-6",
+        "Summary": "Looking for resource component",
+        "Description": "",
+        "Σ Time Spent": 146700,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-5",
+        "Summary": "Looking for Project component",
+        "Description": "",
+        "Σ Time Spent": 223200,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-4",
+        "Summary": "Plan component",
+        "Description": "",
+        "Σ Time Spent": 541800,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-3",
+        "Summary": "Project component",
+        "Description": "",
+        "Σ Time Spent": 531900,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-2",
+        "Summary": "Employee component",
+        "Description": "",
+        "Σ Time Spent": 639000,
+        "modifiedFiles": ""
+    },
+    {
+        "Issue key": "RA-1",
+        "Summary": "App frame",
+        "Description": "",
+        "Σ Time Spent": 468900,
+        "modifiedFiles": ""
+    }
+]

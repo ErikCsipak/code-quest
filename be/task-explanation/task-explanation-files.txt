@@ -1,0 +1,65 @@
+Forget everything about your task description that I told you before.  Here comes your new task description, let's call this task "prediction task".
+ 
+I'm going to give you an issue with its summary and description and based on the provided json dataset (issues-with-files-extracted-3.json) and your general knowledge please provide me some predictions on the issue.
+I will provide the issue in json format.
+
+At first, please always analyze the provided dataset and find similar issues to the provided one.
+Do this by analyzing the meanings of the summary and description fields of the issues of the dataset from software engineering point of view. Also analyze the meaning of the summary and description fields of the issue I will provide. Then find at most 3 issues  in the uploaded dataset that are the most similar to the provided one based on their meanings. 
+However if you don’t find similar issues, don't use them in your prediction! 
+Then based on the found similar issues and your general knowledge about software engineering conclude to the information I would like to know about the new issue I will provide.
+It is important that if the similarity is very low, use only your general knowledge.
+
+I also add some information about the project from technical point of view: 
+The project has an angular frontend, a spring backend and a postgress database layer. For database schema handling we use flyway. The source files of the project are listed in txt file (all-files.txt).
+
+So again it is really important to consider the dataset, technical information you know about the project and your general knowledge about software engineering.
+
+
+About the provided issue I'd like to know these 5 things:
+	1. Estimated time spent: Estimated time spent of the provided issue in hours. This should be a range of hours as a string.
+	
+	2. Explanation: An explanation why did you gave that time spent estimation. Elaborate your way of thinking. If you found similar issues you can mention them as well. Don't mention exact similarity metrics. You can list the subtasks with their estimated efforts in hours as well. Don’t give general text here, be specific and technical similar to a programmer.
+	
+	3. Similar issues: If you find similar issues to the provided one in the dataset please give me the keys and the summaries of these issues in a list. The Issue key and the summary should be exactly the same as it is in the dataset. Give at most 3 issues here. The similarity must be at least 0.5. If you don't find similar issues leave this list empty.
+	
+	4. Subtasks: Please do a subtask breakdown and give me a list of subtasks. It should include various testing activities and code review. Give me here the estimation for each subtask too in the same string as the subtask name.
+
+	5. Files to be modified: Deduce and give back what files will be probably modified by the provided issue. You can choose the files from the all-files.txt uploaded file. If you found similar issues consider the modified files of the found similar issues. Also try to find the files to be modified by matching the main terms and expressions from the provided issue to the filenames in the all-files.txt. Give me an empty file list if you didn't found any good file candidates, give back a file only if you are quite sure it will be modified.
+
+Your answer should be a valid json string with these 5 fields I asked.
+
+
+Now I will give you an example, but just because to show you the input and output format.
+The example provided issue in json: {
+  "summary": "Implement the new feature",
+  "description": "Implement the backend by creating the database and service layer, also design the frontend parts and implement backend calls"
+}
+
+Your output should have the same structure as this example JSON output: "{
+	"estimatedTimeSpent": "20-25 hours",
+    "explanation": "Some explanation why did you gave that time spent estimation",
+	"similarIssues": [ 
+	   {
+	      issue-key: ,
+	      summary:  
+	   },
+	   {
+	       issue-key: ,
+	      summary:  
+	    }
+	 ],
+     "subtasks": [ "Implement the endpoint on backend (6 hours)", "Code review (2-3 hours)", "Testing the frontend (1-2 hours)"],
+	 "filesToBeModified": [
+		resource-app\resource-app-backend\src\main\java\com\minero\resourceapp\plan\dto\Project.java,
+		resource-app\resource-app-backend\src\main\java\com\minero\resourceapp\project\entity\Project.java
+		resource-app\resource-app-backend\src\main\java\com\minero\resourceapp\project\service\ProjectService.java,
+		resource-app\resource-app-frontend\src\app\application\home\home.component.ts
+		resource-app\resource-app-frontend\src\app\application\home\home.component.html
+	 ]
+}"
+
+Give one single answer which has to be a json string. Don't give explanations at all!
+So your answer have to be a JSON string! Please don’t answer anything else just the JSON string!  
+Now I will give you the issue. Wait for it.
+
+This is the end of the description of "prediction task".

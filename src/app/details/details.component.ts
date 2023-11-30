@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { SharedEstimationDataService } from '../services/shared.estimation.data.service';
 
 @Component({
-  selector: 'estimation-form',
-  templateUrl: './estimation-form.component.html',
-  styleUrls: ['./estimation-form.component.scss']
+  selector: 'detail-canvas',
+  templateUrl: './details.component.html',
+  styleUrls: ['./details.component.scss']
 })
-export class EstimationFormComponent implements OnInit {
-  explanation: any;
-  estimatedTime: any;
+export class DetailsComponent {
+  similarIssues: any;
+  subtasks: any;
   loading = true;
 
   constructor(private sharedDataService: SharedEstimationDataService) {
@@ -17,13 +17,13 @@ export class EstimationFormComponent implements OnInit {
   ngOnInit() {
     this.sharedDataService.data$.subscribe((data) => {
       if (data) {
-        this.explanation = data.explanation;
-        this.estimatedTime = data.estimatedTimeSpent
+        this.similarIssues = data.similarIssues;
+        this.subtasks = data.subtasks
         this.loading = false;
       } else {
         this.loading = true;
       }
     });
   }
-
+  
 }
