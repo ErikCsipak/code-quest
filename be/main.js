@@ -44,9 +44,9 @@ async function predictIssue(futureIssue) {
 
     return JSON.parse(response);
   } catch (ex) {
-    // The open ai api is not so stable, in 2 out of 10 cases it fails (various reasons). We provide here some
-    // safety answers. Handling this is valid in a production software as well and we give back real
-    // results given by the opeanai api for the (randomly picked) test cases before.
+    // The open ai api is not so stable, in 2 out of 10 cases it fails (e.g. because we reached the daily token limit, need more money :) ).
+    // We provide here some safety answers. Handling this is valid in a production software as well. We give back real
+    // results given by the opeanai api for the (randomly picked real-life) test cases before.
     console.error('Exception thrown: ', ex);
     console.error('Generating safety answer...');
     return getSafetyAnswer(futureIssue);

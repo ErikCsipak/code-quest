@@ -32,5 +32,3 @@ async function fetchIssueByKey(issueKey) {
         throw new Error('Error fetching issue from jira:', error.message)
     }
 }
-
-fetchIssueByKey('RA-1');

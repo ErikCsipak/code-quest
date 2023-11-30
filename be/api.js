@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const ai = require('./main');
+const jira = require('./jira');
 
 const app = express();
 const port = 3000;
@@ -75,6 +76,24 @@ app.post('/predict', async (req, res) => {
       });
    }
 });
+
+/**
+ * GET /jira/issue/:issue-key
+ * 
+ * Example response:
+ *   GET http://localhost:3000/jira/issue/RA-1
+ * 
+ * Example response body:
+ *  {
+ *   "summary": "Test issue in Jira",
+ *   "description": "Some description here 😉"
+ *  }
+ */
+app.get('/jira/issue/:key', async (req, res) => {
+   const issueKey = req.params.key;
+   const issue = await jira.fetchIssueByKey(issueKey);
+   res.json(issue);
+ });
 
 // Start the server
 app.listen(port, () => {
