@@ -18,7 +18,7 @@ class OpenAiAssistant {
       
         let timeElapsed = 0;
         let interval = 1000;
-        let timeout = 70000;
+        let timeout = 60000;
         while (timeElapsed < timeout) {
           const run = await this.openai.beta.threads.runs.retrieve(this.threadId, runId);
           if (run.status === 'completed') {
@@ -29,7 +29,8 @@ class OpenAiAssistant {
           timeElapsed += interval;
         }
       
-        console.log("Timeout");
+        console.error('Timeout');
+        throw new Error('opean ai assistant timeout');
       }
   }
 

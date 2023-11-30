@@ -161,12 +161,38 @@ Válasz:
 
 
 
-// 6. 1 óra volt, nem igazán jó példa
+// 6. 1 óra volt
    {
       "Issue key": "RA-91",
       "Summary": "GetAllUsers API",
       "Description": "    Change `findAll()` controller method names to avoid conflicts in generated code    Change `findAll()` controller method names to avoid conflicts in generated code    Add API for getting all users"
    }
+
+   Válasz:
+   {
+    "estimatedTimeSpent": "2-4 hours",
+    "explanation": "Based on similar issues in the dataset such as RA-100 and RA-98, which involved API changes and took approximately 2 hours, this task involves simple backend changes to the findAll() method to avoid name conflicts and adding a new API endpoint. Typically, such tasks don't require extensive time, assuming that there are no complex business logic changes or database schema updates.",
+    "similarIssues": [
+        {
+            "issue-key": "RA-100",
+            "summary": "GetAllEmployees API"
+        },
+        {
+            "issue-key": "RA-98",
+            "summary": "getAllLookingForResources API"
+        }
+    ],
+    "subtasks": [
+        "Refactor 'findAll()' method names in the controller to avoid conflicts (0.5-1 hours)",
+        "Add API endpoint for getting all users (1-1.5 hours)",
+        "Code review (0.5 hours)",
+        "Testing (0.5-1 hours)"
+    ],
+    "filesToBeModified": [
+        "resource-app-backend/src/main/java/com/minero/resourceapp/user/controller/UserController.java",
+        "resource-app-backend/src/main/java/com/minero/resourceapp/user/dto/UserDTO.java"
+    ]
+}
 
 
 
