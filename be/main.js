@@ -124,50 +124,18 @@ async function main() {
 
 //main();
 
-
+// Open ai assistant and thread is set up on the open ai platform.
 async function sendMessageToAssistant(message) {
-  const assistantId = 'asst_JBNdKzqlSBQOc9IsA0RmJq2h';
-  const threadId = 'thread_fuMIDpJHyw3vOhKOYloWZdDM';
-  await openai.beta.threads.messages.create(threadId, {
-    role: 'user',
-    content: message,
-  });
-
-  const run = await openai.beta.threads.runs.create(threadId, {
-    assistant_id: assistantId,
-  });
-  const runId = run.id;
-
-  let timeElapsed = 0;
-  let interval = 1000;
-  let timeout = 60000;
-  while (timeElapsed < timeout) {
-    const run = await openai.beta.threads.runs.retrieve(threadId, runId);
-    if (run.status === 'completed') {
-      const messagesFromThread = await openai.beta.threads.messages.list(threadId);
-      return messagesFromThread.data[0].content[0].text.value;
-    }
-    await new Promise((resolve) => setTimeout(resolve, interval));
-    timeElapsed += interval;
-  }
-
-  console.log("Timeout");
+  const assistantId = 'asst_fwqox77MkrHbq8TTqvYXx3dF';
+  const threadId = 'thread_YM7wWW9nUAwaJIdkzTnv8kEU';
+  const ai = new OpenAiAssistant(openai, assistantId, threadId);
+  let response = await ai.sendMessage(message);
+  return response;
 }
 
-async function startAssistantChat() {
-  console.log("--------------------- start chat -------------------------------");
-  let consoleInput;
-  while ( consoleInput != 'yes' ) {
-    consoleInput = await question('User says >>>   ');
-    let gptResponse = await sendMessageToAssistant(consoleInput);
-    console.log('API says >>>   ' + JSON.stringify(gptResponse));
-  }
-}
 
-// startAssistantChat()
-
-
-// open ai assistant and thread is set on the open ai platform using the task-explanation.txt.
+// Open ai assistant and thread is set up on the open ai platform.
+// Instructions are in task-explanation.txt.
 async function predictIssue(futureIssue) {
   const assistantId = 'asst_fwqox77MkrHbq8TTqvYXx3dF';
   const threadId = 'thread_YM7wWW9nUAwaJIdkzTnv8kEU';
@@ -180,4 +148,14 @@ async function predictIssue(futureIssue) {
   console.log("first answer: " , response);
 
   return JSON.parse(response);
+}
+
+async function startConsoleAssistantChat() {
+  console.log("--------------------- start chat -------------------------------");
+  let consoleInput;
+  while ( consoleInput != 'yes' ) {
+    consoleInput = await question('User says >>>   ');
+    let gptResponse = await sendMessageToAssistant(consoleInput);
+    console.log('API says >>>   ' + JSON.stringify(gptResponse));
+  }
 }

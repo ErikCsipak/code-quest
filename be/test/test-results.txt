@@ -39,38 +39,24 @@ Válasz:
    }
 
 
-
   Válasz:
 {
     "estimatedTimeSpent": "8-12 hours",
-    "explanation": "The estimation for time spent is based on the complexity of integrating a new number input element into both the frontend and backend, ensuring correct handling of numeric values, and updating UI components. It also includes addition and modification of validation logic, associated backend services, and UI adjustments for the range with step values. These tasks are fairly common in web development and the time estimate reflects experience with similar tasks.",
+    "explanation": "The task involves frontend changes such as adding a new input element for percentage values, adjusting the range for percentage changes, and modifying the position of percentage inputs in an update modal. This type of work generally requires changes to the UI elements and associated logic in the application's frontend codebase. Back-end changes might be minimal unless there's a strong validation component that must be put in place for the new number input field. As no similar issues were directly found in the dataset, this estimate is based on common tasks of a similar nature.",
     "similarIssues": [],
     "subtasks": [
-        {
-            "task": "Add number input for plan percentage (2 hours)"
-        },
-        {
-            "task": "Implement input range slider (3 hours)"
-        },
-        {
-            "task": "Update backend for number input handling (2 hours)"
-        },
-        {
-            "task": "Modify frontend for number input field (3-4 hours)"
-        },
-        {
-            "task": "Write unit and integration tests (1-2 hours)"
-        },
-        {
-            "task": "Code review and adjustments (1 hour)"
-        }
+        "Add number input in plan creation/modification UI (2-3 hours)",
+        "Implement logic for percentage range changes (2-3 hours)",
+        "Rearrange update percentage inputs on modal (1-2 hours)",
+        "Integration with the backend if necessary (1-2 hours)",
+        "Code review (1 hour)",
+        "Testing and QA (1-2 hours)"
     ],
     "filesToBeModified": [
-        "resource-app/resource-app-frontend/src/app/application/plan/plan-creation.component.ts",
-        "resource-app/resource-app-frontend/src/app/application/plan/plan-creation.component.html",
-        "resource-app/resource-app-frontend/src/app/application/plan/plan-update.component.ts",
-        "resource-app/resource-app-frontend/src/app/application/plan/plan-update.component.html",
-        "resource-app/resource-app-backend/src/main/java/com/minero/resourceapp/plan/PlanService.java"
+        "resource-app-frontend/src/app/application/plan/modify-plan/modify-plan.component.html",
+        "resource-app-frontend/src/app/application/plan/modify-plan/modify-plan.component.ts",
+        "resource-app-frontend/src/app/application/plan/create-plan/create-plan.component.html",
+        "resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.ts"
     ]
 }
 
@@ -110,11 +96,32 @@ Válasz:
 
 
 
-// 4. ez kimarad 
+// 4. - nem volt rajta time spent
    { 
       "Summary": "Extend Project DTO with project status",
       "Description": "    Extend ProjectTableDTO with project status"
    }
+
+   {
+    "estimatedTimeSpent": "1-2 hours",
+    "explanation": "Extending an existing DTO (Data Transfer Object) to include a new field is typically a quick task. It requires adding a new property to the DTO class and ensuring it's correctly used in any serialization/deserialization logic, as well as updating associated API endpoints if required. Based on RA-78, which involved similar DTO modification work and had a total time spent of approximately 11.5 hours, the task of adding a single field is much less involved and should therefore be on the lower end of the effort spectrum. Given that no issues related to database migration or complex business logic were indicated, a 1-2 hours range is estimated.",
+    "similarIssues": [
+        {
+            "issue-key": "RA-78",
+            "summary": "UpdateProject API"
+        }
+    ],
+    "subtasks": [
+        "Add project status field to ProjectTableDTO class (0.5 hours)",
+        "Update any affected serialization/deserialization logic (0.5 hours)",
+        "Reflect new DTO structure in API documentation (0.5 hours)",
+        "Code review (0.5 hours)"
+    ],
+    "filesToBeModified": [
+        "resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectTableDTO.java",
+        "resource-app-frontend/src/shared/api/generated/model/projectTableDTO.ts"
+    ]
+}
 
 
 
