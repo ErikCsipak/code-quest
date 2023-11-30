@@ -1,0 +1,299 @@
+[
+    {
+        "request": {
+            "Summary": "Change DB for the scale",
+            "Description": "Add ProjectCompetency. Change Employee's competency level from enum to 1-10 rating"
+        },
+        "response": {
+            "estimatedTimeSpent": "12-16 hours",
+            "explanation": "The task requires database schema changes, which is a complex task that can impact several parts of the application...",
+            "similarIssues": [
+                {
+                    "issue-key": "RA-14",
+                    "summary": "Add and delete competence to employee"
+                }
+            ],
+            "subtasks": [
+                "Update database schema for new ProjectCompetency entity (3-4 hours)",
+                "Alter Employee's competency level from enum to 1-10 rating (3-4 hours)",
+                "Update entity classes and relationships in code (2-3 hours)",
+                "Modify repository method definitions (1-2 hours)",
+                "Apply validation for the new competency level rating (1-2 hours)",
+                "Code review and refactoring (1-2 hours)",
+                "Testing and bug fixes (1-2 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-backend/src/main/java/com/minero/resourceapp/employee/entity/Employee.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/employee/repository/EmployeeRepository.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/project/entity/ProjectCompetency.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/project/repository/ProjectCompetencyRepository.java"
+            ]
+        }
+    },
+    {
+        "request": {
+            "Summary": "Change plan percentage to number input and range",
+            "Description": "Add a number input to plan creation/modification, change the range values for easier percentage change. Change position of update percentage inputs on update modal. Change percentage input to number input field and range with step of 5"
+        },
+        "response": {
+            "estimatedTimeSpent": "8-12 hours",
+            "explanation": "The task involves frontend changes such as adding a new input element for percentage values...",
+            "similarIssues": [],
+            "subtasks": [
+                "Add number input in plan creation/modification UI (2-3 hours)",
+                "Implement logic for percentage range changes (2-3 hours)",
+                "Rearrange update percentage inputs on modal (1-2 hours)",
+                "Integration with the backend if necessary (1-2 hours)",
+                "Code review (1 hour)",
+                "Testing and QA (1-2 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-frontend/src/app/application/plan/modify-plan/modify-plan.component.html",
+                "resource-app-frontend/src/app/application/plan/modify-plan/modify-plan.component.ts",
+                "resource-app-frontend/src/app/application/plan/create-plan/create-plan.component.html",
+                "resource-app-frontend/src/app/application/plan/plan-timeline/plan-timeline.component.ts"
+            ]
+        }
+    },
+    {
+        "request": {
+            "Summary": "Add project's employee list to a looking for resource according to plan",
+            "Description": "Generate API after merge. Formatting with Prettier. Add member list to Looking for Resource on frontend"
+        },
+        "response": {
+            "estimatedTimeSpent": "8-12 hours",
+            "explanation": "Based on a similar issue RA-62... API generation and front-end modifications are typically not very time-consuming tasks when the changes are clear-cut and the data model is already in place.",
+            "similarIssues": [
+                {
+                    "issue-key": "RA-62",
+                    "summary": "Add employee to a looking for project list"
+                }
+            ],
+            "subtasks": [
+                "Generate API after merge (1-2 hours)",
+                "Formatting code with Prettier (1-hour)",
+                "Frontend development for member list in Looking for Resource (4-6 hours)",
+                "Code review (1-2 hours)",
+                "Unit testing (0.5-1 hours)",
+                "Integration testing (1-1.5 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.ts",
+                "resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.html",
+                "resource-app-frontend/src/shared/api/generated/api/lookingForResource.service.ts"
+            ]
+        }
+    },
+    {
+        "request": {
+            "Summary": "Extend Project DTO with project status",
+            "Description": "Extend ProjectTableDTO with project status"
+        },
+        "response": {
+            "estimatedTimeSpent": "1-2 hours",
+            "explanation": "Extending an existing DTO (Data Transfer Object) to include a new field is typically a quick task...",
+            "similarIssues": [
+                {
+                    "issue-key": "RA-78",
+                    "summary": "UpdateProject API"
+                }
+            ],
+            "subtasks": [
+                "Add project status field to ProjectTableDTO class (0.5 hours)",
+                "Update any affected serialization/deserialization logic (0.5 hours)",
+                "Reflect new DTO structure in API documentation (0.5 hours)",
+                "Code review (0.5 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectTableDTO.java",
+                "resource-app-frontend/src/shared/api/generated/model/projectTableDTO.ts"
+            ]
+        }
+    },
+    {
+        "request": {
+            "Summary": "Backend skeleton for 'Plan'",
+            "Description": "    Initialize lists in DTOs to avoid null lists    Add DTOs for timeline structure    Add backend skeleton for Plan"
+        },
+        "response": {
+            "estimatedTimeSpent": "45-60 hours",
+            "explanation": "Based on the related task RA-59 which involved similar backend work on plans and took about 30.5 hours, the current task involves initializing lists within DTOs to avoid null pointers, creating new DTOs for the timeline, and setting up the backend 'Plan' structure. Taking into account that this task includes foundational work important for future features, a conservative estimate accounting for potential complexities in API design and data structure synchronization with the frontend is given. Additional time is considered for testing and unforeseen issues that typically occur in such developmental tasks.",
+            "similarIssues": [
+                {
+                    "issue-key": "RA-59",
+                    "summary": "Connect project to an employee"
+                }
+            ],
+            "subtasks": [
+                "Initialize lists in DTOs (5-8 hours)",
+                "Add DTOs for timeline structure (8-10 hours)",
+                "Implement backend skeleton for Plan (20-30 hours)",
+                "Code review (4-6 hours)",
+                "Unit testing (4-6 hours)",
+                "Integration testing (4-6 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-backend/src/main/java/com/minero/resourceapp/plan/dto/PlanDTO.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/plan/controller/PlanController.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/plan/service/PlanService.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/plan/repository/PlanRepository.java"
+            ]
+        }
+    },
+    {
+        "request": {
+            "Summary": "GetAllUsers API",
+            "Description": "    Change `findAll()` controller method names to avoid conflicts in generated code    Change `findAll()` controller method names to avoid conflicts in generated code    Add API for getting all users"
+        },
+        "response": {
+            "estimatedTimeSpent": "2-4 hours",
+            "explanation": "Based on similar issues in the dataset such as RA-100 and RA-98, which involved API changes and took approximately 2 hours, this task involves simple backend changes to the findAll() method to avoid name conflicts and adding a new API endpoint. Typically, such tasks don't require extensive time, assuming that there are no complex business logic changes or database schema updates.",
+            "similarIssues": [
+                {
+                    "issue-key": "RA-100",
+                    "summary": "GetAllEmployees API"
+                },
+                {
+                    "issue-key": "RA-98",
+                    "summary": "getAllLookingForResources API"
+                }
+            ],
+            "subtasks": [
+                "Refactor 'findAll()' method names in the controller to avoid conflicts (0.5-1 hours)",
+                "Add API endpoint for getting all users (1-1.5 hours)",
+                "Code review (0.5 hours)",
+                "Testing (0.5-1 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-backend/src/main/java/com/minero/resourceapp/user/controller/UserController.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/user/dto/UserDTO.java"
+            ]
+        }
+    },
+    {
+        "request": {
+            "Summary": "Add Project API",
+            "Description": "    Fix problem that competency set could be `null` when creating a new project    Add validation to check fte non-negativity    Change create endpoint response to `HttpStatus.CREATED`    Add name existence check repository method to Project    Add name uniqueness check in project creation    Add name existence check repository method to Project    Add project creation    Expand ProjectTableDTO with companyId"
+        },
+        "response": {
+            "estimatedTimeSpent": "16-24 hours",
+            "explanation": "Drawing on RA-92 task involving API and validation changes, which took approximately 7.75 hours, this task includes fixing a null issue, adding multiple validation steps, altering an endpoint response status, adding repository method, project creation handling, and DTO expansion. This is slightly more complex, so we anticipate it will take longer, approximately double the time. This estimate allows for front and back-end work along with additional overhead for the multiple validation checks and associated testing.",
+            "similarIssues": [
+                {
+                    "issue-key": "RA-92",
+                    "summary": "SearchLookingForProject API"
+                }
+            ],
+            "subtasks": [
+                "Fix competency set null issue (2-3 hours)",
+                "Add fte non-negativity validation (3-4 hours)",
+                "Change create endpoint response status (1-2 hours)",
+                "Add name uniqueness check in project creation (3-4 hours)",
+                "Implement project creation (4-5 hours)",
+                "Expand ProjectTableDTO with companyId (1-2 hours)",
+                "Code review (2-3 hours)",
+                "Testing and bug fixes (1-2 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-backend/src/main/java/com/minero/resourceapp/project/controller/ProjectController.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/project/service/ProjectService.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/project/repository/ProjectRepository.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectDTO.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/project/dto/ProjectTableDTO.java"
+            ]
+        }
+    },
+    {
+        "request": {
+            "Summary": "Update list element",
+            "Description": "* The user can update the following fields by double clicking in the cell:    ** assigned to    ** status    ** project state        * the user can see the saved result by enter or by clicking somewhere else on the site    Implement update of 'looking for resource' entities with error handling on frontend"
+        },
+        "response": {
+            "estimatedTimeSpent": "18-22 hours",
+            "explanation": "The task involves frontend updates to allow users to update specific fields directly within a list element. Similar to RA-84, which required frontend and backend changes for updating list elements and took approximately 21.25 hours, this task includes implementing error handling which suggests a need for thorough testing of edge cases on the frontend. The effort was estimated considering the multiple interactive elements being updated, the complexity of ensuring immediate visual feedback, and proper error handling to provide a user-friendly experience.",
+            "similarIssues": [
+                {
+                    "issue-key": "RA-84",
+                    "summary": "Update list element"
+                }
+            ],
+            "subtasks": [
+                "Frontend development for in-cell editing features (6-8 hours)",
+                "Implement save on enter or external click (2-3 hours)",
+                "Add error handling for update calls (3-4 hours)",
+                "Backend service creation for 'looking for resource' updates (3-4 hours)",
+                "Code review (2 hours)",
+                "Testing and debugging (2-3 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.ts",
+                "resource-app-frontend/src/app/application/home/table-looking-for-resource/table-looking-for-resource.component.html",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/looking_for/looking_for_resource/controller/LookingForResourceController.java"
+            ]
+        }
+    },
+    {
+        "request": {
+            "Summary": "Summarise the workload of an employee",
+            "Description": "On the line of the employee, the user can see the total planned workload for the employee.    Replace magic numbers with constant    Fix mistakes regarding i18n    Cast dates to strings to avoid issues with timezones    Fix date intervals on frontend    Display summaries and style timeline    Generate API"
+        },
+        "response": {
+            "estimatedTimeSpent": "20-30 hours",
+            "explanation": "Considering the complexity of the features such as fixing internationalization issues, casting dates to avoid timezone problems, and displaying summarized data, a significant amount of time is required. This estimation is based on the understanding that fixing i18n and date issues can be tricky and requires thorough testing across different locales and time zones. Moreover, generating API and ensuring data consistency on the front end adds to the complexity. No direct similar issues could be identified from the provided data, hence the estimation is based on the individual components of the task.",
+            "similarIssues": [],
+            "subtasks": [
+                "Fix magic numbers with constants (1-2 hours)",
+                "Fix i18n mistakes (2-4 hours)",
+                "Cast dates to strings (2-4 hours)",
+                "Fix date intervals on frontend (3-5 hours)",
+                "Display summaries and style timeline (4-6 hours)",
+                "Generate API (4-6 hours)",
+                "Code review (2-3 hours)",
+                "Testing across different locales and time zones (2-3 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-frontend/src/app/application/employee/employee-list/employee-list.component.ts",
+                "resource-app-frontend/src/app/application/employee/employee-list/employee-list.component.html",
+                "resource-app-frontend/src/app/application/employee/employee-profile/employee-profile.component.ts",
+                "resource-app-frontend/src/shared/api/generated/api/employee.service.ts",
+                "resource-app-frontend/src/shared/api/generated/model/employeeDTO.ts",
+                "resource-app-frontend/src/app/application/home/home.component.ts"
+            ]
+        }
+    },
+    {
+        "request": {
+            "Summary": "OAuth2 research+config",
+            "Description": "    Fix AuthGuard function    Remove breaking method    Add authorized redirect uri to application.yaml    Refactor code to include requested changes    Add requested code fixes    Configure CORS    Remove commented code, TODOs and unnecessary console.log    Implement Google login on the frontend    Add SecurityConfig    Add Oauth2AuthenticationFailureHandler    Add Oauth2AuthenticationSuccessHandler    Add OAuth2UserService    Add HttpCookieOAuth2AuthorizationRequestRepository    Add TokenAuthenticationFilter    Add CustomUserDetailsService    Add TokenProvider    Add AppProperties    Add SimpleCorsFilter    Add UserService    Add CookieUtils    Add UserRepository    Add UserDTO    Refactor imports due to project name change    Configure application.yaml file    Update dependencies in pom.xml"
+        },
+        "response": {
+            "estimatedTimeSpent": "40-60 hours",
+            "explanation": "The task encompasses a comprehensive overhaul and setup of the OAuth2 authentication mechanism, including various configuration settings and service implementations, which is a complex and highly involved process. The range accounts for the creation of new services and handlers, refactoring of existing code, configuration changes, and thorough testing, particularly regarding security components. Similar past tasks are not explicitly outlined in the dataset, and therefore, the estimate is based on general knowledge of OAuth2 implementation complexities.",
+            "similarIssues": [],
+            "subtasks": [
+                "Research OAuth2 providers and configurations (8-12 hours)",
+                "Implement Google login on frontend (4-6 hours)",
+                "Add and configure security classes and services in backend (12-16 hours)",
+                "Refactor code and apply requested changes (5-8 hours)",
+                "Remove unnecessary code and debug (4 hours)",
+                "Write and update application configurations (2-4 hours)",
+                "Code review and adjustments (3-5 hours)",
+                "Testing and bug fixes (2-4 hours)"
+            ],
+            "filesToBeModified": [
+                "resource-app-backend/src/main/java/com/minero/resourceapp/config/CorsConfiguration.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/config/SecurityConfig.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/config/TokenProvider.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/config/oauth2/Oauth2AuthenticationFailureHandler.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/config/oauth2/Oauth2AuthenticationSuccessHandler.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/config/oauth2/OAuth2UserServiceImpl.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/config/security/CustomUserDetailsService.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/config/security/TokenAuthenticationFilter.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/employee/controller/EmployeeController.java",
+                "resource-app-backend/src/main/java/com/minero/resourceapp/employee/dto/EmployeeDTO.java",
+                "resource-app-frontend/src/app/application/util/CookieUtils.java",
+                "resource-app-frontend/src/app/application/auth/UserService.java"
+            ]
+        }
+    }
+]
