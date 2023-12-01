@@ -7,13 +7,15 @@
     <div class="offcanvas-body">
       <div>
             <h5>Sub-Tasks</h5>
-            <ol class="list-group list-group-numbered mb-5">
+            <p *ngIf="!subtasks?.length" class="fst-italic"> No sub-tasks were generated.</p>
+            <ol class="list-group list-group-numbered">
                 <li class="list-group-item"
                 *ngFor="let subtask of subtasks">
                 {{ subtask }}
                 </li>
             </ol>
             <h5>Similar Issues</h5>
+            <p *ngIf="!similarIssues?.length" class="fst-italic"> No similar issues found.</p>
             <ol class="list-group list-group-flush">
                 <li class="list-group-item"
                 *ngFor="let issue of similarIssues">
@@ -21,6 +23,7 @@
                 </li>
             </ol>
             <h5>Files to be modified</h5>
+            <p *ngIf="!filesToBeModified?.length" class="fst-italic"> No files were found to be modified.</p>
             <ol class="list-group list-group-flush">
               <li class="list-group-item"
                   *ngFor="let file of filesToBeModified">
