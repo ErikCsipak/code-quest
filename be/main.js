@@ -6,7 +6,7 @@ const OpenAiAssistant = require('./openai-assistant');
 module.exports = { sendMessageToAssistant, predictIssue };
 
 const openai = new OpenAIAPI({
-     apiKey: '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'
+     apiKey: keys.openAiApiKey
 });
 
 const cl = readline.createInterface( process.stdin, process.stdout );
