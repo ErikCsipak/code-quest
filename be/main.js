@@ -21,8 +21,8 @@ const question = function(q) {
 
 // Open ai assistant and thread is set up on the open ai platform.
 async function sendMessageToAssistant(message) {
-  const assistantId = 'asst_JBNdKzqlSBQOc9IsA0RmJq2h';
-  const threadId = 'thread_fuMIDpJHyw3vOhKOYloWZdDM';
+  const assistantId = 'asst_HRO6HxAgVlU8LtvxTTlfXT8R';
+  const threadId = 'thread_NQes7OGcktyjl7fp4xKVA2OR';
   const ai = new OpenAiAssistant(openai, assistantId, threadId);
   let response = await ai.sendMessage(message);
   return response;
