@@ -26,7 +26,7 @@ async function fetchIssueByKey(issueKey) {
         }
         console.log(summaryAndDesc);
         return summaryAndDesc;
-        
+
     } catch (error) {
         console.error('Error fetching issue from jira:', error.message);
         throw new Error('Error fetching issue from jira:', error.message)

@@ -1,11 +1,29 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Button from '@atlaskit/button';
+import { view } from "@forge/bridge";
 
 function App() {
-  const localhostURL = 'http://localhost:4200';
+  const [data, setData] = useState(null);
+  let localhostURL = 'http://localhost:4200';
+
+  useEffect(() => {
+    const fetchData = async () => {
+      return await view.getContext();
+    };
+
+    fetchData().then(r => {
+      setData(r);
+    });
+  }, []);
 
   return (
-    <Button href={localhostURL} appearance="primary">Primary button</Button>
+    <div>
+      {data ? (
+        <Button href={localhostURL + '/' + data.extension.issue.key} appearance="primary">Generate estimation</Button>
+      ) : (
+        <p>Loading...</p>
+      )}
+    </div>
   );
 }
 

@@ -16,7 +16,8 @@ export class EstimationFormComponent implements OnInit {
 
   ngOnInit() {
     this.sharedDataService.data$.subscribe((data) => {
-      if (data) {
+      if (data.estimatedTimeSpent) {
+        console.log(data);
         this.explanation = data.explanation;
         this.estimatedTime = data.estimatedTimeSpent
         this.loading = false;
@@ -24,6 +25,8 @@ export class EstimationFormComponent implements OnInit {
         this.loading = true;
       }
     });
+    this.sharedDataService.setData(this.sharedDataService.data$);
+    //This is needed so that the components referenced in this module also get the data
   }
 
 }

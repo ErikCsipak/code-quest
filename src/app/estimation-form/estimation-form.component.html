@@ -4,12 +4,18 @@
         <i class="bi bi-bookmark-check align-middle"></i>
         <div class="d-flex flex-column mb-3 ms-3 w-100">
             <label for="estimation" class="form-label">Estimation</label>
-            <div *ngIf="loading" class="spinner-border spinner-border-sm text-primary" role="status">
+            <div class="d-flex">
+              <div *ngIf="loading" class="spinner-border spinner-border-sm text-primary me-2" role="status">
                 <span class="visually-hidden">Loading...</span>
+              </div>
+              <div *ngIf="!loading" class="d-flex justify-content-around">
+                  <input [(ngModel)]="estimatedTime" name="estimatedTime" type="text" id="estimation" class="form-control me-4" placeholder="Estimation">
+                <button *ngIf="!loading" type="submit" class="btn btn-primary me-2">Apply</button>
+              </div>
+              <chat-canvas></chat-canvas>
+              <detail-canvas class="ms-2"></detail-canvas>
             </div>
-            <div *ngIf="!loading" class="d-flex justify-content-around">
-                <input [(ngModel)]="estimatedTime" name="estimatedTime" type="text" id="estimation" class="form-control me-4" placeholder="Estimation">
-            </div>
+
         </div>
     </div>
     <fieldset class="d-flex flex-row" disabled>

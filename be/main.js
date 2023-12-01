@@ -55,7 +55,7 @@ async function predictIssue(futureIssue) {
 
 function getSafetyAnswer(futureIssue) {
   const testResults = require('./test/test-results.json');
-  
+
   const foundTestResult = testResults.find(result => {
     const requestSummary = result.request.Summary.toLowerCase();
     const futureIssueSummary = futureIssue.Summary.toLowerCase();

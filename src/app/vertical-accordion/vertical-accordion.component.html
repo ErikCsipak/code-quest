@@ -1,15 +1,15 @@
-<button class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+<button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#chatModal">
   <i class="bi bi-robot"></i>
 </button>
 
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-      <chat-box></chat-box>
+<!-- Modal -->
+<div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <chat-box></chat-box>
+      </div>
     </div>
   </div>
 </div>
+

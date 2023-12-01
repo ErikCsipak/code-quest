@@ -2,6 +2,12 @@ nb-chat {
     width: auto;
 }
 
+.white-bg {
+  width: min-content !important;
+  height: min-content !important;
+  padding: 0 !important;
+}
+
 nb-chat-avatar {
     visibility: hidden;
 }

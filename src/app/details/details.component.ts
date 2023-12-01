@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
 import { SharedEstimationDataService } from '../services/shared.estimation.data.service';
 
 @Component({
@@ -6,18 +6,20 @@ import { SharedEstimationDataService } from '../services/shared.estimation.data.
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss']
 })
-export class DetailsComponent {
+export class DetailsComponent implements AfterViewInit{
   similarIssues: any;
+  filesToBeModified: any;
   subtasks: any;
   loading = true;
 
   constructor(private sharedDataService: SharedEstimationDataService) {
   }
 
-  ngOnInit() {
+  ngAfterViewInit () {
     this.sharedDataService.data$.subscribe((data) => {
       if (data) {
         this.similarIssues = data.similarIssues;
+        this.filesToBeModified = data.filesToBeModified;
         this.subtasks = data.subtasks
         this.loading = false;
       } else {
@@ -25,5 +27,5 @@ export class DetailsComponent {
       }
     });
   }
-  
+
 }

@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ModalModule } from './modal/modal.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbThemeModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 @NgModule({
@@ -19,9 +19,9 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     ModalModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
-    NbLayoutModule,
     NbEvaIconsModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

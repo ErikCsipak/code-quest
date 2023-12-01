@@ -20,4 +20,14 @@ export class EstimationService {
 
         return this.http.post(postUrl, requestBody);
     }
+
+  getPredictionForStoryByIssueKey(issueKey: string): Observable<any> {
+    const requestBody = {
+      issueKey: issueKey
+    };
+
+    const postUrl = `${this.apiUrl}/predictByIssueKey`;
+
+    return this.http.post(postUrl, requestBody);
+  }
 }
